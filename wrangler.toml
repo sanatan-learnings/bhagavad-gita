@@ -11,7 +11,7 @@ workers_dev = true
 
 # Account ID (get from Cloudflare dashboard)
 # https://dash.cloudflare.com/ > Workers & Pages > Overview
-account_id = ""  # Add your Cloudflare account ID here
+account_id = "af86ad0762a15106eea3a63829d709eb"
 
 # Secrets (DO NOT set actual values here)
 # Set via: wrangler secret put OPENAI_API_KEY
