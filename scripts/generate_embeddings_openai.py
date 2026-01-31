@@ -19,7 +19,6 @@ import json
 from pathlib import Path
 from datetime import datetime
 import yaml
-from dotenv import load_dotenv
 
 try:
     from openai import OpenAI
@@ -28,8 +27,13 @@ except ImportError:
     print("Please install it with: pip install openai")
     sys.exit(1)
 
-# Load environment variables
-load_dotenv()
+# Load environment variables from .env file (optional, for local development)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # dotenv not available (CI/CD environment), use environment variables directly
+    pass
 
 # Configuration
 EMBEDDING_MODEL = "text-embedding-3-small"
