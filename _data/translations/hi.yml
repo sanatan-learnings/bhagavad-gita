@@ -42,8 +42,11 @@ theme: "थीम"
 modern_minimalist: "आधुनिक न्यूनतम"
 traditional: "पारंपरिक"
 
+# Guidance
+guidance: "आध्यात्मिक मार्गदर्शन"
+
 # Guidance page
-guidance:
+guidance_page:
   title: "आध्यात्मिक मार्गदर्शन"
   subtitle: "भगवद गीता की शिक्षाओं के बारे में प्रश्न पूछें"
   input_placeholder: "उदाहरण: मैं चिंता और भय को कैसे दूर करूं?"

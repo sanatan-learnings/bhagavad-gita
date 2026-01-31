@@ -42,8 +42,11 @@ theme: "Theme"
 modern_minimalist: "Modern Minimalist"
 traditional: "Traditional"
 
+# Guidance
+guidance: "Spiritual Guidance"
+
 # Guidance page
-guidance:
+guidance_page:
   title: "Spiritual Guidance"
   subtitle: "Ask questions about the Bhagavad Gita teachings"
   input_placeholder: "e.g., How do I overcome anxiety and fear?"

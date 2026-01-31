@@ -8,50 +8,50 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 
 <div class="guidance-container">
     <div class="guidance-header">
-        <h1>💬 <span data-lang="en">{{ t_en.guidance.title }}</span><span data-lang="hi">{{ t_hi.guidance.title }}</span></h1>
-        <p><span data-lang="en">{{ t_en.guidance.subtitle }}</span><span data-lang="hi">{{ t_hi.guidance.subtitle }}</span></p>
+        <h1>💬 <span data-lang="en">{{ t_en.guidance_page.title }}</span><span data-lang="hi">{{ t_hi.guidance_page.title }}</span></h1>
+        <p><span data-lang="en">{{ t_en.guidance_page.subtitle }}</span><span data-lang="hi">{{ t_hi.guidance_page.subtitle }}</span></p>
     </div>
 
     <!-- API Key Section -->
     <div id="apiKeySection" class="api-key-section">
         <div id="apiKeyPrompt" class="api-key-prompt">
-            <h3>🔑 <span data-lang="en">{{ t_en.guidance.api_key_prompt }}</span><span data-lang="hi">{{ t_hi.guidance.api_key_prompt }}</span></h3>
+            <h3>🔑 <span data-lang="en">{{ t_en.guidance_page.api_key_prompt }}</span><span data-lang="hi">{{ t_hi.guidance_page.api_key_prompt }}</span></h3>
             <div class="api-key-input-group">
                 <input
                     type="password"
                     id="apiKeyInput"
                     placeholder=""
-                    data-placeholder-en="{{ t_en.guidance.api_key_placeholder }}"
-                    data-placeholder-hi="{{ t_hi.guidance.api_key_placeholder }}"
+                    data-placeholder-en="{{ t_en.guidance_page.api_key_placeholder }}"
+                    data-placeholder-hi="{{ t_hi.guidance_page.api_key_placeholder }}"
                     autocomplete="off"
                 >
                 <button id="saveApiKey" class="btn-primary">
-                    <span data-lang="en">{{ t_en.guidance.api_key_save }}</span>
-                    <span data-lang="hi">{{ t_hi.guidance.api_key_save }}</span>
+                    <span data-lang="en">{{ t_en.guidance_page.api_key_save }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance_page.api_key_save }}</span>
                 </button>
             </div>
             <div class="api-key-help">
                 <p>
                     <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer">
-                        <span data-lang="en">{{ t_en.guidance.api_key_get }}</span>
-                        <span data-lang="hi">{{ t_hi.guidance.api_key_get }}</span>
+                        <span data-lang="en">{{ t_en.guidance_page.api_key_get }}</span>
+                        <span data-lang="hi">{{ t_hi.guidance_page.api_key_get }}</span>
                     </a>
                 </p>
                 <p class="privacy-notice">
-                    <span data-lang="en">{{ t_en.guidance.api_key_privacy }}</span>
-                    <span data-lang="hi">{{ t_hi.guidance.api_key_privacy }}</span>
+                    <span data-lang="en">{{ t_en.guidance_page.api_key_privacy }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance_page.api_key_privacy }}</span>
                 </p>
             </div>
         </div>
 
         <div id="apiKeySet" class="api-key-set" style="display: none;">
             <span class="key-status">
-                ✓ <span data-lang="en">{{ t_en.guidance.api_key_set }}</span>
-                <span data-lang="hi">{{ t_hi.guidance.api_key_set }}</span>
+                ✓ <span data-lang="en">{{ t_en.guidance_page.api_key_set }}</span>
+                <span data-lang="hi">{{ t_hi.guidance_page.api_key_set }}</span>
             </span>
             <button id="editApiKey" class="btn-secondary-small">
-                <span data-lang="en">{{ t_en.guidance.api_key_edit }}</span>
-                <span data-lang="hi">{{ t_hi.guidance.api_key_edit }}</span>
+                <span data-lang="en">{{ t_en.guidance_page.api_key_edit }}</span>
+                <span data-lang="hi">{{ t_hi.guidance_page.api_key_edit }}</span>
             </button>
         </div>
     </div>
@@ -64,8 +64,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 
         <div id="loadingIndicator" class="loading-indicator" style="display: none;">
             <div class="loading-spinner"></div>
-            <span data-lang="en">{{ t_en.guidance.thinking }}</span>
-            <span data-lang="hi">{{ t_hi.guidance.thinking }}</span>
+            <span data-lang="en">{{ t_en.guidance_page.thinking }}</span>
+            <span data-lang="hi">{{ t_hi.guidance_page.thinking }}</span>
         </div>
     </div>
 
@@ -76,17 +76,17 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
                 id="queryInput"
                 rows="2"
                 placeholder=""
-                data-placeholder-en="{{ t_en.guidance.input_placeholder }}"
-                data-placeholder-hi="{{ t_hi.guidance.input_placeholder }}"
+                data-placeholder-en="{{ t_en.guidance_page.input_placeholder }}"
+                data-placeholder-hi="{{ t_hi.guidance_page.input_placeholder }}"
             ></textarea>
             <button id="sendButton" class="btn-send">
-                <span data-lang="en">{{ t_en.guidance.send }}</span>
-                <span data-lang="hi">{{ t_hi.guidance.send }}</span>
+                <span data-lang="en">{{ t_en.guidance_page.send }}</span>
+                <span data-lang="hi">{{ t_hi.guidance_page.send }}</span>
             </button>
         </div>
         <button id="clearChat" class="btn-clear">
-            <span data-lang="en">{{ t_en.guidance.clear_chat }}</span>
-            <span data-lang="hi">{{ t_hi.guidance.clear_chat }}</span>
+            <span data-lang="en">{{ t_en.guidance_page.clear_chat }}</span>
+            <span data-lang="hi">{{ t_hi.guidance_page.clear_chat }}</span>
         </button>
     </div>
 </div>
