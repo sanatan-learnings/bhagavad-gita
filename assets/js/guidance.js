@@ -1,12 +1,12 @@
 /**
- * Hanuman Chalisa Spiritual Guidance - RAG System
+ * Bhagavad Gita Spiritual Guidance - RAG System
  *
  * This script implements a client-side RAG (Retrieval Augmented Generation) pipeline:
- * 1. Loads pre-generated embeddings for all 43 verses
- * 2. Uses HuggingFace (free) for embeddings, OpenAI for chat
+ * 1. Loads pre-generated embeddings for all verses
+ * 2. Uses OpenAI text-embedding-3-small for query embeddings
  * 3. Detects query language (English/Hindi)
  * 4. Performs semantic search using cosine similarity
- * 5. Sends relevant verses + query to GPT-4 for spiritual guidance
+ * 5. Sends relevant verses + query to GPT-4o for spiritual guidance
  * 6. Displays AI response with verse citations
  */
 
@@ -17,17 +17,16 @@ let conversationHistory = [];
 let isProcessing = false;
 
 // Configuration
-const EMBEDDING_MODEL = 'sentence-transformers/all-MiniLM-L6-v2';
-const HF_API_URL = `https://router.huggingface.co/pipeline/feature-extraction/${EMBEDDING_MODEL}`;
+const EMBEDDING_MODEL = 'text-embedding-3-small';
 const GPT_MODEL = 'gpt-4o'; // Can change to 'gpt-4o-mini' for lower cost
 const TOP_K = 3; // Number of relevant verses to retrieve
-const MAX_TOKENS = 1000;
+const MAX_TOKENS = 1500;
 const TEMPERATURE = 0.7;
 
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
-// Example: 'https://hanuman-chalisa-api.your-subdomain.workers.dev'
-const WORKER_URL = 'https://hanuman-chalisa-api.arungupta.workers.dev'; // Leave empty to use user-provided API key mode
+// Example: 'https://bhagavad-gita-api.your-subdomain.workers.dev'
+const WORKER_URL = ''; // Leave empty to use user-provided API key mode
 
 /**
  * Initialize the guidance system on page load
@@ -73,12 +72,13 @@ function initGuidanceSystem() {
  */
 async function loadEmbeddings() {
     try {
-        const response = await fetch('/hanuman-chalisa/data/embeddings.json');
+        const response = await fetch('/bhagavad-gita/data/embeddings.json');
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
         }
         embeddingsData = await response.json();
         console.log(`Loaded embeddings: ${embeddingsData.verses.en.length} English + ${embeddingsData.verses.hi.length} Hindi verses`);
+        console.log(`Embedding model: ${embeddingsData.model}, dimensions: ${embeddingsData.dimensions}`);
     } catch (error) {
         console.error('Error loading embeddings:', error);
         showError('Failed to load verse embeddings. Please refresh the page.');
@@ -89,7 +89,7 @@ async function loadEmbeddings() {
  * Initialize API key from localStorage
  */
 function initApiKey() {
-    apiKey = localStorage.getItem('hc_openai_key');
+    apiKey = localStorage.getItem('bg_openai_key');
     if (apiKey) {
         showApiKeySetStatus();
     } else {
@@ -167,7 +167,7 @@ function saveApiKey() {
     }
 
     apiKey = key;
-    localStorage.setItem('hc_openai_key', key);
+    localStorage.setItem('bg_openai_key', key);
     input.value = '';
     showApiKeySetStatus();
 
@@ -245,14 +245,33 @@ function cosineSimilarity(vecA, vecB) {
 
 /**
  * Get embedding for user query from OpenAI API
- * Note: Uses text-embedding-3-small which has 1536 dimensions,
- * but our pre-computed embeddings use sentence-transformers (384 dimensions).
- * We'll use a simple keyword-based fallback for retrieval.
  */
 async function getQueryEmbedding(query) {
-    // For now, we'll use keyword-based search as a fallback
-    // since mixing different embedding dimensions doesn't work well
-    return null; // Signal to use keyword search instead
+    try {
+        const response = await fetch('https://api.openai.com/v1/embeddings', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                model: EMBEDDING_MODEL,
+                input: query
+            })
+        });
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error?.message || `HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.data[0].embedding;
+    } catch (error) {
+        console.error('Error getting query embedding:', error);
+        // Fall back to keyword search
+        return null;
+    }
 }
 
 /**
@@ -269,9 +288,9 @@ function findRelevantVersesByKeywords(query, lang, k = TOP_K) {
         let score = 0;
         const searchText = (
             verse.title + ' ' +
-            verse.metadata.transliteration + ' ' +
-            verse.metadata.literal_translation + ' ' +
-            verse.metadata.devanagari
+            (verse.metadata.transliteration || '') + ' ' +
+            (verse.metadata.translation || '') + ' ' +
+            (verse.metadata.devanagari || '')
         ).toLowerCase();
 
         // Count keyword matches
@@ -330,15 +349,16 @@ function findRelevantVerses(queryEmbedding, lang, k = TOP_K) {
  */
 function buildSystemPrompt(verses, lang) {
     const intro = lang === 'hi'
-        ? 'आप हनुमान चालीसा के विशेषज्ञ आध्यात्मिक मार्गदर्शक हैं। उपयोगकर्ता के प्रश्न का उत्तर देने के लिए प्रासंगिक छंदों का उपयोग करें। अपनी प्रतिक्रिया में विशिष्ट छंदों का हवाला दें और व्यावहारिक आध्यात्मिक मार्गदर्शन प्रदान करें।'
-        : 'You are a spiritual guide specializing in the Hanuman Chalisa. Use the relevant verses below to answer the user\'s question. Cite specific verses in your response and provide practical spiritual guidance.';
+        ? 'आप भगवद् गीता के विशेषज्ञ आध्यात्मिक मार्गदर्शक हैं। उपयोगकर्ता के प्रश्न का उत्तर देने के लिए प्रासंगिक श्लोकों का उपयोग करें। अपनी प्रतिक्रिया में विशिष्ट श्लोकों का संदर्भ दें और व्यावहारिक आध्यात्मिक मार्गदर्शन प्रदान करें। श्री कृष्ण की शिक्षाओं के आधार पर गहन और विचारशील उत्तर दें।'
+        : 'You are a spiritual guide specializing in the Bhagavad Gita. Use the relevant verses below to answer the user\'s question. Cite specific verses in your response and provide practical spiritual guidance based on Lord Krishna\'s teachings. Be profound, thoughtful, and help apply ancient wisdom to modern life.';
 
     const versesContext = verses.map((v, i) => {
-        const header = lang === 'hi' ? `छंद ${i + 1}:` : `Verse ${i + 1}:`;
-        return `${header} ${v.title}\n${v.metadata.transliteration}\n${v.metadata.literal_translation}`;
+        const header = lang === 'hi' ? `श्लोक ${i + 1}:` : `Verse ${i + 1}:`;
+        const chapter = v.chapter ? `Chapter ${v.chapter}, Verse ${v.verse}` : v.title;
+        return `${header} ${chapter}\n${v.metadata.devanagari || ''}\n${v.metadata.transliteration || ''}\n${v.metadata.translation || ''}`;
     }).join('\n\n');
 
-    return `${intro}\n\nRelevant Verses:\n\n${versesContext}\n\nProvide guidance based on these verses. Be concise, respectful, and spiritually insightful.`;
+    return `${intro}\n\nRelevant Verses from Bhagavad Gita:\n\n${versesContext}\n\nProvide guidance based on these verses. Be concise yet profound, respectful, and spiritually insightful.`;
 }
 
 /**
@@ -463,13 +483,22 @@ async function handleSendQuery() {
         const queryLang = detectLanguage(query);
         console.log(`Query language: ${queryLang}`);
 
-        // Step 2: Store query for keyword search
-        embeddingsData.lastQuery = query;
+        // Step 2: Get query embedding for semantic search
+        console.log('Generating query embedding...');
+        const queryEmbedding = await getQueryEmbedding(query);
 
-        // Step 3: Find relevant verses using keyword-based search
-        console.log('Finding relevant verses using keyword search...');
-        const relevantVerses = findRelevantVersesByKeywords(query, queryLang, TOP_K);
-        console.log(`Found ${relevantVerses.length} relevant verses:`, relevantVerses.map(v => v.title));
+        // Step 3: Find relevant verses (semantic search if embedding available, else keyword)
+        let relevantVerses;
+        if (queryEmbedding) {
+            console.log('Finding relevant verses using semantic search...');
+            relevantVerses = findRelevantVerses(queryEmbedding, queryLang, TOP_K);
+            console.log(`Found ${relevantVerses.length} relevant verses:`, relevantVerses.map(v => v.title));
+        } else {
+            console.log('Falling back to keyword search...');
+            embeddingsData.lastQuery = query;
+            relevantVerses = findRelevantVersesByKeywords(query, queryLang, TOP_K);
+            console.log(`Found ${relevantVerses.length} relevant verses:`, relevantVerses.map(v => v.title));
+        }
 
         // Step 4: Get GPT guidance
         console.log('Getting spiritual guidance...');
