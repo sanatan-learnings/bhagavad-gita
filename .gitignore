@@ -36,7 +36,7 @@ Thumbs.db
 *.log
 
 # Generated files
-data/embeddings.json
+# data/embeddings.json - Now committed to repo for GitHub Pages deployment
 data/search.json
 
 # Wrangler
