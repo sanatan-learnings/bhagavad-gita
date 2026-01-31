@@ -37,6 +37,12 @@ verse-audio --verses-dir _verses --output-dir audio
 verse-images --verses-dir _verses --output-dir images
 ```
 
+### Deploy Cloudflare Worker
+```bash
+# Deploy the semantic search worker
+verse-deploy
+```
+
 ## Project-Specific Scripts
 
 ### `generate_verse_templates.py`
