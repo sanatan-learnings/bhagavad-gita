@@ -1,21 +1,21 @@
 /**
- * Cloudflare Worker - OpenAI API Proxy for Hanuman Chalisa
+ * Cloudflare Worker - OpenAI API Proxy for Bhagavad Gita
  *
  * This worker securely proxies OpenAI API requests without exposing your API key.
- * Deploy this to Cloudflare Workers and set OPENAI_API_KEY as a secret.
+ * Handles both chat completions (spiritual guidance) and embeddings (query search).
  *
  * Deployment:
- *   1. Go to https://dash.cloudflare.com/
- *   2. Workers & Pages > Create Application > Create Worker
- *   3. Paste this code
- *   4. Settings > Variables > Add secret: OPENAI_API_KEY
- *   5. Copy worker URL (e.g., https://hanuman-chalisa-api.your-subdomain.workers.dev)
+ *   1. Install Wrangler: npm install -g wrangler
+ *   2. Login: wrangler login
+ *   3. Set secret: wrangler secret put OPENAI_API_KEY
+ *   4. Deploy: wrangler deploy
+ *   5. Copy worker URL (e.g., https://bhagavad-gita-api.your-subdomain.workers.dev)
  *   6. Update WORKER_URL in assets/js/guidance.js
  */
 
 // CORS headers for browser requests
 const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*', // Change to your domain for better security: 'https://sanatan-learnings.github.io'
+  'Access-Control-Allow-Origin': 'https://sanatan-learnings.github.io',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
@@ -82,22 +82,6 @@ async function handleRequest(request, env) {
     // Get request body
     const body = await request.json();
 
-    // Validate request
-    if (!body.messages || !Array.isArray(body.messages)) {
-      return new Response(JSON.stringify({
-        error: {
-          message: 'Invalid request: messages array required',
-          type: 'invalid_request_error',
-        }
-      }), {
-        status: 400,
-        headers: {
-          ...CORS_HEADERS,
-          'Content-Type': 'application/json',
-        },
-      });
-    }
-
     // Check for API key
     if (!env.OPENAI_API_KEY) {
       console.error('OPENAI_API_KEY not set in worker secrets');
@@ -115,19 +99,49 @@ async function handleRequest(request, env) {
       });
     }
 
+    // Determine endpoint based on request type
+    let endpoint;
+    let requestBody;
+
+    if (body.messages) {
+      // Chat completion request
+      endpoint = 'https://api.openai.com/v1/chat/completions';
+      requestBody = {
+        model: body.model || 'gpt-4o',
+        messages: body.messages,
+        temperature: body.temperature || 0.7,
+        max_tokens: body.max_tokens || 1500,
+      };
+    } else if (body.input) {
+      // Embedding request
+      endpoint = 'https://api.openai.com/v1/embeddings';
+      requestBody = {
+        model: body.model || 'text-embedding-3-small',
+        input: body.input,
+      };
+    } else {
+      return new Response(JSON.stringify({
+        error: {
+          message: 'Invalid request: either messages or input required',
+          type: 'invalid_request_error',
+        }
+      }), {
+        status: 400,
+        headers: {
+          ...CORS_HEADERS,
+          'Content-Type': 'application/json',
+        },
+      });
+    }
+
     // Forward request to OpenAI
-    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+    const openaiResponse = await fetch(endpoint, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${env.OPENAI_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        model: body.model || 'gpt-4o',
-        messages: body.messages,
-        temperature: body.temperature || 0.7,
-        max_tokens: body.max_tokens || 1000,
-      }),
+      body: JSON.stringify(requestBody),
     });
 
     // Return OpenAI response with CORS headers

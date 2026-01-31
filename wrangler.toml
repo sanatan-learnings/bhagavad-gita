@@ -9,15 +9,15 @@ compatibility_date = "2026-01-29"
 # Workers configuration
 workers_dev = true
 
-# Environment variables (set these in Cloudflare dashboard)
-# OPENAI_API_KEY = "your-key-here" (set via dashboard, not here!)
+# Account ID (get from Cloudflare dashboard)
+# https://dash.cloudflare.com/ > Workers & Pages > Overview
+account_id = ""  # Add your Cloudflare account ID here
 
-# Account ID (optional - wrangler will prompt if not set)
-# Get this from: https://dash.cloudflare.com/ > Workers & Pages > Overview
-# account_id = "your-account-id"
+# Secrets (DO NOT set actual values here)
+# Set via: wrangler secret put OPENAI_API_KEY
+# The OPENAI_API_KEY will be prompted during deployment
 
-# Route configuration (optional - for custom domains)
-# [env.production]
-# routes = [
-#   { pattern = "api.hanumanchalisa.com/*", zone_name = "hanumanchalisa.com" }
-# ]
+# Local development
+# For testing locally: wrangler dev
+[vars]
+# Non-secret variables can go here
