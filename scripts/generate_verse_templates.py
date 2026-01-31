@@ -13,15 +13,16 @@ def create_verse_template(chapter, verse_num, total_verses, chapter_name_en, cha
     """Create a verse template with proper structure."""
 
     # Determine previous and next verse
+    # Note: Jekyll converts underscores to hyphens in URLs, so we use hyphens here
     if verse_num == 1:
         prev_verse = "null"
     else:
-        prev_verse = f"/verses/chapter_{chapter:02d}_verse_{verse_num-1:02d}/"
+        prev_verse = f"/verses/chapter-{chapter:02d}-verse-{verse_num-1:02d}/"
 
     if verse_num == total_verses:
         next_verse = "null"  # Or link to next chapter's first verse
     else:
-        next_verse = f"/verses/chapter_{chapter:02d}_verse_{verse_num+1:02d}/"
+        next_verse = f"/verses/chapter-{chapter:02d}-verse-{verse_num+1:02d}/"
 
     template = f"""---
 layout: verse

@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 22"
 title_hi: "अध्याय 1, श्लोक 22"
 chapter: 1
 verse_number: 22
-previous_verse: /verses/chapter_01_verse_21/
-next_verse: /verses/chapter_01_verse_23/
+previous_verse: /verses/chapter-01-verse-21/
+next_verse: /verses/chapter-01-verse-23/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

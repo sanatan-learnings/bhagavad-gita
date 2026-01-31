@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 25"
 title_hi: "अध्याय 1, श्लोक 25"
 chapter: 1
 verse_number: 25
-previous_verse: /verses/chapter_01_verse_24/
-next_verse: /verses/chapter_01_verse_26/
+previous_verse: /verses/chapter-01-verse-24/
+next_verse: /verses/chapter-01-verse-26/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

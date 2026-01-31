@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 13"
 title_hi: "अध्याय 1, श्लोक 13"
 chapter: 1
 verse_number: 13
-previous_verse: /verses/chapter_01_verse_12/
-next_verse: /verses/chapter_01_verse_14/
+previous_verse: /verses/chapter-01-verse-12/
+next_verse: /verses/chapter-01-verse-14/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

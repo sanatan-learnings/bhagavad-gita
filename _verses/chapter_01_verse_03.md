@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 3"
 title_hi: "अध्याय 1, श्लोक 3"
 chapter: 1
 verse_number: 3
-previous_verse: /verses/chapter_01_verse_02/
-next_verse: /verses/chapter_01_verse_04/
+previous_verse: /verses/chapter-01-verse-02/
+next_verse: /verses/chapter-01-verse-04/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

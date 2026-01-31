@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 10"
 title_hi: "अध्याय 1, श्लोक 10"
 chapter: 1
 verse_number: 10
-previous_verse: /verses/chapter_01_verse_09/
-next_verse: /verses/chapter_01_verse_11/
+previous_verse: /verses/chapter-01-verse-09/
+next_verse: /verses/chapter-01-verse-11/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

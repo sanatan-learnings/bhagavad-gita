@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 18"
 title_hi: "अध्याय 1, श्लोक 18"
 chapter: 1
 verse_number: 18
-previous_verse: /verses/chapter_01_verse_17/
-next_verse: /verses/chapter_01_verse_19/
+previous_verse: /verses/chapter-01-verse-17/
+next_verse: /verses/chapter-01-verse-19/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

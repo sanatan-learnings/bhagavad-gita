@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 45"
 title_hi: "अध्याय 1, श्लोक 45"
 chapter: 1
 verse_number: 45
-previous_verse: /verses/chapter_01_verse_44/
-next_verse: /verses/chapter_01_verse_46/
+previous_verse: /verses/chapter-01-verse-44/
+next_verse: /verses/chapter-01-verse-46/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

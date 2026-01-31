@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 7"
 title_hi: "अध्याय 1, श्लोक 7"
 chapter: 1
 verse_number: 7
-previous_verse: /verses/chapter_01_verse_06/
-next_verse: /verses/chapter_01_verse_08/
+previous_verse: /verses/chapter-01-verse-06/
+next_verse: /verses/chapter-01-verse-08/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

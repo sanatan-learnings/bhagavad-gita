@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 34"
 title_hi: "अध्याय 1, श्लोक 34"
 chapter: 1
 verse_number: 34
-previous_verse: /verses/chapter_01_verse_33/
-next_verse: /verses/chapter_01_verse_35/
+previous_verse: /verses/chapter-01-verse-33/
+next_verse: /verses/chapter-01-verse-35/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

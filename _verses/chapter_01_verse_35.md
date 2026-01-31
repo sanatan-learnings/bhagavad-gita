@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 35"
 title_hi: "अध्याय 1, श्लोक 35"
 chapter: 1
 verse_number: 35
-previous_verse: /verses/chapter_01_verse_34/
-next_verse: /verses/chapter_01_verse_36/
+previous_verse: /verses/chapter-01-verse-34/
+next_verse: /verses/chapter-01-verse-36/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

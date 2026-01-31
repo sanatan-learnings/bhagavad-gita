@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 12"
 title_hi: "अध्याय 1, श्लोक 12"
 chapter: 1
 verse_number: 12
-previous_verse: /verses/chapter_01_verse_11/
-next_verse: /verses/chapter_01_verse_13/
+previous_verse: /verses/chapter-01-verse-11/
+next_verse: /verses/chapter-01-verse-13/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

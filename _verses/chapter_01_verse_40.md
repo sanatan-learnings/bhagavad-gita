@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 40"
 title_hi: "अध्याय 1, श्लोक 40"
 chapter: 1
 verse_number: 40
-previous_verse: /verses/chapter_01_verse_39/
-next_verse: /verses/chapter_01_verse_41/
+previous_verse: /verses/chapter-01-verse-39/
+next_verse: /verses/chapter-01-verse-41/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

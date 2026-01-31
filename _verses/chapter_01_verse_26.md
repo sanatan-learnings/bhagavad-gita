@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 26"
 title_hi: "अध्याय 1, श्लोक 26"
 chapter: 1
 verse_number: 26
-previous_verse: /verses/chapter_01_verse_25/
-next_verse: /verses/chapter_01_verse_27/
+previous_verse: /verses/chapter-01-verse-25/
+next_verse: /verses/chapter-01-verse-27/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

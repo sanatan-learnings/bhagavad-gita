@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 46"
 title_hi: "अध्याय 1, श्लोक 46"
 chapter: 1
 verse_number: 46
-previous_verse: /verses/chapter_01_verse_45/
-next_verse: /verses/chapter_01_verse_47/
+previous_verse: /verses/chapter-01-verse-45/
+next_verse: /verses/chapter-01-verse-47/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

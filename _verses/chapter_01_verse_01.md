@@ -5,7 +5,7 @@ title_hi: "अध्याय 1, श्लोक 1"
 chapter: 1
 verse_number: 1
 previous_verse: null
-next_verse: /verses/chapter_01_verse_02/
+next_verse: /verses/chapter-01-verse-02/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

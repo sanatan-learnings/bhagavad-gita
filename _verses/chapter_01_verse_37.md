@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 37"
 title_hi: "अध्याय 1, श्लोक 37"
 chapter: 1
 verse_number: 37
-previous_verse: /verses/chapter_01_verse_36/
-next_verse: /verses/chapter_01_verse_38/
+previous_verse: /verses/chapter-01-verse-36/
+next_verse: /verses/chapter-01-verse-38/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

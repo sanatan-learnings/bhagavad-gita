@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 28"
 title_hi: "अध्याय 1, श्लोक 28"
 chapter: 1
 verse_number: 28
-previous_verse: /verses/chapter_01_verse_27/
-next_verse: /verses/chapter_01_verse_29/
+previous_verse: /verses/chapter-01-verse-27/
+next_verse: /verses/chapter-01-verse-29/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

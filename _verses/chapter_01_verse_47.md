@@ -4,7 +4,7 @@ title_en: "Chapter 1, Verse 47"
 title_hi: "अध्याय 1, श्लोक 47"
 chapter: 1
 verse_number: 47
-previous_verse: /verses/chapter_01_verse_46/
+previous_verse: /verses/chapter-01-verse-46/
 next_verse: null
 chapter_info:
   number: 1

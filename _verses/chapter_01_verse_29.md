@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 29"
 title_hi: "अध्याय 1, श्लोक 29"
 chapter: 1
 verse_number: 29
-previous_verse: /verses/chapter_01_verse_28/
-next_verse: /verses/chapter_01_verse_30/
+previous_verse: /verses/chapter-01-verse-28/
+next_verse: /verses/chapter-01-verse-30/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

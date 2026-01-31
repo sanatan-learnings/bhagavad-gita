@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 33"
 title_hi: "अध्याय 1, श्लोक 33"
 chapter: 1
 verse_number: 33
-previous_verse: /verses/chapter_01_verse_32/
-next_verse: /verses/chapter_01_verse_34/
+previous_verse: /verses/chapter-01-verse-32/
+next_verse: /verses/chapter-01-verse-34/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

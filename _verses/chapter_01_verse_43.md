@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 43"
 title_hi: "अध्याय 1, श्लोक 43"
 chapter: 1
 verse_number: 43
-previous_verse: /verses/chapter_01_verse_42/
-next_verse: /verses/chapter_01_verse_44/
+previous_verse: /verses/chapter-01-verse-42/
+next_verse: /verses/chapter-01-verse-44/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

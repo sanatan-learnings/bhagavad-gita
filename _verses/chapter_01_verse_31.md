@@ -4,8 +4,8 @@ title_en: "Chapter 1, Verse 31"
 title_hi: "अध्याय 1, श्लोक 31"
 chapter: 1
 verse_number: 31
-previous_verse: /verses/chapter_01_verse_30/
-next_verse: /verses/chapter_01_verse_32/
+previous_verse: /verses/chapter-01-verse-30/
+next_verse: /verses/chapter-01-verse-32/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"

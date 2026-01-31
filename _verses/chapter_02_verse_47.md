@@ -4,8 +4,8 @@ title_en: "Chapter 2, Verse 47"
 title_hi: "अध्याय 2, श्लोक 47"
 chapter: 2
 verse_number: 47
-previous_verse: /verses/chapter_02_verse_46/
-next_verse: /verses/chapter_02_verse_48/
+previous_verse: /verses/chapter-02-verse-46/
+next_verse: /verses/chapter-02-verse-48/
 chapter_info:
   number: 2
   name_en: "The Yoga of Knowledge"
