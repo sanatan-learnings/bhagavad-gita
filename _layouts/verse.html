@@ -51,6 +51,41 @@ layout: default
         <h2><span data-lang="en">{{ t_en.devanagari }}</span><span data-lang="hi">{{ t_hi.devanagari }}</span></h2>
         <pre class="sanskrit-text">{{ page.devanagari }}</pre>
 
+        {% if page.audio_full or page.audio_slow %}
+        <div class="audio-container">
+            <h3 class="audio-title">
+                <span data-lang="en">🎧 {{ t_en.listen }}</span>
+                <span data-lang="hi">🎧 {{ t_hi.listen }}</span>
+            </h3>
+            <div class="audio-players">
+                {% if page.audio_full %}
+                <div class="audio-player">
+                    <div class="audio-label">
+                        <span data-lang="en">{{ t_en.audio_full }}</span>
+                        <span data-lang="hi">{{ t_hi.audio_full }}</span>
+                    </div>
+                    <audio controls preload="metadata">
+                        <source src="{{ page.audio_full | relative_url }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                {% endif %}
+                {% if page.audio_slow %}
+                <div class="audio-player">
+                    <div class="audio-label">
+                        <span data-lang="en">{{ t_en.audio_slow }}</span>
+                        <span data-lang="hi">{{ t_hi.audio_slow }}</span>
+                    </div>
+                    <audio controls preload="metadata">
+                        <source src="{{ page.audio_slow | relative_url }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
         <div data-lang="en">
             <h2>{{ t_en.transliteration }}</h2>
             <pre class="transliteration-text">{{ page.transliteration }}</pre>

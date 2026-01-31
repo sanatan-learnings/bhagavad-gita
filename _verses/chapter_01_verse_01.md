@@ -11,6 +11,8 @@ chapter_info:
   name_en: "Arjuna's Dilemma"
   name_hi: "अर्जुन विषाद योग"
 image: /images/modern-minimalist/chapter-01-verse-01.png
+audio_full: /audio/chapter_01_verse_01_full.mp3
+audio_slow: /audio/chapter_01_verse_01_slow.mp3
 
 devanagari: |
   धृतराष्ट्र उवाच।

@@ -244,6 +244,69 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
+/* Audio Player Section */
+.audio-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+}
+
+.audio-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #495057;
+    text-align: center;
+    font-weight: 600;
+}
+
+.audio-players {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.audio-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.audio-player audio {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Style the audio controls */
+.audio-player audio::-webkit-media-controls-panel {
+    background: white;
+    border-radius: 8px;
+}
+
+/* Responsive audio players */
+@media (min-width: 768px) {
+    .audio-players {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .audio-player {
+        flex: 1;
+    }
+}
+
 /* About Section (Collapsible) */
 .about-section {
     max-width: 700px;
