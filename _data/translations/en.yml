@@ -5,7 +5,7 @@ site_description: "An interactive guide to the Bhagavad Gita with verse-by-verse
 # Navigation
 home: "Home"
 guidance: "Spiritual Guidance"
-search: "Search"
+search_nav: "Search"
 book: "Book Generator"
 full_gita: "Full Gita"
 
