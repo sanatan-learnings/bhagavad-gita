@@ -10,7 +10,7 @@ chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"
   name_hi: "अर्जुन विषाद योग"
-image: /bhagavad-gita/images/modern-minimalist/chapter-01-verse-01.png
+image: /images/modern-minimalist/chapter-01-verse-01.png
 
 devanagari: |
   धृतराष्ट्र उवाच।
