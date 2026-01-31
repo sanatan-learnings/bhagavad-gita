@@ -59,17 +59,14 @@ title: Home
 </div>
 
 <section class="verse-navigation">
-    <h2>
-        <span data-lang="en">Chapters</span>
-        <span data-lang="hi">अध्याय</span>
-    </h2>
-
     <!-- Chapter 1 -->
-    <div class="chapter-section">
-        <h3>
-            <span data-lang="en">📖 Chapter 1: {{ t_en.chapter_1 }}</span>
-            <span data-lang="hi">📖 अध्याय 1: {{ t_hi.chapter_1 }}</span>
-        </h3>
+    <details class="chapter-section" open>
+        <summary class="chapter-header">
+            <h3>
+                <span data-lang="en">📖 Chapter 1: {{ t_en.chapter_1 }} <span class="verse-count">(47 verses)</span></span>
+                <span data-lang="hi">📖 अध्याय 1: {{ t_hi.chapter_1 }} <span class="verse-count">(47 श्लोक)</span></span>
+            </h3>
+        </summary>
         <p class="chapter-description">
             <span data-lang="en">
                 Arjuna's moral crisis on the battlefield - witnessing his relatives, teachers, and friends
@@ -101,14 +98,16 @@ title: Home
             </a>
             {% endfor %}
         </div>
-    </div>
+    </details>
 
     <!-- Chapter 2 -->
-    <div class="chapter-section">
-        <h3>
-            <span data-lang="en">📖 Chapter 2: {{ t_en.chapter_2 }}</span>
-            <span data-lang="hi">📖 अध्याय 2: {{ t_hi.chapter_2 }}</span>
-        </h3>
+    <details class="chapter-section">
+        <summary class="chapter-header">
+            <h3>
+                <span data-lang="en">📖 Chapter 2: {{ t_en.chapter_2 }} <span class="verse-count">(72 verses)</span></span>
+                <span data-lang="hi">📖 अध्याय 2: {{ t_hi.chapter_2 }} <span class="verse-count">(72 श्लोक)</span></span>
+            </h3>
+        </summary>
         <p class="chapter-description">
             <span data-lang="en">
                 Krishna's response containing the essence of Gita philosophy - the immortality of the soul,
@@ -140,5 +139,5 @@ title: Home
             </a>
             {% endfor %}
         </div>
-    </div>
+    </details>
 </section>
