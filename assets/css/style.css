@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Language switching - hide Hindi by default until JS loads */
+[data-lang="hi"] {
+    display: none !important;
+}
+
+/* English is shown by default */
+[data-lang="en"] {
+    display: inline;
+}
+
+div[data-lang="en"] {
+    display: block;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
