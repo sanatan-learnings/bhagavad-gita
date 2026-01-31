@@ -2,6 +2,8 @@
 
 An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse analysis, bilingual translations, and AI-powered spiritual guidance.
 
+🌐 **[View Live Site](https://sanatan-learnings.github.io/bhagavad-gita)**
+
 ## 🌟 Features
 
 - **Comprehensive Verse Analysis**: Each verse includes:
@@ -16,7 +18,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
 - **Bilingual Support**: Full interface in English and Hindi with seamless language switching
 
 - **AI-Powered Spiritual Guidance**: Ask questions about Gita teachings and receive contextual answers powered by:
-  - Local embeddings (HuggingFace Transformers - FREE)
+  - OpenAI or Local embeddings (HuggingFace Transformers)
   - Semantic search (Retrieval Augmented Generation)
   - GPT-4o for thoughtful spiritual responses
   - Cloudflare Worker for secure API management
@@ -79,7 +81,20 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    pip install -r scripts/requirements.txt
    ```
 
-2. **Generate embeddings**
+2. **Configure environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your OpenAI API key (for OpenAI embeddings)
+   ```
+
+3. **Generate embeddings**
+
+   **Option A: OpenAI embeddings (Recommended for better quality)**
+   ```bash
+   python scripts/generate_embeddings_openai.py
+   ```
+
+   **Option B: Local embeddings (Free, no API key needed)**
    ```bash
    python scripts/generate_embeddings_local.py
    ```
@@ -187,10 +202,10 @@ The RAG-powered spiritual guidance feature requires a Cloudflare Worker:
 | Component | Cost | Notes |
 |-----------|------|-------|
 | GitHub Pages Hosting | FREE | Static site hosting |
-| Embeddings Generation | FREE | Local HuggingFace transformers |
+| Embeddings Generation | FREE or ~$0.10 | FREE with local models OR ~$0.10 for OpenAI embeddings (one-time) |
 | Cloudflare Worker | FREE | 100k requests/day free tier |
 | OpenAI API (Guidance) | ~$0.01/query | Only when users ask questions |
-| **Total Setup** | $0 | No upfront costs |
+| **Total Setup** | $0-$0.10 | One-time embedding cost if using OpenAI |
 | **Monthly Operational** | ~$0 | Negligible unless heavy guidance usage |
 
 ## 📁 Project Structure
