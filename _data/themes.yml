@@ -1,0 +1,24 @@
+# Theme definitions for verse images
+# Each theme can have different artistic styles
+# Images are stored in images/[theme-name]/
+
+themes:
+  - id: modern-minimalist
+    name:
+      en: "Modern Minimalist"
+      hi: "आधुनिक न्यूनतम"
+    description:
+      en: "Clean, contemporary design with spiritual aesthetics"
+      hi: "आध्यात्मिक सौंदर्यशास्त्र के साथ स्वच्छ, समकालीन डिजाइन"
+    folder: "modern-minimalist"
+    default: true
+
+  - id: traditional
+    name:
+      en: "Traditional"
+      hi: "पारंपरिक"
+    description:
+      en: "Classic Indian art style inspired by ancient manuscripts"
+      hi: "प्राचीन पांडुलिपियों से प्रेरित क्लासिक भारतीय कला शैली"
+    folder: "traditional"
+    default: false

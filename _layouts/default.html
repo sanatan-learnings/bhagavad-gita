@@ -1,0 +1,108 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.translations.en %}
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1><a href="{{ '/' | relative_url }}?lang={{ lang }}">
+                        <span data-lang="en">{{ t_en.site_title }}</span>
+                        <span data-lang="hi">{{ t_hi.site_title }}</span>
+                    </a></h1>
+                    <p class="subtitle">
+                        <span data-lang="en">🕉️ Divine Song of the Lord 📖</span>
+                        <span data-lang="hi">🕉️ भगवान का दिव्य गीत 📖</span>
+                    </p>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <label for="languageSelect" class="sr-only">{{ t.language }}</label>
+                        <select id="languageSelect" onchange="switchLanguage(this.value)">
+                            <option value="en" {% if lang == 'en' %}selected{% endif %}>🌐 {{ t_en.english }}</option>
+                            <option value="hi" {% if lang == 'hi' %}selected{% endif %}>🌐 {{ t_hi.hindi }}</option>
+                        </select>
+                    </div>
+                    {% if site.data.themes.size > 0 %}
+                    <div class="theme-switcher">
+                        <label for="themeSelect" class="sr-only">{{ t.theme }}</label>
+                        <select id="themeSelect" onchange="switchTheme(this.value)">
+                            {% for theme in site.data.themes.themes %}
+                                <option value="{{ theme.id }}"
+                                        data-name-en="🎨 {{ theme.name.en }}"
+                                        data-name-hi="🎨 {{ theme.name.hi }}"
+                                        {% if theme.default %}selected{% endif %}>
+                                    🎨 {{ theme.name.en }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="{{ '/' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.home }}</span>
+                    <span data-lang="hi">{{ t_hi.home }}</span>
+                </a>
+                <a href="{{ '/guidance' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.guidance }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance }}</span>
+                </a>
+                <a href="{{ '/search' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.search }}</span>
+                    <span data-lang="hi">{{ t_hi.search }}</span>
+                </a>
+                <a href="{{ '/full-gita' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.full_gita }}</span>
+                    <span data-lang="hi">{{ t_hi.full_gita }}</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <span data-lang="en">🙏 May the wisdom of the Gita illuminate your path</span>
+                <span data-lang="hi">🙏 गीता का ज्ञान आपके मार्ग को प्रकाशित करे</span>
+            </p>
+            <p class="footer-links">
+                <a href="https://github.com/sanatan-learnings/bhagavad-gita" target="_blank" rel="noopener noreferrer">
+                    <span data-lang="en">{{ t_en.contribute }}</span>
+                    <span data-lang="hi">{{ t_hi.contribute }}</span>
+                </a>
+                |
+                <a href="{{ '/guidance' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.guidance }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance }}</span>
+                </a>
+                |
+                <a href="{{ '/search' | relative_url }}?lang={{ lang }}">
+                    <span data-lang="en">{{ t_en.search }}</span>
+                    <span data-lang="hi">{{ t_hi.search }}</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+</body>
+</html>

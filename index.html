@@ -1,0 +1,144 @@
+---
+layout: default
+title: Home
+---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>
+            <span data-lang="en">Welcome to the Bhagavad Gita</span>
+            <span data-lang="hi">भगवद गीता में आपका स्वागत है</span>
+        </h1>
+        <p class="blessing">
+            <em>
+                <span data-lang="en">🕉️ Timeless wisdom from the divine dialogue between Lord Krishna and Arjuna</span>
+                <span data-lang="hi">🕉️ भगवान कृष्ण और अर्जुन के बीच दिव्य संवाद से शाश्वत ज्ञान</span>
+            </em>
+        </p>
+    </div>
+
+    <div class="quick-actions">
+        <a href="{{ '/full-gita' | relative_url }}" class="btn-primary">
+            📖 <span data-lang="en">{{ t_en.full_gita }}</span><span data-lang="hi">{{ t_hi.full_gita }}</span>
+        </a>
+        <a href="{{ '/guidance' | relative_url }}" class="btn-secondary">
+            💬 <span data-lang="en">{{ t_en.guidance }}</span><span data-lang="hi">{{ t_hi.guidance }}</span>
+        </a>
+        <a href="{{ '/search' | relative_url }}" class="btn-secondary">
+            🔍 <span data-lang="en">{{ t_en.search }}</span><span data-lang="hi">{{ t_hi.search }}</span>
+        </a>
+    </div>
+
+    <details class="about-section">
+        <summary><span data-lang="en">About the Bhagavad Gita</span><span data-lang="hi">भगवद गीता के बारे में</span></summary>
+        <p>
+            <span data-lang="en">
+                The Bhagavad Gita is a 700-verse Hindu scripture that is part of the epic Mahabharata.
+                It is a sacred dialogue between Lord Krishna and the warrior Arjuna on the battlefield of Kurukshetra,
+                addressing fundamental questions about duty, righteousness, and the nature of reality.
+            </span>
+            <span data-lang="hi">
+                भगवद गीता महाभारत महाकाव्य का एक भाग है जिसमें 700 श्लोक हैं।
+                यह कुरुक्षेत्र के युद्धक्षेत्र में भगवान कृष्ण और योद्धा अर्जुन के बीच एक पवित्र संवाद है,
+                जो कर्तव्य, धर्म और वास्तविकता की प्रकृति के बारे में मौलिक प्रश्नों को संबोधित करता है।
+            </span>
+        </p>
+        <p>
+            <span data-lang="en">
+                This guide currently includes Chapters 1 and 2, featuring verse-by-verse analysis with Sanskrit text,
+                transliteration, word-by-word meanings, interpretive commentary, and practical applications for modern life.
+            </span>
+            <span data-lang="hi">
+                इस गाइड में वर्तमान में अध्याय 1 और 2 शामिल हैं, जिसमें संस्कृत पाठ, लिप्यंतरण,
+                शब्द-दर-शब्द अर्थ, व्याख्यात्मक टिप्पणी और आधुनिक जीवन के लिए व्यावहारिक अनुप्रयोगों के साथ श्लोक-दर-श्लोक विश्लेषण है।
+            </span>
+        </p>
+    </details>
+</div>
+
+<section class="verse-navigation">
+    <h2>
+        <span data-lang="en">Chapters</span>
+        <span data-lang="hi">अध्याय</span>
+    </h2>
+
+    <!-- Chapter 1 -->
+    <div class="chapter-section">
+        <h3>
+            <span data-lang="en">📖 {{ t_en.chapter }} 1: {{ t_en.chapter_1 }}</span>
+            <span data-lang="hi">📖 {{ t_hi.chapter }} 1: {{ t_hi.chapter_1 }}</span>
+        </h3>
+        <p class="chapter-description">
+            <span data-lang="en">
+                Arjuna's moral crisis on the battlefield - witnessing his relatives, teachers, and friends
+                on both sides of the war, he becomes overwhelmed with grief and confusion about his duty as a warrior.
+            </span>
+            <span data-lang="hi">
+                युद्धक्षेत्र में अर्जुन का नैतिक संकट - युद्ध के दोनों पक्षों में अपने रिश्तेदारों,
+                शिक्षकों और मित्रों को देखकर, वह एक योद्धा के रूप में अपने कर्तव्य के बारे में दुःख और भ्रम से अभिभूत हो जाता है।
+            </span>
+        </p>
+        <div class="verse-grid">
+            {% assign chapter1_verses = site.verses | where_exp: "item", "item.chapter == 1" | sort: "verse_number" %}
+            {% for verse in chapter1_verses %}
+            <a href="{{ verse.url | relative_url }}" class="verse-card">
+                {% if verse.image %}
+                <div class="card-image">
+                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+                </div>
+                {% endif %}
+                <div class="card-content">
+                    <div class="verse-number">
+                        <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                        <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                    </div>
+                    <div class="verse-preview">
+                        {{ verse.devanagari | truncate: 60 }}
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="chapter-section">
+        <h3>
+            <span data-lang="en">📖 {{ t_en.chapter }} 2: {{ t_en.chapter_2 }}</span>
+            <span data-lang="hi">📖 {{ t_hi.chapter }} 2: {{ t_hi.chapter_2 }}</span>
+        </h3>
+        <p class="chapter-description">
+            <span data-lang="en">
+                Krishna's response containing the essence of Gita philosophy - the immortality of the soul,
+                the concept of dharma, karma yoga, and the characteristics of a self-realized person.
+            </span>
+            <span data-lang="hi">
+                गीता दर्शन के सार युक्त कृष्ण का उत्तर - आत्मा की अमरता,
+                धर्म की अवधारणा, कर्म योग, और आत्म-साक्षात्कार प्राप्त व्यक्ति की विशेषताएं।
+            </span>
+        </p>
+        <div class="verse-grid">
+            {% assign chapter2_verses = site.verses | where_exp: "item", "item.chapter == 2" | sort: "verse_number" %}
+            {% for verse in chapter2_verses %}
+            <a href="{{ verse.url | relative_url }}" class="verse-card">
+                {% if verse.image %}
+                <div class="card-image">
+                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+                </div>
+                {% endif %}
+                <div class="card-content">
+                    <div class="verse-number">
+                        <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                        <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                    </div>
+                    <div class="verse-preview">
+                        {{ verse.devanagari | truncate: 60 }}
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+# Site settings
+title: "Bhagavad Gita: A Comprehensive Guide"
+description: "An interactive guide to the Bhagavad Gita with verse-by-verse analysis, translations, and spiritual guidance"
+baseurl: "/bhagavad-gita"
+url: "https://sanatan-learnings.github.io"
+
+# Collections
+collections:
+  verses:
+    output: true
+    permalink: /:collection/:name/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
+  - venv/
+  - .env
+  - .env.example
+  - requirements.txt
+  - wrangler.toml
+  - workers/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "verses"
+    values:
+      layout: "verse"

@@ -1,0 +1,167 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.translations.en %}
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<article class="verse-container">
+    <nav class="verse-nav">
+        {% if page.previous_verse %}
+        <a href="{{ page.previous_verse | relative_url }}?lang={{ lang }}" class="nav-button prev" title="{{ t.previous_verse }} (Left arrow)">
+            ← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span>
+        </a>
+        {% else %}
+        <span class="nav-button prev disabled">← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span></span>
+        {% endif %}
+
+        <a href="{{ '/' | relative_url }}?lang={{ lang }}" class="nav-button home" title="{{ t.home }}">
+            ☰ <span data-lang="en">{{ t_en.home }}</span><span data-lang="hi">{{ t_hi.home }}</span>
+        </a>
+
+        {% if page.next_verse %}
+        <a href="{{ page.next_verse | relative_url }}?lang={{ lang }}" class="nav-button next" title="{{ t.next_verse }} (Right arrow)">
+            <span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →
+        </a>
+        {% else %}
+        <span class="nav-button next disabled"><span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →</span>
+        {% endif %}
+    </nav>
+
+    <div class="verse-content">
+        <h1>
+            <span data-lang="en">{{ page.title_en | default: page.title }}</span>
+            <span data-lang="hi">{{ page.title_hi | default: page.title }}</span>
+        </h1>
+
+        {% if page.chapter_info %}
+        <p class="chapter-info">
+            <span data-lang="en">{{ t_en.chapter }} {{ page.chapter_info.number }}: {{ page.chapter_info.name_en }}</span>
+            <span data-lang="hi">{{ t_hi.chapter }} {{ page.chapter_info.number }}: {{ page.chapter_info.name_hi }}</span>
+        </p>
+        {% endif %}
+
+        {% if page.image %}
+        <div class="verse-image-container">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title_en | default: page.title }}" class="verse-image">
+        </div>
+        {% endif %}
+
+        <h2><span data-lang="en">{{ t_en.devanagari }}</span><span data-lang="hi">{{ t_hi.devanagari }}</span></h2>
+        <pre class="sanskrit-text">{{ page.devanagari }}</pre>
+
+        <div data-lang="en">
+            <h2>{{ t_en.transliteration }}</h2>
+            <pre class="transliteration-text">{{ page.transliteration }}</pre>
+        </div>
+
+        {% if page.phonetic_notes %}
+        <div data-lang="en">
+            <h3>{{ t_en.phonetic_notes }}</h3>
+            <ul>
+            {% for note in page.phonetic_notes %}
+                <li><strong>{{ note.word }}</strong> - {{ note.note }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <h2><span data-lang="en">{{ t_en.word_meanings }}</span><span data-lang="hi">{{ t_hi.word_meanings }}</span></h2>
+        <ul class="word-meanings">
+        {% for item in page.word_meanings %}
+            <li><strong>{{ item.word }}</strong> ({{ item.roman }}) -
+            {% if item.meaning.en %}
+                <span data-lang="en">{{ item.meaning.en }}</span><span data-lang="hi">{{ item.meaning.hi }}</span>
+            {% else %}
+                {{ item.meaning }}
+            {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+
+        <h2><span data-lang="en">{{ t_en.literal_translation }}</span><span data-lang="hi">{{ t_hi.literal_translation }}</span></h2>
+        {% if page.literal_translation.en %}
+        <div data-lang="en">
+            <p>{{ page.literal_translation.en }}</p>
+        </div>
+        {% endif %}
+        {% if page.literal_translation.hi %}
+        <div data-lang="hi">
+            <p>{{ page.literal_translation.hi }}</p>
+        </div>
+        {% endif %}
+
+        <h2><span data-lang="en">{{ t_en.interpretive_meaning }}</span><span data-lang="hi">{{ t_hi.interpretive_meaning }}</span></h2>
+        {% if page.interpretive_meaning.en %}
+        <div data-lang="en">
+            <p>{{ page.interpretive_meaning.en }}</p>
+        </div>
+        {% endif %}
+        {% if page.interpretive_meaning.hi %}
+        <div data-lang="hi">
+            <p>{{ page.interpretive_meaning.hi }}</p>
+        </div>
+        {% endif %}
+
+        {% if page.story %}
+        <h2><span data-lang="en">{{ t_en.story }}</span><span data-lang="hi">{{ t_hi.story }}</span></h2>
+        {% if page.story.en %}
+        <div data-lang="en">
+            <p>{{ page.story.en }}</p>
+        </div>
+        {% endif %}
+        {% if page.story.hi %}
+        <div data-lang="hi">
+            <p>{{ page.story.hi }}</p>
+        </div>
+        {% endif %}
+        {% endif %}
+
+        {% if page.practical_application %}
+        <h2><span data-lang="en">{{ t_en.practical_application }}</span><span data-lang="hi">{{ t_hi.practical_application }}</span></h2>
+        <div class="practical-application">
+            {% if page.practical_application.en %}
+            <div data-lang="en">
+                <p>{{ page.practical_application.en }}</p>
+            </div>
+            {% endif %}
+            {% if page.practical_application.hi %}
+            <div data-lang="hi">
+                <p>{{ page.practical_application.hi }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <nav class="verse-nav bottom">
+        {% if page.previous_verse %}
+        <a href="{{ page.previous_verse | relative_url }}?lang={{ lang }}" class="nav-button prev">
+            ← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span>
+        </a>
+        {% else %}
+        <span class="nav-button prev disabled">← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span></span>
+        {% endif %}
+
+        <a href="{{ '/' | relative_url }}?lang={{ lang }}" class="nav-button home">
+            ☰ <span data-lang="en">{{ t_en.home }}</span><span data-lang="hi">{{ t_hi.home }}</span>
+        </a>
+
+        {% if page.next_verse %}
+        <a href="{{ page.next_verse | relative_url }}?lang={{ lang }}" class="nav-button next">
+            <span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →
+        </a>
+        {% else %}
+        <span class="nav-button next disabled"><span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →</span>
+        {% endif %}
+    </nav>
+</article>
+
+<script>
+    // Store navigation URLs for arrow key navigation
+    window.verseNav = {
+        previous: {% if page.previous_verse %}"{{ page.previous_verse | relative_url }}?lang={{ lang }}"{% else %}null{% endif %},
+        next: {% if page.next_verse %}"{{ page.next_verse | relative_url }}?lang={{ lang }}"{% else %}null{% endif %}
+    };
+</script>

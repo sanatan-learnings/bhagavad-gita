@@ -1,0 +1,95 @@
+---
+layout: default
+title: Full Gita
+---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<div class="full-text-container">
+    <h1>
+        <span data-lang="en">Complete Bhagavad Gita (Chapters 1-2)</span>
+        <span data-lang="hi">पूर्ण भगवद गीता (अध्याय 1-2)</span>
+    </h1>
+
+    <div class="print-controls">
+        <button onclick="window.print()" class="btn-primary">
+            🖨️ <span data-lang="en">Print</span><span data-lang="hi">प्रिंट</span>
+        </button>
+    </div>
+
+    <!-- Chapter 1 -->
+    <section class="chapter-full">
+        <h2 class="chapter-heading">
+            <span data-lang="en">{{ t_en.chapter }} 1: {{ t_en.chapter_1 }}</span>
+            <span data-lang="hi">{{ t_hi.chapter }} 1: {{ t_hi.chapter_1 }}</span>
+        </h2>
+
+        {% assign chapter1_verses = site.verses | where_exp: "item", "item.chapter == 1" | sort: "verse_number" %}
+        {% for verse in chapter1_verses %}
+        <article class="verse-full" id="ch{{ verse.chapter }}-v{{ verse.verse_number }}">
+            <h3 class="verse-heading">
+                <span data-lang="en">{{ t_en.verse }} {{ verse.chapter }}.{{ verse.verse_number }}</span>
+                <span data-lang="hi">{{ t_hi.verse }} {{ verse.chapter }}.{{ verse.verse_number }}</span>
+            </h3>
+
+            <div class="sanskrit-section">
+                <h4><span data-lang="en">{{ t_en.devanagari }}</span><span data-lang="hi">{{ t_hi.devanagari }}</span></h4>
+                <pre class="sanskrit-text">{{ verse.devanagari }}</pre>
+            </div>
+
+            <div class="translation-section" data-lang="en">
+                <h4>{{ t_en.transliteration }}</h4>
+                <pre class="transliteration-text">{{ verse.transliteration }}</pre>
+            </div>
+
+            <div class="meaning-section">
+                <h4><span data-lang="en">{{ t_en.literal_translation }}</span><span data-lang="hi">{{ t_hi.literal_translation }}</span></h4>
+                {% if verse.literal_translation.en %}
+                <p data-lang="en">{{ verse.literal_translation.en }}</p>
+                {% endif %}
+                {% if verse.literal_translation.hi %}
+                <p data-lang="hi">{{ verse.literal_translation.hi }}</p>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+
+    <!-- Chapter 2 -->
+    <section class="chapter-full">
+        <h2 class="chapter-heading">
+            <span data-lang="en">{{ t_en.chapter }} 2: {{ t_en.chapter_2 }}</span>
+            <span data-lang="hi">{{ t_hi.chapter }} 2: {{ t_hi.chapter_2 }}</span>
+        </h2>
+
+        {% assign chapter2_verses = site.verses | where_exp: "item", "item.chapter == 2" | sort: "verse_number" %}
+        {% for verse in chapter2_verses %}
+        <article class="verse-full" id="ch{{ verse.chapter }}-v{{ verse.verse_number }}">
+            <h3 class="verse-heading">
+                <span data-lang="en">{{ t_en.verse }} {{ verse.chapter }}.{{ verse.verse_number }}</span>
+                <span data-lang="hi">{{ t_hi.verse }} {{ verse.chapter }}.{{ verse.verse_number }}</span>
+            </h3>
+
+            <div class="sanskrit-section">
+                <h4><span data-lang="en">{{ t_en.devanagari }}</span><span data-lang="hi">{{ t_hi.devanagari }}</span></h4>
+                <pre class="sanskrit-text">{{ verse.devanagari }}</pre>
+            </div>
+
+            <div class="translation-section" data-lang="en">
+                <h4>{{ t_en.transliteration }}</h4>
+                <pre class="transliteration-text">{{ verse.transliteration }}</pre>
+            </div>
+
+            <div class="meaning-section">
+                <h4><span data-lang="en">{{ t_en.literal_translation }}</span><span data-lang="hi">{{ t_hi.literal_translation }}</span></h4>
+                {% if verse.literal_translation.en %}
+                <p data-lang="en">{{ verse.literal_translation.en }}</p>
+                {% endif %}
+                {% if verse.literal_translation.hi %}
+                <p data-lang="hi">{{ verse.literal_translation.hi }}</p>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+</div>

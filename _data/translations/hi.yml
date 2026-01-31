@@ -1,0 +1,79 @@
+# Hindi translations for UI strings
+site_title: "भगवद गीता: एक व्यापक मार्गदर्शिका"
+site_description: "भगवद गीता के श्लोक-दर-श्लोक विश्लेषण के साथ एक इंटरैक्टिव गाइड"
+
+# Navigation
+home: "होम"
+guidance: "आध्यात्मिक मार्गदर्शन"
+search: "खोजें"
+book: "पुस्तक जनरेटर"
+full_gita: "पूर्ण गीता"
+
+# Language
+language: "भाषा"
+english: "English"
+hindi: "हिंदी"
+
+# Verse page sections
+verse: "श्लोक"
+chapter: "अध्याय"
+devanagari: "देवनागरी (संस्कृत)"
+transliteration: "लिप्यंतरण"
+phonetic_notes: "उच्चारण नोट्स"
+word_meanings: "शब्दार्थ"
+literal_translation: "शाब्दिक अनुवाद"
+interpretive_meaning: "व्याख्यात्मक अर्थ"
+story: "कहानी और संदर्भ"
+practical_application: "व्यावहारिक अनुप्रयोग"
+
+# Navigation buttons
+previous_verse: "पिछला श्लोक"
+next_verse: "अगला श्लोक"
+previous_chapter: "पिछला अध्याय"
+next_chapter: "अगला अध्याय"
+
+# Audio (for future use)
+listen: "सुनें"
+audio_full: "सामान्य गति"
+audio_slow: "धीमी गति"
+
+# Theme
+theme: "थीम"
+modern_minimalist: "आधुनिक न्यूनतम"
+traditional: "पारंपरिक"
+
+# Guidance page
+guidance_title: "आध्यात्मिक मार्गदर्शन"
+guidance_subtitle: "भगवद गीता की शिक्षाओं के बारे में प्रश्न पूछें"
+your_question: "आपका प्रश्न"
+ask_button: "पूछें"
+thinking: "सोच रहा हूँ..."
+answer: "उत्तर"
+example_questions: "उदाहरण प्रश्न"
+conversation_history: "बातचीत का इतिहास"
+clear_history: "इतिहास साफ़ करें"
+
+# Search page
+search_title: "गीता में खोजें"
+search_placeholder: "श्लोक, अनुवाद, अर्थ खोजें..."
+search_button: "खोजें"
+no_results: "कोई परिणाम नहीं मिला"
+results_count: "परिणाम मिले"
+
+# Book generator
+book_title: "पुस्तक जनरेटर"
+book_subtitle: "एक व्यक्तिगत मुद्रण योग्य पुस्तक बनाएं"
+select_size: "आकार चुनें"
+select_chapters: "अध्याय चुनें"
+custom_header: "कस्टम हेडर"
+custom_footer: "कस्टम फुटर"
+generate: "पुस्तक बनाएं"
+print: "प्रिंट करें"
+
+# Chapter titles
+chapter_1: "अर्जुन विषाद योग"
+chapter_2: "सांख्य योग"
+
+# Footer
+learn_more: "इस परियोजना के बारे में और जानें"
+contribute: "GitHub पर योगदान करें"
