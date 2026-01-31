@@ -62,11 +62,18 @@ guidance_page:
   thinking: "सोच रहा हूँ..."
 
 # Search page
-search_title: "गीता में खोजें"
-search_placeholder: "श्लोक, अनुवाद, अर्थ खोजें..."
-search_button: "खोजें"
-no_results: "कोई परिणाम नहीं मिला"
-results_count: "परिणाम मिले"
+search:
+  title: "गीता में खोजें"
+  subtitle: "सभी श्लोकों, अनुवादों और अर्थों में खोजें"
+  placeholder: "श्लोक, अनुवाद, अर्थ खोजें..."
+  clear: "साफ करें"
+  prompt: "खोजने के लिए एक शब्द या वाक्यांश दर्ज करें"
+  filter_devanagari: "संस्कृत"
+  filter_transliteration: "लिप्यंतरण"
+  filter_translation: "अनुवाद"
+  filter_meanings: "अर्थ"
+  no_results: "कोई परिणाम नहीं मिला"
+  results: "परिणाम"
 
 # Book generator
 book_title: "पुस्तक जनरेटर"

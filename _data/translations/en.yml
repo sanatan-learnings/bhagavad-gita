@@ -62,11 +62,18 @@ guidance_page:
   thinking: "Thinking..."
 
 # Search page
-search_title: "Search the Gita"
-search_placeholder: "Search verses, translations, meanings..."
-search_button: "Search"
-no_results: "No results found"
-results_count: "results found"
+search:
+  title: "Search the Gita"
+  subtitle: "Search across all verses, translations, and meanings"
+  placeholder: "Search verses, translations, meanings..."
+  clear: "Clear"
+  prompt: "Enter a keyword or phrase to search"
+  filter_devanagari: "Sanskrit"
+  filter_transliteration: "Transliteration"
+  filter_translation: "Translation"
+  filter_meanings: "Meanings"
+  no_results: "No results found"
+  results: "results"
 
 # Book generator
 book_title: "Book Generator"
