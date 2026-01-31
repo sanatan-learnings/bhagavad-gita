@@ -1,0 +1,22 @@
+theme:
+  name: "Modern Minimalist"
+  description: "Clean, contemporary design with spiritual aesthetics"
+
+  generation:
+    # Style modifier that gets appended to each scene description
+    style_modifier: |
+      Style: Modern minimalist Indian devotional art. Clean composition with balanced negative space.
+      Soft, warm color palette featuring deep saffron, spiritual blue, gentle gold accents, and cream tones.
+      Simplified forms with spiritual elegance. Subtle divine glow and ethereal lighting.
+      Contemporary interpretation of traditional Indian spiritual art.
+      Portrait orientation (1024x1792), will be cropped to 1024x1536 for final display.
+
+    # DALL-E 3 parameters
+    dalle_params:
+      size: "1024x1792"  # Portrait orientation, crop to 1024x1536
+      quality: "standard"  # standard or hd (hd costs 2x)
+      style: "natural"  # natural or vivid
+
+  # Theme metadata
+  folder: "modern-minimalist"
+  default: true
