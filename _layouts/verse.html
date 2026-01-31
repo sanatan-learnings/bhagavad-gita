@@ -118,24 +118,24 @@ layout: default
         <h2><span data-lang="en">{{ t_en.literal_translation }}</span><span data-lang="hi">{{ t_hi.literal_translation }}</span></h2>
         {% if page.literal_translation.en %}
         <div data-lang="en">
-            <p>{{ page.literal_translation.en }}</p>
+            {{ page.literal_translation.en | newline_to_br }}
         </div>
         {% endif %}
         {% if page.literal_translation.hi %}
         <div data-lang="hi">
-            <p>{{ page.literal_translation.hi }}</p>
+            {{ page.literal_translation.hi | newline_to_br }}
         </div>
         {% endif %}
 
         <h2><span data-lang="en">{{ t_en.interpretive_meaning }}</span><span data-lang="hi">{{ t_hi.interpretive_meaning }}</span></h2>
         {% if page.interpretive_meaning.en %}
         <div data-lang="en">
-            <p>{{ page.interpretive_meaning.en }}</p>
+            {{ page.interpretive_meaning.en | newline_to_br }}
         </div>
         {% endif %}
         {% if page.interpretive_meaning.hi %}
         <div data-lang="hi">
-            <p>{{ page.interpretive_meaning.hi }}</p>
+            {{ page.interpretive_meaning.hi | newline_to_br }}
         </div>
         {% endif %}
 
@@ -143,12 +143,12 @@ layout: default
         <h2><span data-lang="en">{{ t_en.story }}</span><span data-lang="hi">{{ t_hi.story }}</span></h2>
         {% if page.story.en %}
         <div data-lang="en">
-            <p>{{ page.story.en }}</p>
+            {{ page.story.en | newline_to_br }}
         </div>
         {% endif %}
         {% if page.story.hi %}
         <div data-lang="hi">
-            <p>{{ page.story.hi }}</p>
+            {{ page.story.hi | newline_to_br }}
         </div>
         {% endif %}
         {% endif %}
@@ -158,12 +158,12 @@ layout: default
         <div class="practical-application">
             {% if page.practical_application.en %}
             <div data-lang="en">
-                <p>{{ page.practical_application.en }}</p>
+                {{ page.practical_application.en | newline_to_br }}
             </div>
             {% endif %}
             {% if page.practical_application.hi %}
             <div data-lang="hi">
-                <p>{{ page.practical_application.hi }}</p>
+                {{ page.practical_application.hi | newline_to_br }}
             </div>
             {% endif %}
         </div>
