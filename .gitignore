@@ -41,3 +41,7 @@ Thumbs.db
 
 # Wrangler
 .wrangler/
+
+# Temporary test scripts
+test-*.sh
+test-*.py
