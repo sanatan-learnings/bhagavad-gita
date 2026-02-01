@@ -1,8 +1,29 @@
 // Theme switching functionality for image themes
 
+// Get available themes from the theme selector
+function getAvailableThemes() {
+    const themeSelect = document.getElementById('themeSelect');
+    if (!themeSelect) return ['modern-minimalist'];
+
+    const themes = [];
+    for (let option of themeSelect.options) {
+        themes.push(option.value);
+    }
+    return themes;
+}
+
 // Get current theme from localStorage or use default
 function getCurrentTheme() {
-    return localStorage.getItem('selectedTheme') || 'modern-minimalist';
+    const savedTheme = localStorage.getItem('selectedTheme');
+    const availableThemes = getAvailableThemes();
+
+    // If saved theme exists in available themes, use it
+    if (savedTheme && availableThemes.includes(savedTheme)) {
+        return savedTheme;
+    }
+
+    // Otherwise, use the first available theme (default)
+    return availableThemes[0] || 'modern-minimalist';
 }
 
 // Set theme in localStorage
