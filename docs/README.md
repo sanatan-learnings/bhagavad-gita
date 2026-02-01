@@ -4,15 +4,17 @@ This directory contains documentation and configuration files for the Bhagavad G
 
 ## Files
 
-- **image-prompts.md** - Scene descriptions for generating verse images using DALL-E 3
+- **content-generation.md** - Complete guide for generating verses with AI
+- **content-sourcing-guide.md** - Sources and validation for verse content
+- **image-prompts.md** - Scene descriptions for DALL-E 3 image generation
 - **themes/** - Visual style configurations for image generation
-- **cloudflare-worker-setup.md** - Instructions for setting up the Cloudflare Worker API proxy
+- **cloudflare-worker-setup.md** - Cloudflare Worker API proxy setup
+- **local-development.md** - Local development setup
+- **tech-stack.md** - Technologies used in the project
 
 ## Content Generation
 
-For documentation on generating multimedia content (text, images, audio) for verses, see the verse-content-sdk documentation:
-
-👉 [Content Generation Guide](https://github.com/sanatan-learnings/verse-content-sdk/blob/main/docs/content-generation-guide.md)
+See **[content-generation.md](content-generation.md)** for the complete guide on generating verses with AI.
 
 ## Quick Reference
 

@@ -87,7 +87,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    verse-generate --chapter 1 --verse 3 --all
    ```
 
-   Creates complete verse with text, image, and audio. See **[docs/GENERATING_CONTENT.md](docs/GENERATING_CONTENT.md)** for details.
+   Creates complete verse with text, image, and audio. See **[docs/content-generation.md](docs/content-generation.md)** for details.
 
 3. **Generate embeddings** (for AI guidance feature)
 
@@ -105,8 +105,8 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 
 ## 📖 Documentation
 
-- **[Content Generation Guide](docs/GENERATING_CONTENT.md)** - How to generate verses with AI
-- **[Content Sourcing Guide](docs/content-sourcing-guide.md)** - Sources and best practices
+- **[Content Generation](docs/content-generation.md)** - How to generate verses with AI
+- **[Content Sourcing](docs/content-sourcing-guide.md)** - Sources and best practices
 - **[Local Development](docs/local-development.md)** - Development setup and workflow
 - **[Tech Stack](docs/tech-stack.md)** - Technologies used
 - **[Cloudflare Worker Setup](docs/cloudflare-worker-setup.md)** - API proxy deployment
@@ -127,7 +127,7 @@ This automatically creates:
 - DALL-E 3 generated artwork
 - ElevenLabs audio pronunciation (full + slow speeds)
 
-See **[docs/GENERATING_CONTENT.md](docs/GENERATING_CONTENT.md)** for complete instructions.
+See **[docs/content-generation.md](docs/content-generation.md)** for complete instructions.
 
 ### Manual Content Creation (Advanced)
 
