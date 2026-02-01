@@ -15,7 +15,7 @@
 
 // CORS headers for browser requests
 const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': 'https://sanatan-learnings.github.io',
+  'Access-Control-Allow-Origin': '*',  // Allow all origins (for development)
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
