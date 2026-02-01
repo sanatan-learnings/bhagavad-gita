@@ -16,10 +16,11 @@ audio_slow: /audio/chapter_01_verse_03_slow.mp3
 
 devanagari: |
   धृतराष्ट्र उवाच |
-पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |
-व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता || 1.3 ||
+  पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |
+  व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता || 1.3 ||
+---
 
-# TODO: Parse and format the AI-generated content below
+<!-- TODO: Parse and format the AI-generated content below -->
 # Generated content:
 
 ```yaml

@@ -16,9 +16,10 @@ audio_slow: /audio/chapter_01_verse_04_slow.mp3
 
 devanagari: |
   अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
-युयुधानो विराटश्च द्रुपदश्च महारथः।।
+  युयुधानो विराटश्च द्रुपदश्च महारथः।।
+---
 
-# TODO: Parse and format the AI-generated content below
+<!-- TODO: Parse and format the AI-generated content below -->
 # Generated content:
 
 ```yaml
