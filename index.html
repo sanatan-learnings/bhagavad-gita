@@ -80,22 +80,24 @@ title: Home
         <div class="verse-grid">
             {% assign chapter1_verses = site.verses | where_exp: "item", "item.chapter == 1" | sort: "verse_number" %}
             {% for verse in chapter1_verses %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
-                        <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
-                        <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                {% unless verse.devanagari contains "[Add" %}
+                <a href="{{ verse.url | relative_url }}" class="verse-card">
+                    {% if verse.image %}
+                    <div class="card-image">
+                        <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
                     </div>
-                    <div class="verse-preview">
-                        {{ verse.devanagari | truncate: 60 }}
+                    {% endif %}
+                    <div class="card-content">
+                        <div class="verse-number">
+                            <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                            <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                        </div>
+                        <div class="verse-preview">
+                            {{ verse.devanagari | truncate: 60 }}
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                {% endunless %}
             {% endfor %}
         </div>
     </details>
@@ -121,22 +123,24 @@ title: Home
         <div class="verse-grid">
             {% assign chapter2_verses = site.verses | where_exp: "item", "item.chapter == 2" | sort: "verse_number" %}
             {% for verse in chapter2_verses %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
-                        <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
-                        <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                {% unless verse.devanagari contains "[Add" %}
+                <a href="{{ verse.url | relative_url }}" class="verse-card">
+                    {% if verse.image %}
+                    <div class="card-image">
+                        <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
                     </div>
-                    <div class="verse-preview">
-                        {{ verse.devanagari | truncate: 60 }}
+                    {% endif %}
+                    <div class="card-content">
+                        <div class="verse-number">
+                            <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                            <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                        </div>
+                        <div class="verse-preview">
+                            {{ verse.devanagari | truncate: 60 }}
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                {% endunless %}
             {% endfor %}
         </div>
     </details>
