@@ -16,7 +16,7 @@ A vast battlefield at Kurukshetra stretches endlessly under a dramatic sky. Two 
 ### Chapter 1, Verse 2
 
 **Scene Description**:
-[Add scene description for verse 2]
+Prince Duryodhana, dressed in royal battle armor with golden accents, stands on the battlefield looking anxious and troubled as he gazes at the vast Pandava army arrayed before him. In the foreground, he is shown approaching his revered teacher Dronacharya, an elderly warrior-sage with a white beard, wearing traditional guru robes and carrying a bow. Dronacharya stands with dignified composure near the Kaurava command post. Behind them, the massive Kaurava army is visible with thousands of soldiers, elephants, chariots, and battle standards. In the distance across the battlefield, the formidable Pandava army stands in perfect military formation, their organized ranks and disciplined arrangement clearly visible, causing concern in Duryodhana's expression. The scene captures the moment of consultation before battle, with dramatic morning light casting long shadows across the battlefield, conveying both the scale of the impending conflict and Duryodhana's inner conflict between confidence and doubt.
 
 ---
 
@@ -28,6 +28,15 @@ A vast battlefield at Kurukshetra stretches endlessly under a dramatic sky. Two 
 ---
 
 <!-- Add more verses as needed -->
+
+## Chapter 2: The Yoga of Knowledge (Sankhya Yoga)
+
+### Chapter 2, Verse 47
+
+**Scene Description**:
+Lord Krishna stands in a teaching pose on the battlefield, his divine form radiating wisdom and serenity, with one hand raised in a gesture of instruction (abhaya mudra). He is speaking to Arjuna, who sits attentively on his chariot, bow resting beside him, listening intently to Krishna's profound teaching. The scene captures the essence of Karma Yoga - around them, symbolic visual elements represent the teaching: on one side, hands performing various actions (working, serving, creating) glowing with golden light representing "right to action"; on the other side, fruits and outcomes fade into mist representing "detachment from results." In the background, the battlefield has a dreamlike quality, slightly blurred to emphasize the timeless nature of this teaching. The composition balances action and detachment, duty and surrender. The lighting is ethereal with divine rays emanating from Krishna, casting a peaceful glow over the scene. The overall mood is one of profound spiritual instruction, with Krishna as the eternal teacher delivering the most famous verse of the Gita about performing duty without attachment to results.
+
+---
 
 ## Instructions for Adding New Verses
 

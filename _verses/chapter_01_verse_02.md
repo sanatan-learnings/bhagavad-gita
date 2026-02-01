@@ -10,6 +10,9 @@ chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"
   name_hi: "अर्जुन विषाद योग"
+image: /images/modern-minimalist/chapter-01-verse-02.png
+audio_full: /audio/chapter_01_verse_02_full.mp3
+audio_slow: /audio/chapter_01_verse_02_slow.mp3
 
 devanagari: |
   सञ्जय उवाच।

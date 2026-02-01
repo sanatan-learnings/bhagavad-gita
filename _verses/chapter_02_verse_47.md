@@ -10,6 +10,9 @@ chapter_info:
   number: 2
   name_en: "The Yoga of Knowledge"
   name_hi: "सांख्य योग"
+image: /images/modern-minimalist/chapter-02-verse-47.png
+audio_full: /audio/chapter_02_verse_47_full.mp3
+audio_slow: /audio/chapter_02_verse_47_slow.mp3
 
 devanagari: |
   कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
