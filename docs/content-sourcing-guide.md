@@ -92,14 +92,37 @@ For each verse, ensure you have:
 
 ## Workflow for Adding Verses
 
-### Step 1: Generate Templates
+### Automated Workflow (Recommended)
+
+Use the `verse-generate` command to automatically generate complete verse content using GPT-4:
+
 ```bash
-python3 scripts/generate_verse_templates.py
-# Select Chapter 1
+# Generate everything (text, scene, image, audio) for a verse
+verse-generate --chapter 3 --verse 5 --all \
+  --chapter-name-en "Karma Yoga" \
+  --chapter-name-hi "कर्म योग"
 ```
 
-### Step 2: Source Content
-For each verse file:
+This automatically:
+1. Fetches Sanskrit text from GPT-4
+2. Generates transliteration (IAST)
+3. Generates word-by-word meanings (English & Hindi)
+4. Generates literal translation (English & Hindi)
+5. Generates interpretive meaning with commentary
+6. Generates story/context
+7. Generates practical application
+8. Creates scene description for image
+9. Generates image using DALL-E 3
+10. Generates audio pronunciation using ElevenLabs
+
+**Important**: AI-generated content requires **manual review and editing** for accuracy. Use the sources below to verify.
+
+### Manual Workflow (Traditional)
+
+If you prefer to create content manually:
+
+#### Step 1: Source Content
+For each verse:
 1. Visit Gita Supersite for verse number
 2. Copy Sanskrit Devanagari text
 3. Copy IAST transliteration
@@ -107,47 +130,28 @@ For each verse file:
 5. Select translation you prefer (or combine multiple)
 6. Write practical application in your own words
 
-### Step 3: Fill Templates
-Open verse file (e.g., `chapter_01_verse_02.md`):
+#### Step 2: Create Verse File
+Use `verse-generate` to create the verse file with your Sanskrit text:
 
-```yaml
-devanagari: |
-  [Paste from source]
-
-transliteration: |
-  [Paste from source]
-
-word_meanings:
-  - word: "संजय"
-    roman: "sañjaya"
-    meaning:
-      en: "Sanjaya (charioteer, narrator)"
-      hi: "संजय (सारथी, वर्णनकर्ता)"
-  [Add more words...]
-
-literal_translation:
-  en: |
-    [Paste/adapt translation]
-  hi: |
-    [Add Hindi translation]
-
-interpretive_meaning:
-  en: |
-    [Write commentary - can combine multiple sources]
-  hi: |
-    [Hindi commentary]
+```bash
+verse-generate --chapter 3 --verse 5 --text \
+  --sanskrit "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।
+कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।" \
+  --chapter-name-en "Karma Yoga"
 ```
 
-### Step 4: Verify Accuracy
-- Cross-reference with 2-3 sources
-- Ensure Sanskrit is accurate
-- Check transliteration follows standard (IAST)
-- Verify meanings are contextually appropriate
+Then edit `_verses/chapter_03_verse_05.md` to refine the AI-generated content.
 
-### Step 5: Regenerate Search/Embeddings
+#### Step 3: Verify Accuracy
+- Cross-reference with 2-3 sources listed above
+- Ensure Sanskrit is accurate
+- Check transliteration follows IAST standard
+- Verify meanings are contextually appropriate
+- Refine AI-generated commentary with authentic sources
+
+#### Step 4: Regenerate Search/Embeddings
 ```bash
-python3 scripts/generate_embeddings_openai.py
-python3 scripts/generate_search_index.py
+verse-embeddings --verses-dir _verses --output data/embeddings.json
 ```
 
 ## Translation Permission Guidelines
@@ -191,12 +195,22 @@ Before committing a verse, verify:
 4. **Commentary**: Can be briefer initially, expand later
 5. **Practical applications**: Can add these last
 
-### Use AI Assistance Carefully
+### Using AI-Generated Content
 
-- ✅ **Good use**: Transliteration verification, Sanskrit word lookup
-- ✅ **Good use**: Structuring your own commentary
-- ⚠️ **Careful**: Translations (verify with sources)
-- ❌ **Avoid**: Completely AI-generated content without verification
+The `verse-generate` command uses GPT-4 to generate verse content automatically.
+
+**Benefits:**
+- ✅ Fast: Generates complete verse in minutes
+- ✅ Comprehensive: Includes all required fields
+- ✅ Bilingual: Generates English and Hindi content
+- ✅ Consistent: Follows standard format
+
+**Important Considerations:**
+- ⚠️ **Always verify**: AI may make errors in Sanskrit or interpretation
+- ⚠️ **Cross-reference**: Check against authentic sources (Gita Supersite, etc.)
+- ⚠️ **Edit for accuracy**: Refine translations and commentary
+- ⚠️ **Spiritual authenticity**: Ensure interpretations align with traditional teachings
+- ✅ **Use as starting point**: AI provides solid foundation for manual refinement
 
 ## Common Pitfalls to Avoid
 
@@ -208,6 +222,26 @@ Before committing a verse, verify:
 
 ## Example Workflow
 
+### Automated Workflow
+**Time per verse**: ~5-10 minutes (generation + review)
+
+1. Run verse-generate command (2 min)
+   - Command generates all content via GPT-4
+   - Creates verse file, scene description, image, audio
+2. Review AI-generated content (3-5 min)
+   - Open verse file in editor
+   - Check Sanskrit text accuracy
+   - Verify transliteration
+   - Review translations and commentary
+3. Refine content (3-5 min)
+   - Cross-reference with Gita Supersite
+   - Edit interpretations if needed
+   - Adjust practical applications
+4. Commit and push (1 min)
+
+**For 46 verses**: ~4-8 hours total work (vs. 15-23 hours manual)
+
+### Manual Workflow
 **Time per verse**: ~20-30 minutes for quality content
 
 1. Open Gita Supersite (5 min)
@@ -256,7 +290,9 @@ This project (code/structure) is MIT licensed. However:
 ---
 
 **Next Steps**:
-1. Run `python3 scripts/generate_verse_templates.py`
-2. Start with verses 2-5 (sample verses provided)
-3. Build up momentum verse by verse
-4. Regenerate search/embeddings after batches
+1. See [GENERATING_CONTENT.md](../GENERATING_CONTENT.md) for detailed instructions
+2. Use `verse-generate` command to create complete verse content
+3. Review and refine AI-generated content using sources above
+4. Regenerate embeddings: `verse-embeddings --verses-dir _verses --output data/embeddings.json`
+
+For complete documentation, see: https://github.com/sanatan-learnings/verse-content-sdk
