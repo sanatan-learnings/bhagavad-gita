@@ -72,79 +72,66 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
 4. **View the site**
    Open http://localhost:4000/bhagavad-gita in your browser
 
-### Generate Embeddings (for RAG System)
+### Generate Content & Embeddings
 
-1. **Set up Python environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r scripts/requirements.txt
-   ```
-
-2. **Configure environment variables**
+1. **Set up API keys**
    ```bash
    cp .env.example .env
-   # Edit .env and add your OpenAI API key (for OpenAI embeddings)
+   # Edit .env and add your API keys:
+   # - OPENAI_API_KEY (for content generation and embeddings)
+   # - ELEVENLABS_API_KEY (for audio pronunciation)
    ```
 
-3. **Generate embeddings**
-
-   **Option A: OpenAI embeddings (Recommended for better quality)**
+2. **Generate verse content** (fully automated)
    ```bash
-   python scripts/generate_embeddings_openai.py
+   verse-generate --chapter 1 --verse 3 --all
    ```
 
-   **Option B: Local embeddings (Free, no API key needed)**
+   Creates complete verse with text, image, and audio. See **[docs/GENERATING_CONTENT.md](docs/GENERATING_CONTENT.md)** for details.
+
+3. **Generate embeddings** (for AI guidance feature)
+
+   **Option A: OpenAI embeddings (Recommended)**
    ```bash
-   python scripts/generate_embeddings_local.py
+   verse-embeddings --verses-dir _verses --output data/embeddings.json
+   ```
+
+   **Option B: Local embeddings (Free, no API key)**
+   ```bash
+   verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface
    ```
 
 This creates `data/embeddings.json` needed for the spiritual guidance feature.
 
+## 📖 Documentation
+
+- **[Content Generation Guide](docs/GENERATING_CONTENT.md)** - How to generate verses with AI
+- **[Content Sourcing Guide](docs/content-sourcing-guide.md)** - Sources and best practices
+- **[Local Development](docs/local-development.md)** - Development setup and workflow
+- **[Tech Stack](docs/tech-stack.md)** - Technologies used
+- **[Cloudflare Worker Setup](docs/cloudflare-worker-setup.md)** - API proxy deployment
+
 ## 📖 Adding Content
 
-### Adding Verses
+### Automated Content Generation (Recommended)
 
-Create a new file in `_verses/` following this naming convention:
-- `chapter_01_verse_01.md` through `chapter_01_verse_47.md` (Chapter 1)
-- `chapter_02_verse_01.md` through `chapter_02_verse_72.md` (Chapter 2)
+Generate complete verses with one command:
 
-Use the existing sample verses as templates. Each verse file should include:
+```bash
+verse-generate --chapter 1 --verse 5 --all
+```
 
-```yaml
----
-layout: verse
-title_en: "Chapter X, Verse Y"
-title_hi: "अध्याय X, श्लोक Y"
-chapter: X
-verse_number: Y
-previous_verse: /verses/chapter_XX_verse_YY/
-next_verse: /verses/chapter_XX_verse_YY/
-chapter_info:
-  number: X
-  name_en: "Chapter Name"
-  name_hi: "अध्याय का नाम"
+This automatically creates:
+- Complete verse file with AI-generated translations and commentary
+- Scene description for the image
+- DALL-E 3 generated artwork
+- ElevenLabs audio pronunciation (full + slow speeds)
 
-devanagari: |
-  Sanskrit text here
+See **[docs/GENERATING_CONTENT.md](docs/GENERATING_CONTENT.md)** for complete instructions.
 
-transliteration: |
-  Romanized text here
+### Manual Content Creation (Advanced)
 
-word_meanings:
-  - word: "संस्कृत"
-    roman: "sanskrit"
-    meaning:
-      en: "English meaning"
-      hi: "हिंदी अर्थ"
-
-literal_translation:
-  en: "English translation"
-  hi: "हिंदी अनुवाद"
-
-interpretive_meaning:
-  en: "Detailed explanation in English"
-  hi: "हिंदी में विस्तृत व्याख्या"
+If you prefer manual creation, verse files follow this structure in `_verses/`:
 
 story:
   en: "Context from Mahabharata"
