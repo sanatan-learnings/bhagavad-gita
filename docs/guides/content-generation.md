@@ -4,11 +4,16 @@ This guide shows how to use the `verse-generate` command to create content for B
 
 ## Prerequisites
 
-**API Keys**: Make sure your `.env` file contains:
-```
-OPENAI_API_KEY=your_openai_key
-ELEVENLABS_API_KEY=your_elevenlabs_key
-```
+1. **Activate virtual environment:**
+   ```bash
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. **API Keys**: Make sure your `.env` file contains:
+   ```
+   OPENAI_API_KEY=your_openai_key
+   ELEVENLABS_API_KEY=your_elevenlabs_key
+   ```
 
 ## Automated Generation (Recommended)
 

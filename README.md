@@ -64,7 +64,9 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    gem install bundler
    bundle install
 
-   # verse-content-sdk for content generation
+   # Python virtual environment for content generation
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install verse-content-sdk
    ```
 
@@ -86,14 +88,19 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    # - ELEVENLABS_API_KEY (for audio pronunciation)
    ```
 
-2. **Generate verse content** (fully automated)
+2. **Activate virtual environment**
+   ```bash
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Generate verse content** (fully automated)
    ```bash
    verse-generate --chapter 1 --verse 3 --all
    ```
 
-   Creates complete verse with text, image, and audio. See **[docs/content-generation.md](docs/content-generation.md)** for details.
+   Creates complete verse with text, image, and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
 
-3. **Generate embeddings** (for AI guidance feature)
+4. **Generate embeddings** (for AI guidance feature)
 
    **Option A: OpenAI embeddings (Recommended)**
    ```bash

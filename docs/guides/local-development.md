@@ -58,6 +58,10 @@ cd bhagavad-gita
 # Install Ruby dependencies
 bundle install
 
+# Set up Python virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 # Install verse-content-sdk (for content generation)
 pip install verse-content-sdk
 
@@ -66,6 +70,11 @@ cp .env.example .env
 # Edit .env and add your API keys:
 # - OPENAI_API_KEY (for content generation and embeddings)
 # - ELEVENLABS_API_KEY (for audio pronunciation)
+```
+
+**Note:** Always activate the virtual environment before running SDK commands:
+```bash
+source venv/bin/activate
 ```
 
 ## Running the Development Server
@@ -195,7 +204,7 @@ Development tasks include:
 
 ## Related Documentation
 
-- [tech-stack.md](tech-stack.md) - Technology architecture overview
+- [tech-stack.md](../reference/tech-stack.md) - Technology architecture overview
 - [README.md](../README.md) - Project overview and contribution guidelines
 
 ## Quick Reference
