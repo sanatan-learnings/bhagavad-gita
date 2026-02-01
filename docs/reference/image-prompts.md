@@ -27,6 +27,13 @@ In the midst of the Kurukshetra battlefield, the early morning light casts a gol
 
 ---
 
+### Chapter 1, Verse 4
+
+**Scene Description**:
+In a dynamic battlefield setting, the noble warriors stand ready for battle, each exuding valor and strength. Bhima, with his mighty mace, stands powerfully, his expression fierce yet controlled, wearing traditional warrior attire of deep reds and golds that catch the sunlight. Beside him, Arjuna is poised with his bow, his face a study in concentration and determination, adorned in shimmering armor that reflects his inner resolve. Nearby, the heroic figures of Yuyudhana and Virata are depicted, their chariots adorned with vibrant banners, while Drupada, a seasoned veteran, holds his spear with a commanding presence. The golden hour light casts a warm, ethereal glow over the scene, highlighting the warriors' readiness and capturing the spiritual essence of courage and duty. Traditional Indian motifs, such as lotus patterns and sacred symbols, subtly embellish their armor and chariots, adding layers of cultural depth to the scene.
+
+---
+
 <!-- Add more verses as needed -->
 
 ## Chapter 2: The Yoga of Knowledge (Sankhya Yoga)
