@@ -13,12 +13,14 @@ themes:
     folder: "modern-minimalist"
     default: true
 
-  - id: traditional
-    name:
-      en: "Traditional"
-      hi: "पारंपरिक"
-    description:
-      en: "Classic Indian art style inspired by ancient manuscripts"
-      hi: "प्राचीन पांडुलिपियों से प्रेरित क्लासिक भारतीय कला शैली"
-    folder: "traditional"
-    default: false
+  # Additional themes can be added here
+  # Example:
+  # - id: traditional
+  #   name:
+  #     en: "Traditional"
+  #     hi: "पारंपरिक"
+  #   description:
+  #     en: "Classic Indian art style inspired by ancient manuscripts"
+  #     hi: "प्राचीन पांडुलिपियों से प्रेरित क्लासिक भारतीय कला शैली"
+  #   folder: "traditional"
+  #   default: false
