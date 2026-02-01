@@ -52,10 +52,6 @@ verse-embeddings --verses-dir _verses --output data/embeddings.json --provider h
 verse-deploy
 ```
 
-## Legacy Scripts
-
-Legacy standalone scripts have been moved to `scripts/legacy/` for reference.
-
 ## More Information
 
 - SDK Repository: https://github.com/sanatan-learnings/verse-content-sdk

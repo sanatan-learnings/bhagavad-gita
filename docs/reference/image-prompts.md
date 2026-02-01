@@ -23,7 +23,7 @@ Prince Duryodhana, dressed in royal battle armor with golden accents, stands on 
 ### Chapter 1, Verse 3
 
 **Scene Description**:
-[Add scene description for verse 3]
+In the midst of the Kurukshetra battlefield, the early morning light casts a golden hue over the assembled armies, creating an atmosphere of anticipation and tension. Drona, the venerable teacher, stands prominently, his expression a mix of pride and concern as he surveys the vast Pandava army, meticulously arranged by his intelligent disciple, Dhrishtadyumna. Drona is adorned in traditional warrior attire, with intricate armor and a flowing sage-colored robe, while Dhrishtadyumna stands beside him, donned in resplendent armor with a determined look, holding a ceremonial staff. Behind them, the Pandava army stretches into the horizon, banners fluttering and weapons gleaming in the soft, diffused light, symbolizing both the grandeur and gravity of the impending conflict. The scene captures the spiritual tension of Arjuna Vishada Yoga, highlighting the complex emotions of duty, loyalty, and foresight in the face of an inevitable battle.
 
 ---
 

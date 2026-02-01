@@ -34,7 +34,11 @@ Two deployment modes available: (1) User-provided OpenAI API key stored locally 
 
 ## Development Workflow
 
-Content development emphasizes version control through Git. Verse files follow consistent YAML structure. Python scripts generate embeddings after content updates. Jekyll rebuilds site automatically. GitHub Actions deploys on push to main branch.
+**Content Generation:**
+The [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) provides unified commands for generating complete verses with text, images, and audio. GPT-4 generates verse content, DALL-E 3 creates artwork, ElevenLabs produces Sanskrit audio.
+
+**Deployment:**
+Version control through Git. Verses follow consistent YAML structure in `_verses/`. The `verse-embeddings` command regenerates semantic search data. Jekyll rebuilds site automatically. GitHub Actions deploys on push to main branch.
 
 ## Performance and Cost
 
@@ -42,11 +46,10 @@ Static site generation eliminates server overhead, achieving instant page loads 
 
 ## Technical Implementation Details
 
-**Python Environment:**
-- `openai>=1.0.0` for API access
-- `python-dotenv` for environment management
-- `PyYAML` for verse file parsing
-- Optional: `sentence-transformers` for local embeddings
+**Content Generation SDK:**
+- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) - Python package for automated content generation
+- Commands: `verse-generate`, `verse-images`, `verse-audio`, `verse-embeddings`, `verse-deploy`
+- Dependencies: OpenAI API (GPT-4, DALL-E 3), ElevenLabs API (audio), HuggingFace (optional local embeddings)
 
 **Ruby Dependencies:**
 - `github-pages` gem ensures compatibility
@@ -54,8 +57,22 @@ Static site generation eliminates server overhead, achieving instant page loads 
 - `webrick` for local development server
 
 **Data Flow:**
-Verse markdown files → YAML extraction → Python embedding generation → JSON output → Client-side JavaScript loading → User query → Semantic search → GPT-4o guidance → Response display with verse citations
+1. **Content Creation:** `verse-generate` → GPT-4 verse content → DALL-E 3 images → ElevenLabs audio → Markdown file
+2. **Search Index:** Verse files → `verse-embeddings` → OpenAI/HuggingFace → JSON output
+3. **User Query:** Question → Client-side semantic search → GPT-4o guidance → Response with verse citations
 
-## Future Enhancements
+## Current Features & Roadmap
 
-Planned features include audio narration via ElevenLabs (Sanskrit recitation, Hindi commentary), chapter illustrations via DALL-E 3, full-text search with Lunr.js, progressive web app capabilities for offline access, and extended verse coverage beyond initial chapters.
+**Implemented:**
+- ✅ Automated verse generation (text, images, audio)
+- ✅ Sanskrit audio narration via ElevenLabs (full + slow speeds)
+- ✅ DALL-E 3 generated artwork with theme system
+- ✅ Semantic search and RAG-powered spiritual guidance
+- ✅ Bilingual interface (English/Hindi)
+
+**Planned Enhancements:**
+- Full-text search with Lunr.js
+- Progressive web app capabilities for offline access
+- Extended verse coverage (currently 4 sample verses)
+- Hindi commentary narration
+- Additional artwork themes

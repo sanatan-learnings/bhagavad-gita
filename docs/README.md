@@ -1,33 +1,50 @@
 # Documentation
 
-This directory contains documentation and configuration files for the Bhagavad Gita website.
+Documentation for the Bhagavad Gita website.
 
-## Files
+## Structure
 
-- **content-generation.md** - Complete guide for generating verses with AI
-- **content-sourcing-guide.md** - Sources and validation for verse content
-- **image-prompts.md** - Scene descriptions for DALL-E 3 image generation
-- **themes/** - Visual style configurations for image generation
-- **cloudflare-worker-setup.md** - Cloudflare Worker API proxy setup
-- **local-development.md** - Local development setup
-- **tech-stack.md** - Technologies used in the project
+```
+docs/
+├── guides/                      # Step-by-step how-to guides
+│   ├── local-development.md     # Setup and running locally
+│   ├── content-generation.md    # Creating verses with AI
+│   ├── content-sourcing-guide.md # Authentic content sources
+│   └── cloudflare-worker-setup.md # API proxy deployment
+├── reference/                   # Reference material
+│   ├── image-prompts.md         # Scene descriptions for images
+│   └── tech-stack.md            # Technical architecture
+└── themes/                      # Image theme configurations
+```
 
-## Content Generation
+## Quick Start
 
-See **[content-generation.md](content-generation.md)** for the complete guide on generating verses with AI.
+### Generate Content
 
-## Quick Reference
-
-### Generate content for a verse
 ```bash
-verse-generate --chapter 2 --verse 47 --image --audio
+# Generate everything for a verse
+verse-generate --chapter 2 --verse 47 --all
 ```
 
 ### Commands
-- `verse-generate` - Unified command for generating text, images, and audio
+
+- `verse-generate` - Generate text, images, and audio
 - `verse-images` - Generate images using DALL-E 3
 - `verse-audio` - Generate audio using ElevenLabs
 - `verse-embeddings` - Generate embeddings for semantic search
 - `verse-deploy` - Deploy Cloudflare Worker
 
-See the [verse-content-sdk README](https://github.com/sanatan-learnings/verse-content-sdk) for full documentation.
+See [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) for full SDK documentation.
+
+## Guides
+
+- **[Local Development](guides/local-development.md)** - Setup and run locally
+- **[Content Generation](guides/content-generation.md)** - Create verses with AI
+- **[Content Sourcing](guides/content-sourcing-guide.md)** - Find authentic sources
+- **[Cloudflare Worker](guides/cloudflare-worker-setup.md)** - Deploy API proxy
+
+## Reference
+
+- **[Image Prompts](reference/image-prompts.md)** - Scene descriptions
+- **[Tech Stack](reference/tech-stack.md)** - Architecture overview
+- **[Themes](themes/)** - Visual style configurations

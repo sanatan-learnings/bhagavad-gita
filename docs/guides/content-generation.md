@@ -4,30 +4,24 @@ This guide shows how to use the `verse-generate` command to create content for B
 
 ## Prerequisites
 
-1. **API Keys**: Make sure your `.env` file contains:
-   ```
-   OPENAI_API_KEY=your_openai_key
-   ELEVENLABS_API_KEY=your_elevenlabs_key
-   ```
-
-2. **Sanskrit Text**: Have the Sanskrit verse in Devanagari script ready
+**API Keys**: Make sure your `.env` file contains:
+```
+OPENAI_API_KEY=your_openai_key
+ELEVENLABS_API_KEY=your_elevenlabs_key
+```
 
 ## Automated Generation (Recommended)
 
 Generate everything with one command:
 
 ```bash
-verse-generate --chapter 3 --verse 5 --all \
-  --sanskrit "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।
-कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।" \
-  --chapter-name-en "Karma Yoga" \
-  --chapter-name-hi "कर्म योग"
+verse-generate --chapter 3 --verse 5 --all
 ```
 
-**Note:** If `verse-generate` is not in your PATH, use the full path:
-```bash
-/Users/arungupta/Library/Python/3.13/bin/verse-generate --chapter 3 --verse 5 --all ...
-```
+This automatically:
+- Fetches Sanskrit text from GPT-4
+- Fetches chapter names from GPT-4
+- Generates all content (text, scene description, image, audio)
 
 ## What Gets Generated
 
@@ -60,19 +54,13 @@ Running the command above will:
 ### Generate Only Scene Description
 
 ```bash
-verse-generate --chapter 3 --verse 5 --prompt \
-  --sanskrit "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।
-कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।"
+verse-generate --chapter 3 --verse 5 --prompt
 ```
 
 ### Generate Only Verse File
 
 ```bash
-verse-generate --chapter 3 --verse 5 --text \
-  --sanskrit "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।
-कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।" \
-  --chapter-name-en "Karma Yoga" \
-  --chapter-name-hi "कर्म योग"
+verse-generate --chapter 3 --verse 5 --text
 ```
 
 ### Generate Only Image (requires existing scene description)
@@ -92,29 +80,6 @@ verse-generate --chapter 3 --verse 5 --audio
 ```bash
 verse-generate --chapter 3 --verse 5 --image --audio
 ```
-
-## Chapter Names Reference
-
-| Chapter | English Name | Hindi Name |
-|---------|--------------|------------|
-| 1 | Arjuna's Dilemma | अर्जुन विषाद योग |
-| 2 | The Yoga of Knowledge | सांख्य योग |
-| 3 | Karma Yoga | कर्म योग |
-| 4 | The Yoga of Wisdom | ज्ञान योग |
-| 5 | Karma Sannyasa Yoga | कर्म संन्यास योग |
-| 6 | Dhyana Yoga | ध्यान योग |
-| 7 | Jnana Vijnana Yoga | ज्ञान विज्ञान योग |
-| 8 | Akshara Brahma Yoga | अक्षर ब्रह्म योग |
-| 9 | Raja Vidya Raja Guhya Yoga | राज विद्या राज गुह्य योग |
-| 10 | Vibhuti Yoga | विभूति योग |
-| 11 | Vishvarupa Darshana Yoga | विश्वरूप दर्शन योग |
-| 12 | Bhakti Yoga | भक्ति योग |
-| 13 | Kshetra Kshetragna Vibhaga Yoga | क्षेत्र क्षेत्रज्ञ विभाग योग |
-| 14 | Gunatraya Vibhaga Yoga | गुणत्रय विभाग योग |
-| 15 | Purushottama Yoga | पुरुषोत्तम योग |
-| 16 | Daivasura Sampad Vibhaga Yoga | दैवासुर सम्पद् विभाग योग |
-| 17 | Shraddhatraya Vibhaga Yoga | श्रद्धात्रय विभाग योग |
-| 18 | Moksha Sannyasa Yoga | मोक्ष संन्यास योग |
 
 ## After Generation
 
@@ -151,11 +116,6 @@ verse-generate --chapter 3 --verse 5 --image --audio
    ```
 
 ## Tips
-
-- **API Costs**:
-  - GPT-4: ~$0.01-0.03 per verse (text + prompt generation)
-  - DALL-E 3: ~$0.04 per image
-  - ElevenLabs: ~200-300 characters per verse (~0.002 credits)
 
 - **Review AI Content**: Always review and edit AI-generated translations and interpretations for accuracy
 

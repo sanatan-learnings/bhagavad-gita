@@ -47,7 +47,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
 ### Prerequisites
 
 - Ruby 3.x or higher
-- Python 3.8+ (for embeddings generation)
+- Python 3.8+ (for content generation)
 - Git
 
 ### Local Development
@@ -58,10 +58,14 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    cd bhagavad-gita
    ```
 
-2. **Install Ruby dependencies**
+2. **Install dependencies**
    ```bash
+   # Ruby dependencies for Jekyll
    gem install bundler
    bundle install
+
+   # verse-content-sdk for content generation
+   pip install verse-content-sdk
    ```
 
 3. **Run Jekyll locally**
@@ -105,11 +109,18 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 
 ## 📖 Documentation
 
-- **[Content Generation](docs/content-generation.md)** - How to generate verses with AI
-- **[Content Sourcing](docs/content-sourcing-guide.md)** - Sources and best practices
-- **[Local Development](docs/local-development.md)** - Development setup and workflow
-- **[Tech Stack](docs/tech-stack.md)** - Technologies used
-- **[Cloudflare Worker Setup](docs/cloudflare-worker-setup.md)** - API proxy deployment
+### Guides
+- **[Local Development](docs/guides/local-development.md)** - Setup and running locally
+- **[Content Generation](docs/guides/content-generation.md)** - Creating verses with AI
+- **[Content Sourcing](docs/guides/content-sourcing-guide.md)** - Authentic sources
+- **[Cloudflare Worker](docs/guides/cloudflare-worker-setup.md)** - API proxy deployment
+
+### Reference
+- **[Tech Stack](docs/reference/tech-stack.md)** - Technical architecture
+- **[Image Prompts](docs/reference/image-prompts.md)** - Scene descriptions
+
+### SDK
+- **[verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)** - Full SDK documentation
 
 ## 📖 Adding Content
 
@@ -147,7 +158,7 @@ practical_application:
 
 1. **Regenerate embeddings** if you added new verses:
    ```bash
-   python scripts/generate_embeddings_local.py
+   verse-embeddings --verses-dir _verses --output data/embeddings.json
    ```
 
 2. **Test locally** to ensure everything renders correctly:
@@ -210,8 +221,8 @@ bhagavad-gita/
 ├── data/
 │   └── embeddings.json  # Generated embeddings for RAG
 ├── scripts/
-│   ├── generate_embeddings_local.py
-│   └── requirements.txt
+│   ├── README.md         # Scripts documentation
+│   └── requirements.txt  # Python dependencies
 ├── workers/
 │   └── cloudflare-worker.js  # API proxy for spiritual guidance
 ├── docs/                # Documentation (to be added)

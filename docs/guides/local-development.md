@@ -1,10 +1,6 @@
-# Local Development Setup Guide
+# Local Development Guide
 
-This documentation provides a comprehensive walkthrough for establishing a development environment for the Bhagavad Gita project on macOS, Linux, and Windows.
-
-## Core Purpose
-
-Local development enables developers to see changes immediately without waiting for GitHub Actions, catch build errors before pushing, test the RAG system with actual embeddings, and validate verse formatting across languages.
+Quick setup guide for running the Bhagavad Gita site locally.
 
 ## Prerequisites Installation
 
@@ -62,16 +58,14 @@ cd bhagavad-gita
 # Install Ruby dependencies
 bundle install
 
-# Create Python virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install Python dependencies
-pip install -r scripts/requirements.txt
+# Install verse-content-sdk (for content generation)
+pip install verse-content-sdk
 
 # Configure environment variables
 cp .env.example .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your API keys:
+# - OPENAI_API_KEY (for content generation and embeddings)
+# - ELEVENLABS_API_KEY (for audio pronunciation)
 ```
 
 ## Running the Development Server
@@ -101,28 +95,28 @@ bundle exec jekyll serve --verbose
 After adding or modifying verses, regenerate embeddings for the RAG system:
 
 ```bash
-# Activate Python environment
-source venv/bin/activate
-
 # Generate with OpenAI (recommended)
-python scripts/generate_embeddings_openai.py
+verse-embeddings --verses-dir _verses --output data/embeddings.json
 
 # Or generate locally (free, no API key)
-python scripts/generate_embeddings_local.py
+verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface
 ```
 
-The script reads all verse files from `_verses/`, generates embeddings, and outputs to `data/embeddings.json`.
+See [verse-content-sdk USAGE.md](https://github.com/sanatan-learnings/verse-content-sdk/blob/main/docs/USAGE.md) for full documentation.
 
 ## Development Workflow
 
 ### Adding New Verses
 
-1. Create verse file in `_verses/` following naming convention: `chapter_XX_verse_YY.md`
-2. Use existing verse files as templates for YAML structure
-3. Include all required fields: devanagari, transliteration, translations, commentary
-4. Test locally: `bundle exec jekyll serve`
-5. Regenerate embeddings if needed
-6. Commit and push changes
+Use the automated generation command (recommended):
+
+```bash
+verse-generate --chapter 2 --verse 48 --all
+```
+
+This creates complete verse with text, image, and audio in one step.
+
+See **[content-generation.md](content-generation.md)** for full workflow details.
 
 ### Testing the RAG System
 
@@ -153,13 +147,6 @@ bundle config set --local force_ruby_platform true
 bundle install
 ```
 
-**Python module errors:**
-```bash
-# Ensure virtual environment is activated
-source venv/bin/activate
-pip install -r scripts/requirements.txt
-```
-
 **Changes not appearing:**
 - Hard refresh browser: Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows/Linux)
 - Clear Jekyll cache: `rm -rf _site .jekyll-cache`
@@ -168,7 +155,7 @@ pip install -r scripts/requirements.txt
 **Embeddings generation fails:**
 - Verify OpenAI API key in `.env`: `cat .env`
 - Check API key has credits: https://platform.openai.com/account/usage
-- Try local embeddings instead: `python scripts/generate_embeddings_local.py`
+- Try local embeddings instead: `verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface`
 
 **YAML syntax errors:**
 Validate verse YAML:
@@ -218,16 +205,14 @@ Development tasks include:
 bundle exec jekyll serve --livereload
 ```
 
-**Generate embeddings:**
+**Generate new verse:**
 ```bash
-source venv/bin/activate && python scripts/generate_embeddings_openai.py
+verse-generate --chapter 2 --verse 48 --all
 ```
 
-**Add new verse:**
+**Regenerate embeddings:**
 ```bash
-touch _verses/chapter_02_verse_48.md
-# Edit file with verse content
-bundle exec jekyll serve
+verse-embeddings --verses-dir _verses --output data/embeddings.json
 ```
 
 **Deploy to production:**
