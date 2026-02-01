@@ -1,122 +1,155 @@
 ---
 layout: verse
-title_en: "Chapter 1, Verse 4"
-title_hi: "अध्याय 1, श्लोक 4"
-chapter: 1
+title_en: Chapter 1, Verse 4
+title_hi: अध्याय 1, श्लोक 4
 verse_number: 4
 previous_verse: /verses/chapter-01-verse-03/
 next_verse: /verses/chapter-01-verse-05/
+chapter: 1
 chapter_info:
   number: 1
-  name_en: "Arjuna Vishada Yoga"
-  name_hi: "अर्जुन विषाद योग"
+  name_en: Arjuna Vishada Yoga
+  name_hi: अर्जुन विषाद योग
 image: /images/modern-minimalist/chapter-01-verse-04.png
 audio_full: /audio/chapter_01_verse_04_full.mp3
 audio_slow: /audio/chapter_01_verse_04_slow.mp3
+devanagari: 'अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
 
-devanagari: |
-  अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
-  युयुधानो विराटश्च द्रुपदश्च महारथः।।
----
-
-<!-- TODO: Parse and format the AI-generated content below -->
-# Generated content:
-
-```yaml
-verse:
-  chapter: 1
-  verse_number: 4
-  chapter_name: 
-    english: Arjuna Vishada Yoga
-    hindi: अर्जुन विषाद योग
-
-transliteration: "atra śūrā maheṣvāsā bhīmārjunasamā yudhi | yuyudhāno virāṭaśca drupadaśca mahārathaḥ ||"
-
+  युयुधानो विराटश्च द्रुपदश्च महारथः।।'
+transliteration: atra śūrā maheṣvāsā bhīmārjunasamā yudhi yuyudhāno virāṭaśca drupadaśca
+  mahārathaḥ
 word_meanings:
-  - संस्कृत: अत्र
-    roman: atra
-    english: here
-    hindi: यहाँ
-  - संस्कृत: शूराः
-    roman: śūrāḥ
-    english: heroes
-    hindi: वीर
-  - संस्कृत: महेष्वासाः
-    roman: maheṣvāsāḥ
-    english: great archers
-    hindi: महान धनुर्धर
-  - संस्कृत: भीम
-    roman: bhīma
-    english: Bhima
-    hindi: भीम
-  - संस्कृत: अर्जुन
-    roman: arjuna
-    english: Arjuna
-    hindi: अर्जुन
-  - संस्कृत: समाः
-    roman: samā
-    english: equal
-    hindi: समान
-  - संस्कृत: युधि
-    roman: yudhi
-    english: in battle
-    hindi: युद्ध में
-  - संस्कृत: युयुधानः
-    roman: yuyudhānaḥ
-    english: Yuyudhana
-    hindi: युयुधान
-  - संस्कृत: विराटः
-    roman: virāṭaḥ
-    english: Virata
-    hindi: विराट
-  - संस्कृत: च
-    roman: ca
-    english: and
-    hindi: और
-  - संस्कृत: द्रुपदः
-    roman: drupadaḥ
-    english: Drupada
-    hindi: द्रुपद
-  - संस्कृत: महारथः
-    roman: mahārathaḥ
-    english: great chariot-warrior
-    hindi: महारथी
-
+- word: अत्र
+  roman: atra
+  meaning:
+    en: here
+    hi: यहाँ
+- word: शूरा
+  roman: śūrā
+  meaning:
+    en: heroes
+    hi: वीर
+- word: महेष्वासा
+  roman: maheṣvāsā
+  meaning:
+    en: great archers
+    hi: महान धनुर्धारी
+- word: भीमार्जुनसमा
+  roman: bhīmārjunasamā
+  meaning:
+    en: equal to Bhima and Arjuna
+    hi: भीम और अर्जुन के समान
+- word: युधि
+  roman: yudhi
+  meaning:
+    en: in battle
+    hi: युद्ध में
+- word: युयुधानः
+  roman: yuyudhānaḥ
+  meaning:
+    en: Yuyudhana
+    hi: युयुधान
+- word: विराटः
+  roman: virāṭaḥ
+  meaning:
+    en: Virata
+    hi: विराट
+- word: द्रुपदः
+  roman: drupadaḥ
+  meaning:
+    en: Drupada
+    hi: द्रुपद
+- word: महारथः
+  roman: mahārathaḥ
+  meaning:
+    en: mighty charioteer
+    hi: महान रथी
 literal_translation:
-  english: "Here in this army are many heroic bowmen equal in fighting to Bhima and Arjuna: great fighters like Yuyudhana, Virata, and Drupada."
-  hindi: "इस सेना में भीम और अर्जुन के समान युद्ध में वीर धनुर्धर हैं: जैसे युयुधान, विराट और द्रुपद।"
-
+  en: Here there are heroic, great archers equal to Bhima and Arjuna in battle, like
+    Yuyudhana, Virata, and the mighty Drupada.
+  hi: यहाँ महान धनुर्धारी वीर हैं, जो युद्ध में भीम और अर्जुन के समान हैं, जैसे युयुधान,
+    विराट और महान रथी द्रुपद।
 interpretive_meaning:
-  english: |
-    This verse is part of the enumeration of the warriors in the Pandava army by Duryodhana. It highlights the presence of several distinguished warriors who are comparable in prowess to Bhima and Arjuna, two of the most formidable fighters in the Mahabharata. By mentioning these names, Duryodhana acknowledges the strength and capability of the opposition, which indirectly reflects his underlying apprehensions about the battle.
+  en: 'This verse emphasizes the formidable lineup of warriors present on the battlefield
+    of Kurukshetra. By highlighting warriors like Yuyudhana, Virata, and Drupada who
+    are comparable to Bhima and Arjuna, the verse underscores the strength and valor
+    present on the Pandava side. It reflects the intense preparation and readiness
+    for the great battle, symbolizing the inner readiness one must cultivate when
+    facing life''s challenges.
 
-    Spiritually, this verse teaches us about recognizing and respecting the strengths of others, even those we perceive as adversaries. It is a reminder that true understanding and wisdom come from acknowledging the abilities and virtues in everyone, rather than underestimating them. Such recognition can also inspire us to cultivate similar virtues within ourselves, fostering personal growth and humility.
 
-  hindi: |
-    यह श्लोक दु:शासन द्वारा पाण्डव सेना में मौजूद वीरों की गिनती का हिस्सा है। इसमें कई प्रतिष्ठित योद्धाओं की उपस्थिति का उल्लेख किया गया है जो भीम और अर्जुन के समान शक्ति रखते हैं, जो महाभारत के सबसे शक्तिशाली योद्धाओं में से हैं। इन नामों का उल्लेख करके, दु:शासन विरोधियों की ताकत और क्षमता को स्वीकार करता है, जो अप्रत्यक्ष रूप से युद्ध के प्रति उसकी आशंकाओं को दर्शाता है।
+    Spiritually, the verse suggests that just as the Pandavas are supported by valiant
+    warriors, individuals too are supported by their inner strengths and virtues.
+    It encourages the reader to recognize and harness these inner forces to overcome
+    obstacles and achieve higher goals. The mention of each warrior serves as a metaphor
+    for the various qualities and attributes required to successfully navigate the
+    battles of life.
 
-    आध्यात्मिक रूप से, यह श्लोक हमें दूसरों की ताकतों को पहचानने और उनका सम्मान करने की शिक्षा देता है, भले ही वे हमारे प्रतिद्वंद्वी हों। यह एक याद दिलाने वाली बात है कि सच्चा समझ और ज्ञान सबकी क्षमताओं और गुणों को मान्यता देने से आता है, बजाय उनके कम आंकने के। ऐसी मान्यता हमें समान गुणों को अपने भीतर विकसित करने के लिए प्रेरित कर सकती है, जिससे व्यक्तिगत विकास और विनम्रता को बढ़ावा मिलता है।
+    '
+  hi: 'यह श्लोक कुरुक्षेत्र के युद्धक्षेत्र में उपस्थित योद्धाओं की प्रभावशाली पंक्ति
+    को दर्शाता है। युयुधान, विराट और द्रुपद जैसे योद्धाओं को भीम और अर्जुन के समान
+    बताकर, यह श्लोक पांडव पक्ष की शक्ति और वीरता को रेखांकित करता है। यह महान युद्ध
+    के लिए की गई तीव्र तैयारी और तत्परता को दर्शाता है, जो जीवन की चुनौतियों का सामना
+    करने के लिए आंतरिक तैयारी का प्रतीक है।
 
-story_context:
-  english: |
-    The context of this verse is set at the beginning of the great Kurukshetra war. Duryodhana, the leader of the Kauravas, is surveying the Pandava army, which is led by his cousins, the Pandavas. Despite his outer confidence, Duryodhana is internally anxious about the might of the Pandava warriors. He speaks to his teacher, Drona, highlighting the capable warriors who stand ready to fight against him, reflecting his internal conflict and the gravity of the impending battle.
 
-    This moment is significant as it sets the stage for the profound dialogue of the Bhagavad Gita, where Arjuna, standing on the battlefield, becomes overwhelmed by the moral and ethical dilemmas of war. The verse captures the tension and the build-up of emotions as the warriors prepare for a decisive conflict.
+    आध्यात्मिक रूप से, यह श्लोक सुझाव देता है कि जैसे पांडवों को वीर योद्धाओं का समर्थन
+    प्राप्त है, वैसे ही व्यक्तियों को भी उनकी आंतरिक शक्तियों और गुणों का समर्थन प्राप्त
+    होता है। यह पाठक को इन आंतरिक शक्तियों को पहचानने और उनका उपयोग करने के लिए प्रेरित
+    करता है ताकि बाधाओं को पार किया जा सके और उच्च लक्ष्यों को प्राप्त किया जा सके।
+    प्रत्येक योद्धा का उल्लेख जीवन के युद्धों को सफलतापूर्वक नेविगेट करने के लिए आवश्यक
+    विभिन्न गुणों और विशेषताओं के रूप में एक रूपक के रूप में कार्य करता है।
 
-  hindi: |
-    यह श्लोक महाभारत के महान युद्ध कुरुक्षेत्र की शुरुआत में स्थापित है। दु:शासन, कौरवों के नेता, अपने चचेरे भाइयों पाण्डवों द्वारा नेतृत्व की जा रही पाण्डव सेना का निरीक्षण कर रहे हैं। अपनी बाहरी आत्मविश्वास के बावजूद, दु:शासन पाण्डव योद्धाओं की शक्ति के बारे में आंतरिक रूप से चिंतित है। वह अपने शिक्षक द्रोणाचार्य से बात करते हुए उन सक्षम योद्धाओं का उल्लेख करता है जो उसके खिलाफ लड़ने के लिए तैयार खड़े हैं, जो उसके आंतरिक संघर्ष और आसन्न युद्ध की गंभीरता को दर्शाता है।
+    '
+story:
+  en: 'The narrative context of this verse is set on the battlefield of Kurukshetra,
+    just before the commencement of the great war. The verse is part of Duryodhana''s
+    speech to his teacher Drona, as he surveys the Pandava army. Duryodhana is keenly
+    aware of the formidable warriors assembled against him and is attempting to bolster
+    his own side''s morale by acknowledging the strength of the enemy.
 
-    यह क्षण महत्वपूर्ण है क्योंकि यह भगवद् गीता के गहन संवाद का मंच तैयार करता है, जिसमें अर्जुन, युद्ध के मैदान में खड़ा होकर, युद्ध की नैतिक और नैतिक दुविधाओं से अभिभूत हो जाता है। श्लोक उस तनाव और भावनाओं के निर्माण को दर्शाता है जो योद्धाओं के निर्णायक संघर्ष की तैयारी के रूप में होती हैं।
 
+    This verse is a prelude to the intense emotions and the moral dilemmas that will
+    unfold in the Bhagavad Gita. It sets the stage for the epic battle, with each
+    side showcasing their might and readiness. The mention of great warriors serves
+    to highlight the gravity and scale of the conflict that is about to ensue, and
+    the challenges that both sides will face.
+
+    '
+  hi: 'इस श्लोक की कथा पृष्ठभूमि कुरुक्षेत्र के युद्धक्षेत्र में स्थापित है, ठीक महान
+    युद्ध के आरंभ से पहले। यह श्लोक दुर्योधन के अपने गुरु द्रोण के प्रति भाषण का हिस्सा
+    है, जब वह पांडव सेना का निरीक्षण कर रहा है। दुर्योधन अपने खिलाफ एकत्रित शक्तिशाली
+    योद्धाओं से भलीभांति अवगत है और अपने पक्ष का मनोबल बढ़ाने का प्रयास कर रहा है।
+
+
+    यह श्लोक भगवद गीता में प्रकट होने वाले तीव्र भावनाओं और नैतिक दुविधाओं का पूर्वाभास
+    है। यह महाकाव्य युद्ध के लिए मंच तैयार करता है, जिसमें प्रत्येक पक्ष अपनी शक्ति
+    और तैयारी का प्रदर्शन कर रहा है। महान योद्धाओं का उल्लेख उस संघर्ष की गंभीरता
+    और पैमाने को उजागर करता है जो आने वाला है, और उन चुनौतियों का सामना करना है जो
+    दोनों पक्षों को करनी होंगी।
+
+    '
 practical_application:
-  english: |
-    In daily life, this verse encourages us to acknowledge the strengths and capabilities of others, whether they are colleagues, friends, or even competitors. By recognizing the talents of those around us, we can foster an environment of mutual respect and collaboration. It also reminds us not to underestimate others, as everyone has unique strengths that can contribute to collective success.
+  en: 'In daily life, this verse encourages us to recognize our inner strengths and
+    those who support us in our endeavors, just as the Pandavas had powerful allies.
+    One can reflect on the qualities of the warriors mentioned and identify similar
+    virtues within oneself, such as courage, determination, and skill.
 
-    For instance, in a workplace setting, rather than viewing coworkers as rivals, one can focus on their skills and learn from them, potentially leading to stronger teamwork and innovation. Similarly, in personal relationships, appreciating the qualities of others can lead to more harmonious and supportive connections.
 
-  hindi: |
-    दैनिक जीवन में, यह श्लोक हमें दूसरों की ताकतों और क्षमताओं को मान्यता देने के लिए प्रोत्साहित करता है, चाहे वे सहकर्मी हों, मित्र हों या यहां तक कि प्रतिस्पर्धी हों। हमारे आस-पास के लोगों की प्रतिभाओं को पहचानकर, हम आपसी सम्मान और सहयोग का माहौल बना सकते हैं। यह हमें दूसरों को कम आंकने से भी सावधान करता है, क्योंकि हर किसी में अनूठी ताकतें होती हैं जो सामूहिक सफलता में योगदान कर सकती हैं।
+    By assembling a team of supportive and capable individuals, like the Pandavas
+    did, one can enhance personal and professional success. This verse also teaches
+    the importance of preparation and recognizing the strengths of others, which can
+    be essential in collaborative efforts and overcoming challenges.
 
-    उदाहरण के लिए, कार्यस्थल में, सहकर्मियों को प्रतिद्वंद्वी के रूप में देखने के बजाय, कोई उनकी कौशल पर ध्यान केंद्रित कर सकता है और उनसे सीख सकता है, जिससे मजबूत टीम वर्क और नवाचार की संभावना बढ़ सकती है। इसी तरह, व्यक्तिगत संबंधों में, दूसरों के गुणों की सराहना करने से अधिक सामंजस्यपूर्ण और सहायक संबंध बन सकते हैं।
-```
+    '
+  hi: 'दैनिक जीवन में, यह श्लोक हमें हमारे आंतरिक बलों और हमारे प्रयासों में हमारा
+    समर्थन करने वालों को पहचानने के लिए प्रेरित करता है, जैसे पांडवों के पास शक्तिशाली
+    सहयोगी थे। कोई व्यक्ति वर्णित योद्धाओं के गुणों पर विचार कर सकता है और अपने भीतर
+    समान गुणों की पहचान कर सकता है, जैसे साहस, दृढ़ता और कौशल।
+
+
+    पांडवों की तरह सहायक और सक्षम व्यक्तियों की एक टीम बनाकर, कोई व्यक्तिगत और पेशेवर
+    सफलता को बढ़ा सकता है। यह श्लोक तैयारी के महत्व और दूसरों की शक्तियों को पहचानने
+    की शिक्षा भी देता है, जो सहयोगात्मक प्रयासों और चुनौतियों को पार करने में आवश्यक
+    हो सकता है।'
 ---

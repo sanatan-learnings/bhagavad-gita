@@ -1,89 +1,165 @@
 ---
 layout: verse
-title_en: "Chapter 1, Verse 3"
-title_hi: "अध्याय 1, श्लोक 3"
-chapter: 1
+title_en: Chapter 1, Verse 3
+title_hi: अध्याय 1, श्लोक 3
 verse_number: 3
 previous_verse: /verses/chapter-01-verse-02/
 next_verse: /verses/chapter-01-verse-04/
+chapter: 1
 chapter_info:
   number: 1
-  name_en: "Arjuna Vishada Yoga"
-  name_hi: "अर्जुन विषाद योग"
+  name_en: Arjuna's Dilemma
+  name_hi: अर्जुन विषाद योग
 image: /images/modern-minimalist/chapter-01-verse-03.png
 audio_full: /audio/chapter_01_verse_03_full.mp3
 audio_slow: /audio/chapter_01_verse_03_slow.mp3
+devanagari: 'पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।
 
-devanagari: |
-  धृतराष्ट्र उवाच |
-  पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |
-  व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता || 1.3 ||
----
-
-<!-- TODO: Parse and format the AI-generated content below -->
-# Generated content:
-
-```yaml
-verse:
-  chapter: 1
-  verse: 3
-  chapter_name: Arjuna Vishada Yoga / अर्जुन विषाद योग
-
-transliteration: 
-  IAST: dhṛtarāṣṭra uvāca |
-        paśyaitāṁ pāṇḍuputrāṇāmācārya mahatīṁ camūm |
-        vyūḍhāṁ drupadaputreṇa tava śiṣyeṇa dhīmatā || 1.3 ||
-
+  व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥ ३॥'
+transliteration: paśyaitāṁ pāṇḍuputrāṇām ācārya mahatīṁ camūm vyūḍhāṁ drupadaputreṇa
+  tava śiṣyeṇa dhīmatā
 word_meanings:
-  - धृतराष्ट्र (dhṛtarāṣṭra): Dhritarashtra; धृतराष्ट्र; The blind king of the Kauravas; कौरवों का अंधा राजा
-  - उवाच (uvāca): said; कहा; spoke
-  - पश्य (paśya): behold; देखो; see
-  - एताम् (etām): this; इस; this
-  - पाण्डुपुत्राणाम् (pāṇḍuputrāṇām): of the sons of Pandu; पांडु के पुत्रों का; the sons of Pandu
-  - आचार्य (ācārya): teacher; आचार्य; guru or teacher
-  - महतीम् (mahatīm): great; महान; vast
-  - चमूम् (camūm): army; सेना; military force
-  - व्यूढाम् (vyūḍhām): arranged; व्यवस्थित; arrayed
-  - द्रुपदपुत्रेण (drupadaputreṇa): by the son of Drupada; द्रुपद के पुत्र द्वारा; referring to Dhrishtadyumna
-  - तव (tava): your; तुम्हारे; your
-  - शिष्येण (śiṣyeṇa): disciple; शिष्य; student
-  - धीमता (dhīmatā): intelligent; बुद्धिमान; wise
-
+- word: पश्य
+  roman: paśya
+  meaning:
+    en: see
+    hi: देखो
+- word: एताम्
+  roman: etām
+  meaning:
+    en: this
+    hi: इस
+- word: पाण्डुपुत्राणाम्
+  roman: pāṇḍuputrāṇām
+  meaning:
+    en: of the sons of Pandu
+    hi: पाण्डु के पुत्रों की
+- word: आचार्य
+  roman: ācārya
+  meaning:
+    en: O teacher
+    hi: हे आचार्य
+- word: महतीम्
+  roman: mahatīm
+  meaning:
+    en: great
+    hi: महान
+- word: चमूम्
+  roman: camūm
+  meaning:
+    en: army
+    hi: सेना
+- word: व्यूढाम्
+  roman: vyūḍhām
+  meaning:
+    en: arranged
+    hi: व्यूहबद्ध
+- word: द्रुपदपुत्रेण
+  roman: drupadaputreṇa
+  meaning:
+    en: by the son of Drupada
+    hi: द्रुपद के पुत्र द्वारा
+- word: तव
+  roman: tava
+  meaning:
+    en: your
+    hi: आपका
+- word: शिष्येण
+  roman: śiṣyeṇa
+  meaning:
+    en: disciple
+    hi: शिष्य
+- word: धीमता
+  roman: dhīmatā
+  meaning:
+    en: wise
+    hi: बुद्धिमान
 literal_translation:
-  english: "Dhritarashtra said: O teacher, behold this mighty army of the sons of Pandu, arranged by the son of Drupada, your wise disciple."
-  hindi: "धृतराष्ट्र ने कहा: हे आचार्य, पांडु के पुत्रों की इस विशाल सेना को देखो, जिसे तुम्हारे बुद्धिमान शिष्य द्रुपद के पुत्र ने व्यवस्थित किया है।"
-
+  en: O teacher, behold this great army of the sons of Pandu, arranged by your wise
+    disciple, the son of Drupada.
+  hi: हे आचार्य, देखो पाण्डु के पुत्रों की इस महान सेना को, जो आपके बुद्धिमान शिष्य
+    द्रुपद के पुत्र द्वारा व्यूहबद्ध की गई है।
 interpretive_meaning:
-  english: |
-    In this verse, King Dhritarashtra addresses his charioteer and advisor, Sanjaya, expressing a mix of concern and admiration for the Pandavas' military strength. The mention of Dhrishtadyumna, the commander of the Pandavas' army and son of Drupada, highlights the intricate relationships and past rivalries at play. Dhrishtadyumna, born from a sacrificial fire specifically to defeat Drona, the Kauravas' military teacher, stands as a symbol of destiny and the unfolding of divine plans.
+  en: 'In this verse, Duryodhana, addressing his teacher Dronacharya, points out the
+    formidable army of the Pandavas as a strategic move to emphasize the seriousness
+    of the battle they were about to engage in. The mention of the army being arranged
+    by Dronacharya’s own disciple, Dhrishtadyumna, serves as an additional layer of
+    irony and psychological pressure. This highlights the importance of recognizing
+    the capabilities and strategies of one''s opponents, even when they include former
+    allies or students.
 
-    Spiritually, this scene sets the stage for the internal and external battles that Arjuna and, by extension, all individuals face. The Pandavas' army, described as 'mahatīm' (vast), represents the immense challenges and adversities in life. The wise arrangement of the army by Dhrishtadyumna can be seen as the strategic alignment of one's values, intelligence, and inner strength to face life's battles. It reminds us of the necessity to align our mind and actions with wisdom and clarity, guided by the divine plan.
 
-  hindi: |
-    इस श्लोक में, राजा धृतराष्ट्र अपने सारथी और सलाहकार संजय से पांडवों की सैन्य शक्ति के प्रति चिंता और प्रशंसा के मिश्रण की अभिव्यक्ति करते हैं। द्रुपदपुत्र धृष्टद्युम्न, जो पांडवों की सेना के सेनापति हैं, और द्रोणाचार्य के पराजय के लिए अग्निकुंड से उत्पन्न हुए थे, जटिल संबंधों और पूर्व के प्रतिद्वंद्वियों का प्रतीक हैं। धृष्टद्युम्न का उल्लेख भाग्य और दिव्य योजनाओं के विकास के प्रतीक के रूप में होता है।
+    Spiritually, this verse can be seen as a reminder of the duality and complexities
+    of life, where roles and relationships can change, and one must remain aware and
+    adaptable. It serves to illustrate the tension between duty and personal relationships,
+    a recurring theme in the Gita.
 
-    आध्यात्मिक रूप से, यह दृश्य अर्जुन और विस्तार में सभी व्यक्तियों के आंतरिक और बाहरी संघर्षों की भूमिका स्थापित करता है। पांडवों की सेना, जिसे 'महतीं' कहा गया है, जीवन की विशाल चुनौतियों और विपत्तियों का प्रतिनिधित्व करती है। धृष्टद्युम्न द्वारा सेना की बुद्धिमानी से व्यवस्था हमारे मूल्यों, बुद्धि और आंतरिक शक्ति के सामरिक संरेखण का प्रतीक है, जो जीवन के संघर्षों का सामना करते हैं। यह हमें हमारे मन और कार्यों को ज्ञान और स्पष्टता के साथ संरेखित करने की आवश्यकता की याद दिलाता है, जो दिव्य योजना द्वारा निर्देशित है।
+    '
+  hi: 'इस श्लोक में, दुर्योधन अपने गुरु द्रोणाचार्य से पांडवों की विशाल सेना की ओर
+    ध्यान आकर्षित करता है, जो कि युद्ध की गंभीरता को रेखांकित करता है। सेना का उल्लेख
+    द्रोणाचार्य के ही शिष्य धृष्टद्युम्न द्वारा व्यूहबद्ध किए जाने से एक प्रकार का
+    व्यंग्य और मनोवैज्ञानिक दबाव उत्पन्न होता है। यह दर्शाता है कि किसी के विरोधियों
+    की क्षमताओं और रणनीतियों को पहचानना कितना महत्वपूर्ण है, भले ही वे पूर्व सहयोगी
+    या विद्यार्थी हों।
 
-story_context:
-  english: |
-    The Bhagavad Gita begins with a unique narrative setting. The blind King Dhritarashtra asks Sanjaya, his charioteer and advisor, to describe the events of the battlefield of Kurukshetra, where his sons, the Kauravas, are set to fight their cousins, the Pandavas. This verse is part of the dialogue where Dhritarashtra is informed about the preparations and alignments on the battlefield.
 
-    Dhrishtadyumna, the son of King Drupada, is significant here as he is the commander of the Pandavas' army. His role is crucial because he was born specifically to defeat Drona, the Kauravas' military teacher, due to a past enmity between Drupada and Drona. This background sets the tone for the epic's exploration of dharma (righteousness) and adharma (unrighteousness), showcasing the complex interplay of relationships and destiny.
+    आध्यात्मिक दृष्टिकोण से, यह श्लोक जीवन की द्वैतता और जटिलताओं की याद दिलाता है,
+    जहां भूमिकाएँ और रिश्ते बदल सकते हैं, और हमें सतर्क और अनुकूल रहना पड़ता है। यह
+    कर्तव्य और व्यक्तिगत रिश्तों के बीच के तनाव को दर्शाता है, जो गीता में बार-बार
+    उभरता है।
 
-  hindi: |
-    भगवद्गीता एक अनोखे कथानक के साथ शुरू होती है। अंधे राजा धृतराष्ट्र अपने सारथी और सलाहकार संजय से कुरुक्षेत्र के युद्धक्षेत्र की घटनाओं का वर्णन करने का अनुरोध करते हैं, जहां उनके पुत्र कौरव अपने चचेरे भाइयों पांडवों से लड़ने के लिए तैयार हैं। यह श्लोक उस संवाद का हिस्सा है जहां धृतराष्ट्र को युद्धक्षेत्र की तैयारियों और व्यवस्थाओं के बारे में सूचित किया जाता है।
+    '
+story:
+  en: 'The context of this verse is set on the battlefield of Kurukshetra, just before
+    the great war of the Mahabharata is about to begin. Duryodhana, the leader of
+    the Kauravas, is surveying the battlefield and assessing the strengths of the
+    enemy forces. He is speaking to his teacher Dronacharya, who had taught both the
+    Kauravas and the Pandavas in the past.
 
-    धृष्टद्युम्न, राजा द्रुपद के पुत्र, यहां महत्वपूर्ण हैं क्योंकि वह पांडवों की सेना के सेनापति हैं। उनकी भूमिका महत्वपूर्ण है क्योंकि वह विशेष रूप से द्रोणाचार्य को हराने के लिए उत्पन्न हुए थे, जो कौरवों के सैन्य शिक्षक थे, द्रुपद और द्रोणाचार्य के बीच पिछले शत्रुता के कारण। यह पृष्ठभूमि महाकाव्य के धर्म (धार्मिकता) और अधर्म (अधार्मिकता) की खोज के लिए स्वर सेट करती है, जो संबंधों और भाग्य के जटिल अंतःक्रियाओं को दर्शाती है।
 
+    Duryodhana’s words are strategic, as he seeks to remind Dronacharya of the prowess
+    of the Pandava army, particularly highlighting that it is organized by Dronacharya’s
+    own pupil, Dhrishtadyumna, who was born to kill Dronacharya. This scene sets the
+    stage for the complex emotional and moral dynamics that will unfold throughout
+    the Bhagavad Gita.
+
+    '
+  hi: 'इस श्लोक का संदर्भ महाभारत के युद्ध के आरंभ से ठीक पहले कुरुक्षेत्र की युद्धभूमि
+    पर स्थित है। दुर्योधन, कौरवों का नेता, युद्धभूमि का जायजा ले रहा है और शत्रु बलों
+    की ताकतों का मूल्यांकन कर रहा है। वह अपने गुरु द्रोणाचार्य से बात कर रहा है, जिन्होंने
+    अतीत में कौरवों और पांडवों दोनों को पढ़ाया था।
+
+
+    दुर्योधन की बातें रणनीतिक हैं, क्योंकि वह द्रोणाचार्य को पांडव सेना की शक्ति की
+    याद दिलाना चाहता है, विशेष रूप से यह बताते हुए कि इसे द्रोणाचार्य के ही शिष्य
+    धृष्टद्युम्न द्वारा व्यवस्थित किया गया है, जिसका जन्म ही द्रोणाचार्य को मारने
+    के लिए हुआ था। यह दृश्य गीता में आने वाले जटिल भावनात्मक और नैतिक गतिशीलता के
+    लिए मंच तैयार करता है।
+
+    '
 practical_application:
-  english: |
-    In daily life, this verse teaches us the importance of preparation and aligning our resources wisely to face challenges. Just as Dhrishtadyumna strategically arranged the Pandavas' army, individuals should organize their time, skills, and efforts effectively to tackle personal and professional obstacles. It encourages us to be mindful of our strengths and use them to our advantage.
+  en: 'In our daily lives, this verse inspires us to be aware of the dynamics of our
+    surroundings and relationships. It encourages us to recognize the strengths and
+    potential of those around us, even when they might appear as adversaries. By understanding
+    the capabilities of others, we can better prepare ourselves for the challenges
+    we face.
 
-    Furthermore, understanding the deeper relationships and histories, as seen between Drona and Drupada, can help navigate interpersonal dynamics at work or in family settings. Recognizing these backgrounds can lead to more empathetic and informed decisions, fostering harmony and reducing conflict.
 
-  hindi: |
-    दैनिक जीवन में, यह श्लोक हमें चुनौतियों का सामना करने के लिए तैयारी और संसाधनों का बुद्धिमानी से संरेखण करने के महत्व को सिखाता है। जैसे धृष्टद्युम्न ने पांडवों की सेना को रणनीतिक रूप से व्यवस्थित किया, वैसे ही व्यक्तियों को अपने समय, कौशल और प्रयासों को प्रभावी ढंग से व्यवस्थित करना चाहिए ताकि व्यक्तिगत और पेशेवर बाधाओं का सामना किया जा सके। यह हमें अपनी क्षमताओं के प्रति सजग रहने और उन्हें अपने लाभ के लिए उपयोग करने के लिए प्रेरित करता है।
+    Additionally, it teaches the importance of not underestimating any situation or
+    individual, as roles and allegiances can shift, and today''s friend may become
+    tomorrow''s competitor. This awareness can lead to better strategic planning and
+    preparedness in both personal and professional scenarios.
 
-    इसके अलावा, जैसे द्रोण और द्रुपद के बीच गहरे संबंध और इतिहास को समझा गया है, वैसे ही कार्यस्थल या पारिवारिक माहौल में अंतरवैयक्तिक गतिशीलता को समझने में यह मदद कर सकता है। इन पृष्ठभूमियों को पहचानना अधिक सहानुभूतिपूर्ण और सूचित निर्णयों की ओर ले जा सकता है, जो सामंजस्य को बढ़ावा देते हैं और संघर्ष को कम करते हैं।
-```
+    '
+  hi: 'हमारे दैनिक जीवन में, यह श्लोक हमें हमारे परिवेश और रिश्तों की गतिशीलता के
+    प्रति जागरूक रहने के लिए प्रेरित करता है। यह हमें हमारे चारों ओर के लोगों की ताकत
+    और क्षमता को पहचानने के लिए प्रोत्साहित करता है, भले ही वे विरोधी के रूप में प्रतीत
+    हों। दूसरों की क्षमताओं को समझकर, हम अपने सामने आने वाली चुनौतियों के लिए बेहतर
+    तैयारी कर सकते हैं।
+
+
+    इसके अतिरिक्त, यह किसी भी स्थिति या व्यक्ति को कम न आंकने की महत्ता सिखाता है,
+    क्योंकि भूमिकाएँ और वफादारियाँ बदल सकती हैं, और आज का मित्र कल का प्रतिस्पर्धी
+    बन सकता है। इस जागरूकता से व्यक्तिगत और पेशेवर दोनों ही परिदृश्यों में बेहतर रणनीतिक
+    योजना और तैयारी हो सकती है।'
 ---
