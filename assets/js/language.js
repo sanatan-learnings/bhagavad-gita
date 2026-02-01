@@ -60,22 +60,9 @@ function displayLanguageContent() {
         });
     }
 
-    // Show/hide language-specific content
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        if (el.getAttribute('data-lang') === lang) {
-            // Show element - use inline for spans, block for divs
-            const tagName = el.tagName.toLowerCase();
-            if (tagName === 'span') {
-                el.style.display = 'inline';
-            } else if (tagName === 'div') {
-                el.style.display = 'block';
-            } else {
-                el.style.display = '';
-            }
-        } else {
-            el.style.display = 'none';
-        }
-    });
+    // Use CSS classes to control language display
+    document.body.classList.remove('lang-en', 'lang-hi');
+    document.body.classList.add('lang-' + lang);
 }
 
 // Initialize on page load

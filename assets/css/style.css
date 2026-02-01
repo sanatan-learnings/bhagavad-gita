@@ -6,16 +6,37 @@
 }
 
 /* Language switching - hide Hindi by default until JS loads */
-[data-lang="hi"] {
-    display: none !important;
+body:not(.lang-hi) [data-lang="hi"] {
+    display: none;
 }
 
-/* English is shown by default */
-[data-lang="en"] {
+body:not(.lang-en) [data-lang="en"] {
+    display: none;
+}
+
+/* Default to English if no class set */
+body:not(.lang-hi):not(.lang-en) [data-lang="en"] {
     display: inline;
 }
 
-div[data-lang="en"] {
+body:not(.lang-hi):not(.lang-en) div[data-lang="en"] {
+    display: block;
+}
+
+/* Show correct language when class is set */
+body.lang-en [data-lang="en"] {
+    display: inline;
+}
+
+body.lang-en div[data-lang="en"] {
+    display: block;
+}
+
+body.lang-hi [data-lang="hi"] {
+    display: inline;
+}
+
+body.lang-hi div[data-lang="hi"] {
     display: block;
 }
 
