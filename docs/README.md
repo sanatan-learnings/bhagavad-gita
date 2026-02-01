@@ -40,7 +40,7 @@ See [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) 
 
 - **[Local Development](guides/local-development.md)** - Setup and run locally
 - **[Content Generation](guides/content-generation.md)** - Create verses with AI
-- **[Content Sourcing](guides/content-sourcing-guide.md)** - Find authentic sources
+- **[Content Verification](guides/content-verification-guide.md)** - Verify AI-generated content
 - **[Cloudflare Worker](guides/cloudflare-worker-setup.md)** - Deploy API proxy
 
 ## Reference

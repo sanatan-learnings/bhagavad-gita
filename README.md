@@ -112,7 +112,7 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 ### Guides
 - **[Local Development](docs/guides/local-development.md)** - Setup and running locally
 - **[Content Generation](docs/guides/content-generation.md)** - Creating verses with AI
-- **[Content Sourcing](docs/guides/content-sourcing-guide.md)** - Authentic sources
+- **[Content Verification](docs/guides/content-verification-guide.md)** - Verifying AI-generated content
 - **[Cloudflare Worker](docs/guides/cloudflare-worker-setup.md)** - API proxy deployment
 
 ### Reference
