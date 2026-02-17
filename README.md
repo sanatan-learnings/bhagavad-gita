@@ -91,90 +91,6 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 ### SDK
 - **[sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk)** - Full SDK documentation
 
-## 📖 Adding Content
-
-### Automated Content Generation (Recommended)
-
-Generate complete shlokas with one command:
-
-```bash
-verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --all
-```
-
-This automatically creates:
-- DALL-E 3 generated artwork from scene description
-- ElevenLabs audio pronunciation (full + slow speeds)
-- Updates embeddings for search
-
-**Note:** Canonical Devanagari text for all 701 verses is available in `data/verses/bhagavad-gita.yaml`.
-See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for complete instructions.
-
-### Manual Content Creation (Advanced)
-
-If you prefer manual creation, shloka files follow this structure in `_verses/`:
-
-story:
-  en: "Context from Mahabharata"
-  hi: "महाभारत से संदर्भ"
-
-practical_application:
-  en: "How to apply in daily life"
-  hi: "दैनिक जीवन में कैसे लागू करें"
----
-```
-
-### After Adding Content
-
-1. **Regenerate embeddings** if you added new shlokas:
-   ```bash
-   verse-embeddings --multi-collection
-   ```
-
-2. **Test locally** to ensure everything renders correctly:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-3. **Commit and push** to deploy to GitHub Pages
-
-## 🔧 Deploying the Spiritual Guidance API
-
-The RAG-powered spiritual guidance feature requires a Cloudflare Worker:
-
-1. **Install Wrangler** (Cloudflare CLI)
-   ```bash
-   npm install -g wrangler
-   ```
-
-2. **Authenticate with Cloudflare**
-   ```bash
-   wrangler login
-   ```
-
-3. **Set up OpenAI API key**
-   ```bash
-   wrangler secret put OPENAI_API_KEY
-   ```
-   Paste your OpenAI API key when prompted
-
-4. **Deploy the worker**
-   ```bash
-   wrangler deploy
-   ```
-
-5. **Update guidance.js** with your worker URL
-
-## 💰 Cost Breakdown
-
-| Component | Cost | Notes |
-|-----------|------|-------|
-| GitHub Pages Hosting | FREE | Static site hosting |
-| Embeddings Generation | FREE or ~$0.10 | FREE with local models OR ~$0.10 for OpenAI embeddings (one-time) |
-| Cloudflare Worker | FREE | 100k requests/day free tier |
-| OpenAI API (Guidance) | ~$0.01/query | Only when users ask questions |
-| **Total Setup** | $0-$0.10 | One-time embedding cost if using OpenAI |
-| **Monthly Operational** | ~$0 | Negligible unless heavy guidance usage |
-
 ## 📁 Project Structure
 
 ```
@@ -234,8 +150,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Inspired by the [Hanuman Chalisa project](https://github.com/sanatan-learnings/hanuman-chalisa)
 - Built with Jekyll and hosted on GitHub Pages
-- AI features powered by HuggingFace, OpenAI, and Cloudflare Workers
+- AI features powered by OpenAI, ElevenLabs, HuggingFace, and Cloudflare Workers
 - Sanskrit transliterations follow IAST standards
+- Canonical Sanskrit text from [sanskritdocuments.org](https://sanskritdocuments.org)
 
 ## 📞 Support
 
