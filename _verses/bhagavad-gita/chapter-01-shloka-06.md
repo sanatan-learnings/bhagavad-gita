@@ -1,14 +1,13 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-permalink: /bhagavad-gita/chapter-01-shloka-06/
 title_en: The Mighty Warriors
+previous_shloka: /verses/chapter-01-shloka-05/
+next_shloka: /verses/chapter-01-shloka-07/
 title_hi: शूरवीर योद्धा
 chapter: 1
 verse_number: 6
 verse_type: chapter
-previous_verse: /bhagavad-gita/chapter-01-shloka-05/
-next_verse: /bhagavad-gita/chapter-01-shloka-07/
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-06.png
 devanagari: युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् । सौभद्रो द्रौपदेयाश्च सर्व
   एव महारथाः।।

@@ -1,14 +1,13 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-permalink: /bhagavad-gita/chapter-01-shloka-07/
 title_en: Duryodhana's Mighty Warriors
+previous_shloka: /verses/chapter-01-shloka-06/
+next_shloka: null
 title_hi: दुर्योधन के शूरवीर योद्धा
 chapter: 1
 verse_number: 7
 verse_type: chapter
-previous_verse: /bhagavad-gita/chapter-01-shloka-06/
-next_verse: /bhagavad-gita/chapter-01-shloka-08/
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-07.png
 devanagari: अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम । नायका मम सैन्यस्य संज्ञार्थं
   तान्ब्रवीमि ते ॥
