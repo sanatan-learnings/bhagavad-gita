@@ -5,7 +5,7 @@ title_en: "Chapter 2, Shloka 47"
 title_hi: "अध्याय 2, श्लोक 47"
 chapter: 2
 verse_number: 47
-previous_shloka: /verses/chapter-02-shloka-46/
+previous_shloka: /verses/chapter-01-shloka-07/
 next_shloka: null
 chapter_info:
   number: 2

@@ -6,7 +6,7 @@ title_hi: "अध्याय 1, श्लोक 7"
 chapter: 1
 verse_number: 7
 previous_shloka: /verses/chapter-01-shloka-06/
-next_shloka: null
+next_shloka: /verses/chapter-02-shloka-47/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"
