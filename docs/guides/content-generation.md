@@ -1,6 +1,6 @@
-# Generating Content for New Verses
+# Generating Content for New Shlokas
 
-This guide shows how to use the `verse-generate` command to create content for Bhagavad Gita verses.
+This guide shows the streamlined workflow for generating Bhagavad Gita shloka content using `verse-generate --next`.
 
 ## Prerequisites
 
@@ -15,130 +15,212 @@ This guide shows how to use the `verse-generate` command to create content for B
    ELEVENLABS_API_KEY=your_elevenlabs_key
    ```
 
-## Automated Generation (Recommended)
+## Streamlined Workflow (Recommended) 🚀
 
-Generate everything with one command:
+The easiest way to generate shlokas is using the `--next` flag, which automatically detects and generates the next shloka in sequence.
+
+### Step 1: Add Sanskrit Text
+
+Add the canonical Devanagari text to `data/verses/bhagavad-gita.yaml`:
+
+```yaml
+chapter-01-shloka-08:
+  devanagari: 'भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः। अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।'
+```
+
+### Step 2: Generate Everything Automatically
+
+Run one command to generate complete shloka content:
+
+```bash
+verse-generate --collection bhagavad-gita --next --all
+```
+
+**What this does automatically:**
+- ✅ Auto-detects the next shloka to generate
+- ✅ Creates verse markdown file with AI-generated content:
+  - Title (English & Hindi)
+  - Transliteration
+  - Word-by-word meanings
+  - Literal translation
+  - Interpretive meaning
+  - Story and context
+  - Practical application
+- ✅ Generates AI scene description for the shloka
+- ✅ Creates artwork from scene description (DALL-E 3)
+- ✅ Generates audio pronunciation (ElevenLabs - full + slow speeds)
+- ✅ Updates navigation links (previous/next shloka)
+- ✅ Regenerates embeddings for search functionality
+
+### Step 3: Review and Commit
+
+```bash
+# Review AI-generated content
+# Edit if needed for accuracy
+
+# Commit changes
+git add -A
+git commit -m "Generate Chapter X, Shloka Y"
+git push
+```
+
+**That's it!** Repeat for as many shlokas as you want.
+
+## What Gets Generated
+
+Each `verse-generate --next` command creates:
+
+1. **Markdown File** (`_verses/bhagavad-gita/chapter-XX-shloka-YY.md`)
+   - Complete YAML frontmatter with metadata
+   - AI-generated translations and commentary
+   - Navigation links to previous/next shlokas
+
+2. **Image** (`images/bhagavad-gita/modern-minimalist/chapter-XX-shloka-YY.png`)
+   - DALL-E 3 generated artwork
+   - Portrait format (1024x1792)
+   - Based on AI-generated scene description
+
+3. **Audio Files** (`audio/bhagavad-gita/chapter-XX-shloka-YY-*.mp3`)
+   - `*-full.mp3`: Normal speed pronunciation
+   - `*-slow.mp3`: Slow speed for learning
+   - ElevenLabs Sanskrit voice
+
+4. **Updated Files**
+   - `data/scenes/bhagavad-gita.yml`: New scene description added
+   - `data/embeddings.json`: Regenerated for search
+   - Previous shloka's markdown: Navigation link updated
+
+## Alternative Methods
+
+### Generate Specific Shloka by Position
+
+If you need to regenerate or generate a specific shloka (not the next in sequence):
 
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --all
 ```
 
-This automatically:
-- Generates image from scene description (DALL-E 3)
-- Generates audio pronunciation (ElevenLabs - full + slow speeds)
-- Updates embeddings for search
+**Note:** Position is sequential (1-700), not chapter/verse numbers.
+- Position 1-47 = Chapter 1, Shlokas 1-47
+- Position 48-119 = Chapter 2, Shlokas 1-72
+- And so on...
 
-**Note:** Verse position 5 = Chapter 1, Verse 5 (sequential numbering 1-700)
+### Generate Only Specific Assets
 
-## What Gets Generated
-
-Running the command above will:
-
-1. **Generate Image** (`images/bhagavad-gita/modern-minimalist/chapter-01-shloka-05.png`)
-   - Uses DALL-E 3 to create artwork
-   - Based on scene description from `data/scenes/bhagavad-gita.yml`
-   - Portrait format (1024x1792)
-   - Default theme: modern-minimalist (use `--theme` to change)
-
-2. **Generate Audio** (`audio/bhagavad-gita/chapter-01-shloka-05-full.mp3` and `-slow.mp3`)
-   - Uses ElevenLabs for Sanskrit pronunciation
-   - Creates two versions: full speed and slow speed
-   - Based on Devanagari text from `data/verses/bhagavad-gita.yaml`
-
-3. **Update Embeddings** (`data/embeddings.json`)
-   - Updates vector embeddings for semantic search
-   - Automatically included (use `--no-update-embeddings` to skip)
-
-**Note:** Shloka markdown files (`_verses/bhagavad-gita/chapter-XX-shloka-YY.md`) must be created manually or regenerated with `--regenerate-content` flag.
-
-## Step-by-Step Options
-
-### Generate Only Image (requires scene description)
-
+Generate only images:
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --image
 ```
 
-### Generate Only Audio (requires verse file with Devanagari text)
-
+Generate only audio:
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --audio
 ```
 
-### Generate Image and Audio (default behavior)
-
+Generate image and audio (default):
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --all
-# or simply:
-verse-generate --collection bhagavad-gita --verse 5
 ```
 
 ### Regenerate Verse Content
+
+To regenerate the markdown file with new AI-generated translations:
 
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --regenerate-content
 ```
 
-Creates/updates verse markdown file with AI-generated translations and commentary.
+## Batch Generation
+
+To generate multiple shlokas, add Sanskrit text for all of them in `data/verses/bhagavad-gita.yaml`, then run `verse-generate --next --all` repeatedly:
+
+```bash
+# Add shlokas 8-12 to YAML file first
+
+# Generate shloka 8
+verse-generate --collection bhagavad-gita --next --all
+
+# Generate shloka 9
+verse-generate --collection bhagavad-gita --next --all
+
+# Generate shloka 10
+verse-generate --collection bhagavad-gita --next --all
+
+# And so on...
+```
+
+Or use a simple loop:
+```bash
+for i in {1..5}; do
+  verse-generate --collection bhagavad-gita --next --all
+  git add -A
+  git commit -m "Generate next shloka"
+done
+```
 
 ## After Generation
 
-1. **Review Shloka File**: Check `_verses/bhagavad-gita/chapter-01-shloka-05.md`
-   - Verify translations and interpretations
-   - Ensure proper frontmatter and formatting
-   - See `_verses/bhagavad-gita/chapter-02-shloka-47.md` as a reference
-
-2. **Review Scene Description**: Check `data/scenes/bhagavad-gita.yml`
-   - Verify the scene description captures the shloka essence
-   - Edit if needed before regenerating image
-
-3. **Review Generated Files**:
-   ```bash
-   ls -lh images/bhagavad-gita/modern-minimalist/chapter-01-shloka-05.png
-   ls -lh audio/bhagavad-gita/chapter-01-shloka-05-*.mp3
-   ls -lh _verses/bhagavad-gita/chapter-01-shloka-05.md
-   ```
-
-4. **Test Locally**:
+1. **Test Locally**:
    ```bash
    bundle exec jekyll serve
    # Navigate to http://localhost:4000/bhagavad-gita/
    ```
 
-5. **Commit and Push**:
+2. **Review Content**:
+   - Check translations for accuracy
+   - Review AI-generated commentary
+   - Verify image quality and relevance
+   - Test audio pronunciation
+
+3. **Edit if Needed**:
+   - Markdown files: Edit content directly
+   - Scene descriptions: Edit `data/scenes/bhagavad-gita.yml`
+   - Regenerate assets if you change scene descriptions
+
+4. **Commit and Push**:
    ```bash
-   git add _verses/bhagavad-gita/chapter-01-shloka-05.md \
-           data/scenes/bhagavad-gita.yml \
-           images/bhagavad-gita/modern-minimalist/chapter-01-shloka-05.png \
-           audio/bhagavad-gita/chapter-01-shloka-05-*.mp3
-   git commit -m "Add Chapter 1, Shloka 5 with multimedia content"
+   git add -A
+   git commit -m "Generate Chapter X, Shloka Y with multimedia content"
    git push
    ```
 
-## Tips
-
-- **Review AI Content**: Always review and edit AI-generated translations and interpretations for accuracy
-
-- **Scene Descriptions**: More specific scene descriptions lead to better images
-
-- **Regeneration**: Use individual flags to regenerate only specific components
-
 ## Troubleshooting
 
-**"Error: OPENAI_API_KEY not set"**
+### "Error: OPENAI_API_KEY not set"
 - Check `.env` file exists and contains valid API key
+- Make sure to activate virtual environment before running
 
-**"Scene description not found"** (warning only)
-- Add scene to `data/scenes/bhagavad-gita.yml`
-- Or use `--auto-generate-scene` to generate with AI
+### "Error: No canonical Devanagari text found"
+- Add the Sanskrit text to `data/verses/bhagavad-gita.yaml` first
+- Ensure the format is: `devanagari: 'sanskrit text here'`
 
-**"Shloka not found in data file"**
-- Add shloka to `data/verses/bhagavad-gita.yaml` with Devanagari text
-- Or use `--regenerate-content` to generate shloka file
+### "Error code: 400 - content_policy_violation" (Image Generation)
+- Scene description may contain battle/violence imagery
+- Edit `data/scenes/bhagavad-gita.yml` to emphasize spiritual/dharmic context
+- Focus on noble qualities rather than weapons/conflict
+- Regenerate image with updated scene
+
+### Jekyll "No such file or directory" error for .temp.mp3
+- Already fixed in `_config.yml` with `**/*.temp.mp3` exclusion
+- Restart Jekyll server if error persists
+
+## Tips
+
+- **Review AI Content**: Always review and edit AI-generated translations and interpretations for accuracy. The Gita is sacred text - ensure authenticity.
+
+- **Scene Descriptions**: More specific scene descriptions lead to better images. Emphasize spiritual context over battle imagery.
+
+- **Sequential Generation**: Use `--next` to maintain proper ordering and navigation links.
+
+- **Cost Optimization**:
+  - Content generation: ~$0.11 per shloka (GPT-4)
+  - Images: Free (included in OpenAI plan)
+  - Audio: Free tier available (ElevenLabs)
+  - Embeddings: ~$0.0002 per shloka (negligible)
 
 ## Full Documentation
 
 For complete SDK documentation, see:
-- [sanatan-verse-sdk README](https://github.com/sanatan-learnings/sanatan-verse-sdk)
+- [sanatan-verse-sdk Repository](https://github.com/sanatan-learnings/sanatan-verse-sdk)
 - Run `verse-help` for comprehensive CLI documentation
 - Run `verse-generate --help` for detailed command options
