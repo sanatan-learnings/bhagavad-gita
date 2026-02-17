@@ -1,19 +1,19 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: Chapter 1, Verse 3
+title_en: Chapter 1, Shloka 3
 title_hi: अध्याय 1, श्लोक 3
 verse_number: 3
-previous_verse: /verses/chapter-01-verse-02/
-next_verse: /verses/chapter-01-verse-04/
+previous_shloka: /verses/chapter-01-shloka-02/
+next_shloka: /verses/chapter-01-shloka-04/
 chapter: 1
 chapter_info:
   number: 1
   name_en: Arjuna's Dilemma
   name_hi: अर्जुन विषाद योग
-image: /images/bhagavad-gita/modern-minimalist/chapter-01-verse-03.png
-audio_full: /audio/bhagavad-gita/chapter-01-verse-03-full.mp3
-audio_slow: /audio/bhagavad-gita/chapter-01-verse-03-slow.mp3
+image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-03.png
+audio_full: /audio/bhagavad-gita/chapter-01-shloka-03-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-01-shloka-03-slow.mp3
 devanagari: 'पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।
 
   व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥ ३॥'

@@ -1,19 +1,19 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: "Chapter 1, Verse 1"
+title_en: "Chapter 1, Shloka 1"
 title_hi: "अध्याय 1, श्लोक 1"
 chapter: 1
 verse_number: 1
-previous_verse: null
-next_verse: /verses/chapter-01-verse-02/
+previous_shloka: null
+next_shloka: /verses/chapter-01-shloka-02/
 chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"
   name_hi: "अर्जुन विषाद योग"
-image: /images/bhagavad-gita/modern-minimalist/chapter-01-verse-01.png
-audio_full: /audio/bhagavad-gita/chapter-01-verse-01-full.mp3
-audio_slow: /audio/bhagavad-gita/chapter-01-verse-01-slow.mp3
+image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-01.png
+audio_full: /audio/bhagavad-gita/chapter-01-shloka-01-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-01-shloka-01-slow.mp3
 
 devanagari: |
   धृतराष्ट्र उवाच।

@@ -15,7 +15,7 @@ _meta:
 
     '
 scenes:
-  chapter-01-verse-01:
+  chapter-01-shloka-01:
     title: Dhritarashtra's Question
     description: 'A vast battlefield at Kurukshetra stretches endlessly under a dramatic sky. Two massive armies face each
       other - the Kauravas on one side and the Pandavas on the other, with thousands of warriors, chariots, elephants, and
@@ -27,7 +27,7 @@ scenes:
       charged, representing the moment when the greatest spiritual dialogue in history is about to begin.
 
       '
-  chapter-01-verse-02:
+  chapter-01-shloka-02:
     title: Duryodhana Approaches Drona
     description: 'Prince Duryodhana, dressed in royal battle armor with golden accents, stands on the battlefield looking
       anxious and troubled as he gazes at the vast Pandava army arrayed before him. In the foreground, he is shown approaching
@@ -40,7 +40,7 @@ scenes:
       and Duryodhana''s inner conflict between confidence and doubt.
 
       '
-  chapter-01-verse-03:
+  chapter-01-shloka-03:
     title: The Pandava Army Arranged by Dhrishtadyumna
     description: 'In the midst of the Kurukshetra battlefield, the early morning light casts a golden hue over the assembled
       armies, creating an atmosphere of anticipation and tension. Drona, the venerable teacher, stands prominently, his expression
@@ -52,7 +52,7 @@ scenes:
       Yoga, highlighting the complex emotions of duty, loyalty, and foresight in the face of an inevitable battle.
 
       '
-  chapter-01-verse-04:
+  chapter-01-shloka-04:
     title: The Great Warriors of the Pandava Army
     description: 'In a dynamic battlefield setting, the noble warriors stand ready for battle, each exuding valor and strength.
       Bhima, with his mighty mace, stands powerfully, his expression fierce yet controlled, wearing traditional warrior attire
@@ -64,7 +64,7 @@ scenes:
       and sacred symbols, subtly embellish their armor and chariots, adding layers of cultural depth to the scene.
 
       '
-  chapter-02-verse-47:
+  chapter-02-shloka-47:
     title: Krishna Teaches Karma Yoga
     description: 'Lord Krishna stands in a teaching pose on the battlefield, his divine form radiating wisdom and serenity,
       with one hand raised in a gesture of instruction (abhaya mudra). He is speaking to Arjuna, who sits attentively on his
@@ -78,7 +78,7 @@ scenes:
       most famous verse of the Gita about performing duty without attachment to results.
 
       '
-  chapter-01-verse-05:
+  chapter-01-shloka-05:
     title: '[Mock Title] [AI-Generated - Review Recommended]'
     description: Under the twilight sky, a grand assembly of seven brave warriors, each embodying the essence of the verse
       from the Bhagavad Gita, stands resolute on the verdant plains of Kurukshetra. The central character, Dhrishtaketu, bathed

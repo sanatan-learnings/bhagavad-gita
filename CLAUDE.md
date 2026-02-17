@@ -11,7 +11,7 @@ source venv/bin/activate
 
 This applies to:
 - Installing packages (`pip install`)
-- Running CLI tools (`sanatan-sdk` commands)
+- Running CLI tools (`sanatan-verse-sdk` commands)
 - Running Python scripts
 - Generating embeddings
 - Any Python-related tasks
@@ -27,7 +27,7 @@ This is a Jekyll-based static site for the Bhagavad Gita with:
 ## Technology Stack
 
 - **Frontend**: Jekyll (Ruby), HTML, CSS, JavaScript
-- **Content Generation**: Python with sanatan-sdk
+- **Content Generation**: Python with sanatan-verse-sdk
 - **AI Features**: OpenAI API, HuggingFace embeddings
 - **Hosting**: GitHub Pages
 - **API Proxy**: Cloudflare Workers
@@ -41,8 +41,8 @@ bundle exec jekyll serve
 
 # Python commands (require venv activation first)
 source venv/bin/activate
-sanatan generate --chapter X --verse Y --all
-sanatan embeddings --verses-dir _verses --output data/embeddings.json
+verse-generate --chapter X --verse Y --all
+verse-embeddings --verses-dir _verses --output data/embeddings.json
 ```
 
 ### Testing
@@ -54,7 +54,7 @@ bundle exec jekyll serve
 
 ## File Structure
 
-- `_verses/bhagavad-gita/` - Verse YAML files (chapter-XX-verse-YY.md)
+- `_verses/bhagavad-gita/` - Shloka YAML files (chapter-XX-shloka-YY.md)
 - `_layouts/` - Jekyll templates
 - `_data/` - UI translations (en.yml, hi.yml) and collections.yml
 - `assets/` - CSS, JS, static assets
@@ -72,7 +72,7 @@ bundle exec jekyll serve
 ## Content Generation Guidelines
 
 1. Always activate venv first
-2. Use sanatan-sdk CLI tools for generating content
+2. Use sanatan-verse-sdk CLI tools for generating content
 3. Review AI-generated content before committing
 4. Follow existing verse file format in `_verses/`
 5. Regenerate embeddings after adding new verses
@@ -87,7 +87,7 @@ bundle exec jekyll serve
 ## Dependencies
 
 - **Ruby**: Jekyll and GitHub Pages gems
-- **Python**: sanatan-sdk from PyPi (not the old verse-content-sdk from GitHub)
+- **Python**: sanatan-verse-sdk from PyPi (not the old verse-content-sdk from GitHub)
 - **Node**: Only for Cloudflare Workers (wrangler)
 
 ## API Keys
@@ -98,11 +98,11 @@ Required in `.env` file:
 
 ## Important Notes
 
-- The project uses sanatan-sdk (collection-based structure)
-- Verse files are in `_verses/bhagavad-gita/` subdirectory
-- File naming: use dashes (chapter-01-verse-03.md), not underscores
+- The project uses sanatan-verse-sdk (collection-based structure)
+- Shloka files are in `_verses/bhagavad-gita/` subdirectory
+- File naming: use dashes (chapter-01-shloka-03.md), not underscores
 - Assets are organized by collection: `images/bhagavad-gita/`, `audio/bhagavad-gita/`
-- Navigation permalinks: `/verses/chapter-01-verse-03/` (dash-separated)
+- Navigation permalinks: `/verses/chapter-01-shloka-03/` (dash-separated)
 - Always test Jekyll locally after content changes
 - Embeddings must be regenerated after adding verses
-- Collection structure follows sanatan-sdk conventions
+- Collection structure follows sanatan-verse-sdk conventions

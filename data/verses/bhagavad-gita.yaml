@@ -1,119 +1,119 @@
 # Bhagavad Gita Canonical Verse Text
 # ===================================
 # This file contains the canonical Devanagari text for all verses of the Bhagavad Gita.
-# The verse IDs use the format: chapter-XX-verse-YY
+# The shloka IDs use the format: chapter-XX-shloka-YY
 #
 # Note: Only verses with existing content are included below.
 # Add additional verses as you create their content files.
 
 _meta:
   collection: bhagavad-gita
-  total_verses: 700
+  total_shlokas: 700
   chapters: 18
   description: Canonical Sanskrit text of the Bhagavad Gita
-  format: "Each verse entry contains the Devanagari text used for audio generation and content verification"
+  format: "Each shloka entry contains the Devanagari text used for audio generation and content verification"
   sequence:
-    # Chapter 1: Arjuna Vishada Yoga (47 verses)
-    - chapter-01-verse-01
-    - chapter-01-verse-02
-    - chapter-01-verse-03
-    - chapter-01-verse-04
-    - chapter-01-verse-05
-    - chapter-01-verse-06
-    - chapter-01-verse-07
-    - chapter-01-verse-08
-    - chapter-01-verse-09
-    - chapter-01-verse-10
-    - chapter-01-verse-11
-    - chapter-01-verse-12
-    - chapter-01-verse-13
-    - chapter-01-verse-14
-    - chapter-01-verse-15
-    - chapter-01-verse-16
-    - chapter-01-verse-17
-    - chapter-01-verse-18
-    - chapter-01-verse-19
-    - chapter-01-verse-20
-    - chapter-01-verse-21
-    - chapter-01-verse-22
-    - chapter-01-verse-23
-    - chapter-01-verse-24
-    - chapter-01-verse-25
-    - chapter-01-verse-26
-    - chapter-01-verse-27
-    - chapter-01-verse-28
-    - chapter-01-verse-29
-    - chapter-01-verse-30
-    - chapter-01-verse-31
-    - chapter-01-verse-32
-    - chapter-01-verse-33
-    - chapter-01-verse-34
-    - chapter-01-verse-35
-    - chapter-01-verse-36
-    - chapter-01-verse-37
-    - chapter-01-verse-38
-    - chapter-01-verse-39
-    - chapter-01-verse-40
-    - chapter-01-verse-41
-    - chapter-01-verse-42
-    - chapter-01-verse-43
-    - chapter-01-verse-44
-    - chapter-01-verse-45
-    - chapter-01-verse-46
-    - chapter-01-verse-47
-    # Chapter 2: Sankhya Yoga (72 verses) - add as needed
-    - chapter-02-verse-47
+    # Chapter 1: Arjuna Vishada Yoga (47 shlokas)
+    - chapter-01-shloka-01
+    - chapter-01-shloka-02
+    - chapter-01-shloka-03
+    - chapter-01-shloka-04
+    - chapter-01-shloka-05
+    - chapter-01-shloka-06
+    - chapter-01-shloka-07
+    - chapter-01-shloka-08
+    - chapter-01-shloka-09
+    - chapter-01-shloka-10
+    - chapter-01-shloka-11
+    - chapter-01-shloka-12
+    - chapter-01-shloka-13
+    - chapter-01-shloka-14
+    - chapter-01-shloka-15
+    - chapter-01-shloka-16
+    - chapter-01-shloka-17
+    - chapter-01-shloka-18
+    - chapter-01-shloka-19
+    - chapter-01-shloka-20
+    - chapter-01-shloka-21
+    - chapter-01-shloka-22
+    - chapter-01-shloka-23
+    - chapter-01-shloka-24
+    - chapter-01-shloka-25
+    - chapter-01-shloka-26
+    - chapter-01-shloka-27
+    - chapter-01-shloka-28
+    - chapter-01-shloka-29
+    - chapter-01-shloka-30
+    - chapter-01-shloka-31
+    - chapter-01-shloka-32
+    - chapter-01-shloka-33
+    - chapter-01-shloka-34
+    - chapter-01-shloka-35
+    - chapter-01-shloka-36
+    - chapter-01-shloka-37
+    - chapter-01-shloka-38
+    - chapter-01-shloka-39
+    - chapter-01-shloka-40
+    - chapter-01-shloka-41
+    - chapter-01-shloka-42
+    - chapter-01-shloka-43
+    - chapter-01-shloka-44
+    - chapter-01-shloka-45
+    - chapter-01-shloka-46
+    - chapter-01-shloka-47
+    # Chapter 2: Sankhya Yoga (72 shlokas) - add as needed
+    - chapter-02-shloka-47
     # ... additional chapters to be added
 
 # Chapter 1: Arjuna's Dilemma (Arjuna Vishada Yoga)
-# Total verses in chapter: 47
+# Total shlokas in chapter: 47
 
-chapter-01-verse-01:
+chapter-01-shloka-01:
   devanagari: |
     धृतराष्ट्र उवाच।
     धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।
     मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।
 
-chapter-01-verse-02:
+chapter-01-shloka-02:
   devanagari: |
     सञ्जय उवाच।
     दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।
     आचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।
 
-chapter-01-verse-03:
+chapter-01-shloka-03:
   devanagari: |
     पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।
     व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥ ३॥
 
-chapter-01-verse-04:
+chapter-01-shloka-04:
   devanagari: |
     अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
     युयुधानो विराटश्च द्रुपदश्च महारथः।।
 
-chapter-01-verse-05:
+chapter-01-shloka-05:
   devanagari: |
     धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।
     पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।। 
 
 # Chapter 2: The Yoga of Knowledge (Sankhya Yoga)
-# Total verses in chapter: 72
+# Total shlokas in chapter: 72
 
-chapter-02-verse-47:
+chapter-02-shloka-47:
   devanagari: |
     कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
     मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।
 
 # ===================================
-# Template for adding new verses:
+# Template for adding new shlokas:
 # ===================================
 #
-# chapter-XX-verse-YY:
+# chapter-XX-shloka-YY:
 #   devanagari: |
 #     [Sanskrit text line 1]
 #     [Sanskrit text line 2]।।
 #
-# Example for Chapter 1, Verse 5:
-# chapter-01-verse-05:
+# Example for Chapter 1, Shloka 5:
+# chapter-01-shloka-05:
 #   devanagari: |
 #     धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।
 #     द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।।
@@ -122,23 +122,23 @@ chapter-02-verse-47:
 # Chapter Information Reference:
 # ===================================
 #
-# Chapter 1: Arjuna Vishada Yoga (Arjuna's Dilemma) - 47 verses
-# Chapter 2: Sankhya Yoga (The Yoga of Knowledge) - 72 verses
-# Chapter 3: Karma Yoga (The Yoga of Action) - 43 verses
-# Chapter 4: Jnana Karma Sanyasa Yoga (The Yoga of Knowledge and Renunciation) - 42 verses
-# Chapter 5: Karma Sanyasa Yoga (The Yoga of Renunciation) - 29 verses
-# Chapter 6: Dhyana Yoga (The Yoga of Meditation) - 47 verses
-# Chapter 7: Jnana Vijnana Yoga (The Yoga of Knowledge and Wisdom) - 30 verses
-# Chapter 8: Aksara Brahma Yoga (The Yoga of the Imperishable Brahman) - 28 verses
-# Chapter 9: Raja Vidya Raja Guhya Yoga (The Yoga of Royal Knowledge) - 34 verses
-# Chapter 10: Vibhuti Yoga (The Yoga of Divine Glories) - 42 verses
-# Chapter 11: Visvarupa Darsana Yoga (The Yoga of the Universal Form) - 55 verses
-# Chapter 12: Bhakti Yoga (The Yoga of Devotion) - 20 verses
-# Chapter 13: Ksetra Ksetrajna Vibhaga Yoga (The Yoga of Field and Knower) - 35 verses
-# Chapter 14: Gunatraya Vibhaga Yoga (The Yoga of Three Gunas) - 27 verses
-# Chapter 15: Purusottama Yoga (The Yoga of the Supreme Person) - 20 verses
-# Chapter 16: Daivasura Sampad Vibhaga Yoga (Divine and Demonic Qualities) - 24 verses
-# Chapter 17: Sraddhatraya Vibhaga Yoga (The Yoga of Three Types of Faith) - 28 verses
-# Chapter 18: Moksa Sanyasa Yoga (The Yoga of Liberation and Renunciation) - 78 verses
+# Chapter 1: Arjuna Vishada Yoga (Arjuna's Dilemma) - 47 shlokas
+# Chapter 2: Sankhya Yoga (The Yoga of Knowledge) - 72 shlokas
+# Chapter 3: Karma Yoga (The Yoga of Action) - 43 shlokas
+# Chapter 4: Jnana Karma Sanyasa Yoga (The Yoga of Knowledge and Renunciation) - 42 shlokas
+# Chapter 5: Karma Sanyasa Yoga (The Yoga of Renunciation) - 29 shlokas
+# Chapter 6: Dhyana Yoga (The Yoga of Meditation) - 47 shlokas
+# Chapter 7: Jnana Vijnana Yoga (The Yoga of Knowledge and Wisdom) - 30 shlokas
+# Chapter 8: Aksara Brahma Yoga (The Yoga of the Imperishable Brahman) - 28 shlokas
+# Chapter 9: Raja Vidya Raja Guhya Yoga (The Yoga of Royal Knowledge) - 34 shlokas
+# Chapter 10: Vibhuti Yoga (The Yoga of Divine Glories) - 42 shlokas
+# Chapter 11: Visvarupa Darsana Yoga (The Yoga of the Universal Form) - 55 shlokas
+# Chapter 12: Bhakti Yoga (The Yoga of Devotion) - 20 shlokas
+# Chapter 13: Ksetra Ksetrajna Vibhaga Yoga (The Yoga of Field and Knower) - 35 shlokas
+# Chapter 14: Gunatraya Vibhaga Yoga (The Yoga of Three Gunas) - 27 shlokas
+# Chapter 15: Purusottama Yoga (The Yoga of the Supreme Person) - 20 shlokas
+# Chapter 16: Daivasura Sampad Vibhaga Yoga (Divine and Demonic Qualities) - 24 shlokas
+# Chapter 17: Sraddhatraya Vibhaga Yoga (The Yoga of Three Types of Faith) - 28 shlokas
+# Chapter 18: Moksa Sanyasa Yoga (The Yoga of Liberation and Renunciation) - 78 shlokas
 #
-# Total: 700 verses across 18 chapters
+# Total: 700 shlokas across 18 chapters

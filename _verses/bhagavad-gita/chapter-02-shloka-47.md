@@ -1,19 +1,19 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: "Chapter 2, Verse 47"
+title_en: "Chapter 2, Shloka 47"
 title_hi: "अध्याय 2, श्लोक 47"
 chapter: 2
 verse_number: 47
-previous_verse: /verses/chapter-02-verse-46/
-next_verse: /verses/chapter-02-verse-48/
+previous_shloka: /verses/chapter-02-shloka-46/
+next_shloka: /verses/chapter-02-shloka-48/
 chapter_info:
   number: 2
   name_en: "The Yoga of Knowledge"
   name_hi: "सांख्य योग"
-image: /images/bhagavad-gita/modern-minimalist/chapter-02-verse-47.png
-audio_full: /audio/bhagavad-gita/chapter-02-verse-47-full.mp3
-audio_slow: /audio/bhagavad-gita/chapter-02-verse-47-slow.mp3
+image: /images/bhagavad-gita/modern-minimalist/chapter-02-shloka-47.png
+audio_full: /audio/bhagavad-gita/chapter-02-shloka-47-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-02-shloka-47-slow.mp3
 
 devanagari: |
   कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।

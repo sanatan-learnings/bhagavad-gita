@@ -1,14 +1,19 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-permalink: /bhagavad-gita/chapter-01-verse-05/
-title_en: The Valiant Warriors
-title_hi: वीर योद्धाओं का वर्णन
+title_en: Chapter 1, Shloka 5
+title_hi: अध्याय 1, श्लोक 5
 verse_number: 5
-verse_type: chapter
-previous_verse: /bhagavad-gita/chapter-01-verse-04/
-next_verse: /bhagavad-gita/chapter-01-verse-06/
-image: /images/bhagavad-gita/modern-minimalist/chapter-01-verse-05.png
+previous_shloka: /verses/chapter-01-shloka-04/
+next_shloka: /verses/chapter-01-shloka-06/
+chapter: 1
+chapter_info:
+  number: 1
+  name_en: Arjuna Vishada Yoga
+  name_hi: अर्जुन विषाद योग
+image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-05.png
+audio_full: /audio/bhagavad-gita/chapter-01-shloka-05-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-01-shloka-05-slow.mp3
 devanagari: "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च\
   \ नरपुङ्गवः।। \n"
 transliteration: Purujitkuntibhojaśca śaibyaśca narapuṅgavaḥ||

@@ -1,6 +1,6 @@
 # English translations for UI strings
 site_title: "Bhagavad Gita: A Comprehensive Guide"
-site_description: "An interactive guide to the Bhagavad Gita with verse-by-verse analysis"
+site_description: "An interactive guide to the Bhagavad Gita with shloka-by-shloka analysis"
 
 # Navigation
 home: "Home"
@@ -15,7 +15,7 @@ english: "English"
 hindi: "हिंदी"
 
 # Verse page sections
-verse: "Verse"
+verse: "Shloka"
 chapter: "Chapter"
 devanagari: "Devanagari (Sanskrit)"
 transliteration: "Transliteration"
@@ -27,8 +27,8 @@ story: "Story & Context"
 practical_application: "Practical Application"
 
 # Navigation buttons
-previous_verse: "Previous Verse"
-next_verse: "Next Verse"
+previous_verse: "Previous Shloka"
+next_verse: "Next Shloka"
 previous_chapter: "Previous Chapter"
 next_chapter: "Next Chapter"
 
@@ -64,8 +64,8 @@ guidance_page:
 # Search page
 search:
   title: "Search the Gita"
-  subtitle: "Search across all verses, translations, and meanings"
-  placeholder: "Search verses, translations, meanings..."
+  subtitle: "Search across all shlokas, translations, and meanings"
+  placeholder: "Search shlokas, translations, meanings..."
   clear: "Clear"
   prompt: "Enter a keyword or phrase to search"
   filter_devanagari: "Sanskrit"

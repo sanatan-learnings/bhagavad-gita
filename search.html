@@ -388,10 +388,10 @@ function displayResults(results, query) {
 
     const foundMsg = currentLang === 'hi' ?
         `"<strong>${escapeHtml(query)}</strong>" के लिए ${results.length} श्लोक मिले` :
-        `Found ${results.length} verse${results.length === 1 ? '' : 's'} matching "<strong>${escapeHtml(query)}</strong>"`;
+        `Found ${results.length} shloka${results.length === 1 ? '' : 's'} matching "<strong>${escapeHtml(query)}</strong>"`;
     statsDiv.innerHTML = foundMsg;
 
-    const viewDetailsText = currentLang === 'hi' ? 'विवरण देखें →' : 'View Full Verse →';
+    const viewDetailsText = currentLang === 'hi' ? 'विवरण देखें →' : 'View Full Shloka →';
 
     let html = '';
     results.forEach(result => {

@@ -4,7 +4,7 @@ This directory contains project-specific scripts for the Bhagavad Gita site.
 
 ## Setup
 
-Install the sanatan-sdk which provides all common functionality:
+Install the sanatan-verse-sdk which provides all common functionality:
 
 ```bash
 pip install -r scripts/requirements.txt
@@ -57,6 +57,6 @@ verse-validate --fix
 
 ## More Information
 
-- SDK Repository: https://github.com/sanatan-learnings/sanatan-sdk
+- SDK Repository: https://github.com/sanatan-learnings/sanatan-verse-sdk
 - SDK provides shared functionality across all Sanatan Learnings projects
 - Run `verse-help` for comprehensive documentation

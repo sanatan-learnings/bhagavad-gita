@@ -1,19 +1,19 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: Chapter 1, Verse 4
+title_en: Chapter 1, Shloka 4
 title_hi: अध्याय 1, श्लोक 4
 verse_number: 4
-previous_verse: /verses/chapter-01-verse-03/
-next_verse: /bhagavad-gita/chapter-01-verse-05/
+previous_shloka: /verses/chapter-01-shloka-03/
+next_shloka: /verses/chapter-01-shloka-05/
 chapter: 1
 chapter_info:
   number: 1
   name_en: Arjuna Vishada Yoga
   name_hi: अर्जुन विषाद योग
-image: /images/bhagavad-gita/modern-minimalist/chapter-01-verse-04.png
-audio_full: /audio/bhagavad-gita/chapter-01-verse-04-full.mp3
-audio_slow: /audio/bhagavad-gita/chapter-01-verse-04-slow.mp3
+image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-04.png
+audio_full: /audio/bhagavad-gita/chapter-01-shloka-04-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-01-shloka-04-slow.mp3
 devanagari: 'अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।
 
   युयुधानो विराटश्च द्रुपदश्च महारथः।।'

@@ -1,12 +1,12 @@
 # Bhagavad Gita: A Comprehensive Guide
 
-An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse analysis, bilingual translations, and AI-powered spiritual guidance.
+An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka analysis, bilingual translations, and AI-powered spiritual guidance.
 
 🌐 **[View Live Site](https://sanatan-learnings.github.io/bhagavad-gita)**
 
 ## 🌟 Features
 
-- **Comprehensive Verse Analysis**: Each verse includes:
+- **Comprehensive Shloka Analysis**: Each shloka includes:
   - Original Sanskrit (Devanagari script)
   - Roman transliteration
   - Word-by-word meanings
@@ -23,7 +23,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
   - GPT-4o for thoughtful spiritual responses
   - Cloudflare Worker for secure API management
 
-- **Full-Text Search**: Search across all verses, translations, and meanings
+- **Full-Text Search**: Search across all shlokas, translations, and meanings
 
 - **Responsive Design**: Mobile-friendly interface with keyboard navigation
 
@@ -31,16 +31,16 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
 
 ## 📚 Current Status
 
-**Chapters Included**: Chapters 1-2 (119 verses planned)
+**Chapters Included**: Chapters 1-2 (119 shlokas planned)
 
 **Content Status**:
 - ✅ Complete project structure
 - ✅ Full bilingual UI
 - ✅ RAG system with embeddings
-- ⚠️ **Sample verses only** (2 verses implemented as examples)
-- ⏳ Full verse content needs to be added
+- ⚠️ **Sample shlokas only** (6 shlokas implemented as examples)
+- ⏳ Full shloka content needs to be added
 
-**Note**: This repository includes a complete working framework with 2 sample verses demonstrating the structure. Additional verses should follow the same YAML format in the `_verses/` directory.
+**Note**: This repository includes a complete working framework with 6 sample shlokas demonstrating the structure. Additional shlokas should follow the same YAML format in the `_verses/` directory.
 
 ## 🚀 Quick Start
 
@@ -67,7 +67,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    # Python virtual environment for content generation
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install sanatan-sdk
+   pip install sanatan-verse-sdk
    ```
 
 3. **Run Jekyll locally**
@@ -93,14 +93,14 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Generate verse content** (fully automated)
+3. **Generate shloka content** (fully automated)
    ```bash
    verse-generate --collection bhagavad-gita --verse 3 --all
    ```
 
-   Creates complete verse with image and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
+   Creates complete shloka with image and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
 
-   Note: Use sequential verse position (1-700), not chapter/verse numbers. Position 3 = Chapter 1, Verse 3.
+   Note: Use sequential shloka position (1-700), not chapter/shloka numbers. Position 3 = Chapter 1, Shloka 3.
 
 4. **Generate embeddings** (for AI guidance feature)
 
@@ -126,13 +126,13 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 - **[Image Prompts](docs/reference/image-prompts.md)** - Scene descriptions
 
 ### SDK
-- **[sanatan-sdk](https://github.com/sanatan-learnings/sanatan-sdk)** - Full SDK documentation
+- **[sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk)** - Full SDK documentation
 
 ## 📖 Adding Content
 
 ### Automated Content Generation (Recommended)
 
-Generate complete verses with one command:
+Generate complete shlokas with one command:
 
 ```bash
 verse-generate --collection bhagavad-gita --verse 5 --all
@@ -143,12 +143,12 @@ This automatically creates:
 - ElevenLabs audio pronunciation (full + slow speeds)
 - Updates embeddings for search
 
-**Note:** Verse content files must be created manually or with `--regenerate-content` flag.
+**Note:** Shloka content files must be created manually or with `--regenerate-content` flag.
 See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for complete instructions.
 
 ### Manual Content Creation (Advanced)
 
-If you prefer manual creation, verse files follow this structure in `_verses/`:
+If you prefer manual creation, shloka files follow this structure in `_verses/`:
 
 story:
   en: "Context from Mahabharata"
@@ -162,7 +162,7 @@ practical_application:
 
 ### After Adding Content
 
-1. **Regenerate embeddings** if you added new verses:
+1. **Regenerate embeddings** if you added new shlokas:
    ```bash
    verse-embeddings --multi-collection
    ```
@@ -216,7 +216,7 @@ The RAG-powered spiritual guidance feature requires a Cloudflare Worker:
 
 ```
 bhagavad-gita/
-├── _verses/              # Verse content files (YAML)
+├── _verses/              # Shloka content files (YAML)
 ├── _layouts/             # HTML templates
 ├── _data/
 │   ├── translations/     # UI strings (en.yml, hi.yml)
@@ -243,7 +243,7 @@ bhagavad-gita/
 
 Contributions are welcome! Areas where help is needed:
 
-1. **Content**: Adding verses for Chapters 1 and 2 (117 verses remaining)
+1. **Content**: Adding shlokas for Chapters 1 and 2 (113 shlokas remaining)
 2. **Translations**: Improving Hindi translations
 3. **Documentation**: Adding guides and explanations
 4. **Features**: Audio narration, image generation (future)

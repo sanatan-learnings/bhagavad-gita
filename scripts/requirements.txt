@@ -1,7 +1,7 @@
 # Requirements for image and audio generation scripts
 
 # Sanatan SDK (provides embeddings, audio, image generation)
-sanatan-sdk
+sanatan-verse-sdk
 
 # Project-specific dependencies (if any)
 # Add any Bhagavad Gita specific dependencies here
