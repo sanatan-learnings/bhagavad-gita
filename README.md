@@ -31,16 +31,18 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 
 ## 📚 Current Status
 
-**Chapters Included**: Chapters 1-2 (119 shlokas planned)
+**Chapters Included**: All 18 chapters (701 shlokas)
 
 **Content Status**:
 - ✅ Complete project structure
 - ✅ Full bilingual UI
 - ✅ RAG system with embeddings
-- ⚠️ **Sample shlokas only** (6 shlokas implemented as examples)
-- ⏳ Full shloka content needs to be added
+- ✅ **All 701 verses in canonical YAML format** with Devanagari text
+- ✅ Complete source text in Sanskrit/Devanagari
+- ✅ Python parser script for extracting verses from source text
+- ⚠️ **6 sample shlokas generated** (695 shlokas need full content generation)
 
-**Note**: This repository includes a complete working framework with 6 sample shlokas demonstrating the structure. Additional shlokas should follow the same YAML format in the `_verses/` directory.
+**Note**: The canonical Devanagari text for all 701 verses is available in `data/verses/bhagavad-gita.yaml`. Use the `verse-generate` command to create full content (translations, meanings, interpretations, images, audio) for each shloka following the format in `_verses/` directory.
 
 ## 🚀 Quick Start
 
@@ -95,12 +97,12 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 
 3. **Generate shloka content** (fully automated)
    ```bash
-   verse-generate --collection bhagavad-gita --verse 3 --all
+   sanatan generate --collection bhagavad-gita --chapter 1 --verse 3 --all
    ```
 
    Creates complete shloka with image and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
 
-   Note: Use sequential shloka position (1-700), not chapter/shloka numbers. Position 3 = Chapter 1, Shloka 3.
+   Note: Total 701 verses across 18 chapters. Use `--chapter X --verse Y` to specify which verse to generate.
 
 4. **Generate embeddings** (for AI guidance feature)
 
@@ -111,14 +113,13 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
    This creates `data/embeddings.json` needed for the spiritual guidance feature.
    Uses OpenAI embeddings by default (requires OPENAI_API_KEY).
 
-This creates `data/embeddings.json` needed for the spiritual guidance feature.
-
 ## 📖 Documentation
 
 ### Guides
 - **[Local Development](docs/guides/local-development.md)** - Setup and running locally
 - **[Content Generation](docs/guides/content-generation.md)** - Creating verses with AI
 - **[Content Verification](docs/guides/content-verification-guide.md)** - Verifying AI-generated content
+- **[Parse Gita README](docs/parse-gita-readme.md)** - Parsing canonical Sanskrit text
 - **[Cloudflare Worker](docs/guides/cloudflare-worker-setup.md)** - API proxy deployment
 
 ### Reference
@@ -135,7 +136,7 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 Generate complete shlokas with one command:
 
 ```bash
-verse-generate --collection bhagavad-gita --verse 5 --all
+verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --all
 ```
 
 This automatically creates:
@@ -143,7 +144,7 @@ This automatically creates:
 - ElevenLabs audio pronunciation (full + slow speeds)
 - Updates embeddings for search
 
-**Note:** Shloka content files must be created manually or with `--regenerate-content` flag.
+**Note:** Canonical Devanagari text for all 701 verses is available in `data/verses/bhagavad-gita.yaml`.
 See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for complete instructions.
 
 ### Manual Content Creation (Advanced)
@@ -220,18 +221,33 @@ bhagavad-gita/
 ├── _layouts/             # HTML templates
 ├── _data/
 │   ├── translations/     # UI strings (en.yml, hi.yml)
+│   ├── collections.yml   # Collection metadata
 │   └── themes.yml       # Image theme definitions
 ├── assets/
 │   ├── css/             # Styling
 │   └── js/              # Language, navigation, RAG system
 ├── data/
-│   └── embeddings.json  # Generated embeddings for RAG
+│   ├── verses/          # Canonical verse data
+│   │   └── bhagavad-gita.yaml  # All 701 verses in Devanagari
+│   ├── scenes/          # Scene descriptions for images
+│   ├── themes/          # Theme configurations
+│   ├── source-texts/    # Original source texts
+│   │   └── bhagavad-gita-sanskrit-devanagari.txt
+│   ├── embeddings.json  # Generated embeddings for RAG
+│   └── search.json      # Search index
 ├── scripts/
-│   ├── README.md         # Scripts documentation
-│   └── requirements.txt  # Python dependencies
+│   ├── parse_gita.py    # Parser for extracting verses from source
+│   ├── README.md        # Scripts documentation
+│   └── requirements.txt # Python dependencies
 ├── workers/
 │   └── cloudflare-worker.js  # API proxy for spiritual guidance
-├── docs/                # Documentation (to be added)
+├── docs/                # Documentation
+│   ├── guides/          # User guides
+│   └── parse-gita-readme.md  # Parser documentation
+├── audio/               # Audio pronunciations
+│   └── bhagavad-gita/
+├── images/              # Generated artwork
+│   └── bhagavad-gita/
 ├── index.html           # Home page
 ├── full-gita.html       # Full text view
 ├── guidance.html        # AI guidance interface
@@ -243,10 +259,10 @@ bhagavad-gita/
 
 Contributions are welcome! Areas where help is needed:
 
-1. **Content**: Adding shlokas for Chapters 1 and 2 (113 shlokas remaining)
+1. **Content**: Generating full content for all 18 chapters (695 shlokas remaining out of 701 total)
 2. **Translations**: Improving Hindi translations
 3. **Documentation**: Adding guides and explanations
-4. **Features**: Audio narration, image generation (future)
+4. **Verification**: Verifying AI-generated content for accuracy and authenticity
 
 ## 📜 License
 
