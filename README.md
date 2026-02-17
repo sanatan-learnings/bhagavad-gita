@@ -67,7 +67,7 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
    # Python virtual environment for content generation
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install verse-content-sdk
+   pip install sanatan-sdk
    ```
 
 3. **Run Jekyll locally**
@@ -95,22 +95,21 @@ An interactive web-based guide to the Bhagavad Gita featuring verse-by-verse ana
 
 3. **Generate verse content** (fully automated)
    ```bash
-   verse-generate --chapter 1 --verse 3 --all
+   verse-generate --collection bhagavad-gita --verse 3 --all
    ```
 
-   Creates complete verse with text, image, and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
+   Creates complete verse with image and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
+
+   Note: Use sequential verse position (1-700), not chapter/verse numbers. Position 3 = Chapter 1, Verse 3.
 
 4. **Generate embeddings** (for AI guidance feature)
 
-   **Option A: OpenAI embeddings (Recommended)**
    ```bash
-   verse-embeddings --verses-dir _verses --output data/embeddings.json
+   verse-embeddings --multi-collection
    ```
 
-   **Option B: Local embeddings (Free, no API key)**
-   ```bash
-   verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface
-   ```
+   This creates `data/embeddings.json` needed for the spiritual guidance feature.
+   Uses OpenAI embeddings by default (requires OPENAI_API_KEY).
 
 This creates `data/embeddings.json` needed for the spiritual guidance feature.
 
@@ -127,7 +126,7 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 - **[Image Prompts](docs/reference/image-prompts.md)** - Scene descriptions
 
 ### SDK
-- **[verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)** - Full SDK documentation
+- **[sanatan-sdk](https://github.com/sanatan-learnings/sanatan-sdk)** - Full SDK documentation
 
 ## 📖 Adding Content
 
@@ -136,16 +135,16 @@ This creates `data/embeddings.json` needed for the spiritual guidance feature.
 Generate complete verses with one command:
 
 ```bash
-verse-generate --chapter 1 --verse 5 --all
+verse-generate --collection bhagavad-gita --verse 5 --all
 ```
 
 This automatically creates:
-- Complete verse file with AI-generated translations and commentary
-- Scene description for the image
-- DALL-E 3 generated artwork
+- DALL-E 3 generated artwork from scene description
 - ElevenLabs audio pronunciation (full + slow speeds)
+- Updates embeddings for search
 
-See **[docs/content-generation.md](docs/content-generation.md)** for complete instructions.
+**Note:** Verse content files must be created manually or with `--regenerate-content` flag.
+See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for complete instructions.
 
 ### Manual Content Creation (Advanced)
 
@@ -165,7 +164,7 @@ practical_application:
 
 1. **Regenerate embeddings** if you added new verses:
    ```bash
-   verse-embeddings --verses-dir _verses --output data/embeddings.json
+   verse-embeddings --multi-collection
    ```
 
 2. **Test locally** to ensure everything renders correctly:

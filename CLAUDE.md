@@ -1,0 +1,108 @@
+# Claude Instructions for Bhagavad Gita Project
+
+## Virtual Environment
+
+**CRITICAL**: Always use the virtual environment for Python commands.
+
+Before running any Python commands or scripts:
+```bash
+source venv/bin/activate
+```
+
+This applies to:
+- Installing packages (`pip install`)
+- Running CLI tools (`sanatan-sdk` commands)
+- Running Python scripts
+- Generating embeddings
+- Any Python-related tasks
+
+## Project Overview
+
+This is a Jekyll-based static site for the Bhagavad Gita with:
+- Verse content in `_verses/` directory (YAML frontmatter)
+- Jekyll for static site generation (Ruby)
+- Python for content generation and AI features
+- GitHub Pages for hosting
+
+## Technology Stack
+
+- **Frontend**: Jekyll (Ruby), HTML, CSS, JavaScript
+- **Content Generation**: Python with sanatan-sdk
+- **AI Features**: OpenAI API, HuggingFace embeddings
+- **Hosting**: GitHub Pages
+- **API Proxy**: Cloudflare Workers
+
+## Key Commands
+
+### Development
+```bash
+# Start Jekyll server (Ruby - no venv needed)
+bundle exec jekyll serve
+
+# Python commands (require venv activation first)
+source venv/bin/activate
+sanatan generate --chapter X --verse Y --all
+sanatan embeddings --verses-dir _verses --output data/embeddings.json
+```
+
+### Testing
+```bash
+# Test locally after changes
+bundle exec jekyll serve
+# Visit http://localhost:4000/bhagavad-gita
+```
+
+## File Structure
+
+- `_verses/bhagavad-gita/` - Verse YAML files (chapter-XX-verse-YY.md)
+- `_layouts/` - Jekyll templates
+- `_data/` - UI translations (en.yml, hi.yml) and collections.yml
+- `assets/` - CSS, JS, static assets
+- `audio/bhagavad-gita/` - Audio pronunciation files (dash-separated)
+- `images/bhagavad-gita/theme/` - Generated artwork by theme
+- `data/` - Canonical verses, scenes, themes, embeddings
+  - `verses/bhagavad-gita.yaml` - Canonical Devanagari text
+  - `scenes/bhagavad-gita.yml` - Scene descriptions for images
+  - `themes/bhagavad-gita/` - Theme configurations
+  - `embeddings.json` - RAG embeddings for AI guidance
+- `scripts/` - Python utilities
+- `docs/` - Documentation
+- `workers/` - Cloudflare Worker for API proxy
+
+## Content Generation Guidelines
+
+1. Always activate venv first
+2. Use sanatan-sdk CLI tools for generating content
+3. Review AI-generated content before committing
+4. Follow existing verse file format in `_verses/`
+5. Regenerate embeddings after adding new verses
+
+## Git Workflow
+
+- Main branch: `main`
+- Commits should be descriptive
+- Include co-author attribution as configured
+- Test locally before pushing
+
+## Dependencies
+
+- **Ruby**: Jekyll and GitHub Pages gems
+- **Python**: sanatan-sdk from PyPi (not the old verse-content-sdk from GitHub)
+- **Node**: Only for Cloudflare Workers (wrangler)
+
+## API Keys
+
+Required in `.env` file:
+- `OPENAI_API_KEY` - For content generation and embeddings
+- `ELEVENLABS_API_KEY` - For audio pronunciation
+
+## Important Notes
+
+- The project uses sanatan-sdk (collection-based structure)
+- Verse files are in `_verses/bhagavad-gita/` subdirectory
+- File naming: use dashes (chapter-01-verse-03.md), not underscores
+- Assets are organized by collection: `images/bhagavad-gita/`, `audio/bhagavad-gita/`
+- Navigation permalinks: `/verses/chapter-01-verse-03/` (dash-separated)
+- Always test Jekyll locally after content changes
+- Embeddings must be regenerated after adding verses
+- Collection structure follows sanatan-sdk conventions

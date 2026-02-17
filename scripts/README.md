@@ -4,18 +4,18 @@ This directory contains project-specific scripts for the Bhagavad Gita site.
 
 ## Setup
 
-Install the verse-content-sdk which provides all common functionality:
+Install the sanatan-sdk which provides all common functionality:
 
 ```bash
 pip install -r scripts/requirements.txt
 ```
 
 This installs the SDK and provides command-line tools:
-- `verse-generate` - Unified command for generating complete verses (text, images, audio)
-- `verse-embeddings` - Generate embeddings (OpenAI or local)
-- `verse-audio` - Generate audio pronunciations
-- `verse-images` - Generate theme images
-- `verse-deploy` - Deploy Cloudflare Worker
+- `verse-generate` - Generate images and audio for verses
+- `verse-embeddings` - Generate embeddings for semantic search
+- `verse-validate` - Validate project structure
+- `verse-init` - Initialize new collections
+- `verse-help` - Comprehensive CLI documentation
 
 ## Content Generation
 
@@ -23,36 +23,40 @@ For detailed instructions on generating verse content, see **[GENERATING_CONTENT
 
 ### Quick Start
 
-Generate everything for a verse (Sanskrit auto-fetched from GPT-4):
+Generate everything for a verse:
 
 ```bash
-verse-generate --chapter 3 --verse 5 --all \
-  --chapter-name-en "Karma Yoga" \
-  --chapter-name-hi "कर्म योग"
+verse-generate --collection bhagavad-gita --verse 5 --all
 ```
 
-**Note:** Commands are installed at `/Users/YOUR_USERNAME/Library/Python/3.13/bin/`.
-Add to PATH or use full path to run them.
+**Note:**
+- Verse number is sequential position (1-700), not chapter/verse
+- Position 5 = Chapter 1, Verse 5
+- Commands are installed in the virtual environment's bin directory
 
 ## Other Tasks
 
 ### Generate Embeddings
 
 ```bash
-# Using OpenAI (default, requires OPENAI_API_KEY in .env)
-verse-embeddings --verses-dir _verses --output data/embeddings.json
-
-# Using local models (free, no API key needed)
-verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface
+# Generate embeddings for all collections
+verse-embeddings --multi-collection
 ```
 
-### Deploy Cloudflare Worker
+Uses OpenAI embeddings by default (requires OPENAI_API_KEY in .env).
+
+### Validate Project Structure
+
 ```bash
-# Deploy the semantic search worker
-verse-deploy
+# Check project structure
+verse-validate
+
+# Auto-fix common issues
+verse-validate --fix
 ```
 
 ## More Information
 
-- SDK Repository: https://github.com/sanatan-learnings/verse-content-sdk
+- SDK Repository: https://github.com/sanatan-learnings/sanatan-sdk
 - SDK provides shared functionality across all Sanatan Learnings projects
+- Run `verse-help` for comprehensive documentation

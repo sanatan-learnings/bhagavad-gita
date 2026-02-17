@@ -20,103 +20,98 @@ This guide shows how to use the `verse-generate` command to create content for B
 Generate everything with one command:
 
 ```bash
-verse-generate --chapter 3 --verse 5 --all
+verse-generate --collection bhagavad-gita --verse 5 --all
 ```
 
 This automatically:
-- Fetches Sanskrit text from GPT-4
-- Fetches chapter names from GPT-4
-- Generates all content (text, scene description, image, audio)
+- Generates image from scene description (DALL-E 3)
+- Generates audio pronunciation (ElevenLabs - full + slow speeds)
+- Updates embeddings for search
+
+**Note:** Verse position 5 = Chapter 1, Verse 5 (sequential numbering 1-700)
 
 ## What Gets Generated
 
 Running the command above will:
 
-1. **Generate Verse File** (`_verses/chapter_03_verse_05.md`)
-   - Uses GPT-4 to analyze the Sanskrit verse
-   - Creates transliteration, word meanings, translations
-   - Generates interpretive meaning, story/context, practical application
-   - Produces content in English and Hindi
-   - ⚠️ Requires manual review and formatting
-
-2. **Generate Scene Description** (`docs/image-prompts.md`)
-   - Uses GPT-4 to create a vivid 3-5 sentence description
-   - Describes visual elements for DALL-E 3
-   - Appends to the existing file
-
-3. **Generate Image** (`images/modern-minimalist/chapter-03-verse-05.png`)
+1. **Generate Image** (`images/bhagavad-gita/modern-minimalist/chapter-01-verse-05.png`)
    - Uses DALL-E 3 to create artwork
-   - Based on the generated scene description
+   - Based on scene description from `data/scenes/bhagavad-gita.yml`
    - Portrait format (1024x1792)
+   - Default theme: modern-minimalist (use `--theme` to change)
 
-4. **Generate Audio** (`audio/chapter_03_verse_05_*.mp3`)
+2. **Generate Audio** (`audio/bhagavad-gita/chapter-01-verse-05-full.mp3` and `-slow.mp3`)
    - Uses ElevenLabs for Sanskrit pronunciation
    - Creates two versions: full speed and slow speed
-   - Based on the Devanagari text
+   - Based on Devanagari text from `data/verses/bhagavad-gita.yaml`
+
+3. **Update Embeddings** (`data/embeddings.json`)
+   - Updates vector embeddings for semantic search
+   - Automatically included (use `--no-update-embeddings` to skip)
+
+**Note:** Verse markdown files (`_verses/bhagavad-gita/chapter-XX-verse-YY.md`) must be created manually or regenerated with `--regenerate-content` flag.
 
 ## Step-by-Step Options
 
-### Generate Only Scene Description
+### Generate Only Image (requires scene description)
 
 ```bash
-verse-generate --chapter 3 --verse 5 --prompt
+verse-generate --collection bhagavad-gita --verse 5 --image
 ```
 
-### Generate Only Verse File
+### Generate Only Audio (requires verse file with Devanagari text)
 
 ```bash
-verse-generate --chapter 3 --verse 5 --text
+verse-generate --collection bhagavad-gita --verse 5 --audio
 ```
 
-### Generate Only Image (requires existing scene description)
+### Generate Image and Audio (default behavior)
 
 ```bash
-verse-generate --chapter 3 --verse 5 --image
+verse-generate --collection bhagavad-gita --verse 5 --all
+# or simply:
+verse-generate --collection bhagavad-gita --verse 5
 ```
 
-### Generate Only Audio (requires existing verse file)
+### Regenerate Verse Content
 
 ```bash
-verse-generate --chapter 3 --verse 5 --audio
+verse-generate --collection bhagavad-gita --verse 5 --regenerate-content
 ```
 
-### Generate Image and Audio
-
-```bash
-verse-generate --chapter 3 --verse 5 --image --audio
-```
+Creates/updates verse markdown file with AI-generated translations and commentary.
 
 ## After Generation
 
-1. **Review Verse File**: Check `_verses/chapter_XX_verse_YY.md`
+1. **Review Verse File**: Check `_verses/bhagavad-gita/chapter-01-verse-05.md`
    - Verify translations and interpretations
-   - Format the AI-generated content to match existing verse structure
-   - See `_verses/chapter_02_verse_47.md` as a reference
+   - Ensure proper frontmatter and formatting
+   - See `_verses/bhagavad-gita/chapter-02-verse-47.md` as a reference
 
-2. **Review Scene Description**: Check `docs/image-prompts.md`
+2. **Review Scene Description**: Check `data/scenes/bhagavad-gita.yml`
    - Verify the scene description captures the verse essence
    - Edit if needed before regenerating image
 
 3. **Review Generated Files**:
    ```bash
-   ls -lh images/modern-minimalist/chapter-03-verse-05.png
-   ls -lh audio/chapter_03_verse_05_*.mp3
-   ls -lh _verses/chapter_03_verse_05.md
+   ls -lh images/bhagavad-gita/modern-minimalist/chapter-01-verse-05.png
+   ls -lh audio/bhagavad-gita/chapter-01-verse-05-*.mp3
+   ls -lh _verses/bhagavad-gita/chapter-01-verse-05.md
    ```
 
 4. **Test Locally**:
    ```bash
    bundle exec jekyll serve
-   # Navigate to http://localhost:4000/bhagavad-gita/verses/chapter-03-verse-05/
+   # Navigate to http://localhost:4000/bhagavad-gita/
    ```
 
 5. **Commit and Push**:
    ```bash
-   git add _verses/chapter_03_verse_05.md \
-           docs/image-prompts.md \
-           images/modern-minimalist/chapter-03-verse-05.png \
-           audio/chapter_03_verse_05_*.mp3
-   git commit -m "Add Chapter 3, Verse 5 with multimedia content"
+   git add _verses/bhagavad-gita/chapter-01-verse-05.md \
+           data/scenes/bhagavad-gita.yml \
+           images/bhagavad-gita/modern-minimalist/chapter-01-verse-05.png \
+           audio/bhagavad-gita/chapter-01-verse-05-*.mp3
+   git commit -m "Add Chapter 1, Verse 5 with multimedia content"
    git push
    ```
 
@@ -133,16 +128,17 @@ verse-generate --chapter 3 --verse 5 --image --audio
 **"Error: OPENAI_API_KEY not set"**
 - Check `.env` file exists and contains valid API key
 
-**"Error: Scene description not found"**
-- Generate scene description first with `--prompt` flag
-- Or add it manually to `docs/image-prompts.md`
+**"Scene description not found"** (warning only)
+- Add scene to `data/scenes/bhagavad-gita.yml`
+- Or use `--auto-generate-scene` to generate with AI
 
-**"Error: Verse file not found"**
-- Generate verse file first with `--text` flag
-- Or create it manually in `_verses/` directory
+**"Verse not found in data file"**
+- Add verse to `data/verses/bhagavad-gita.yaml` with Devanagari text
+- Or use `--regenerate-content` to generate verse file
 
 ## Full Documentation
 
 For complete SDK documentation, see:
-- [verse-content-sdk README](https://github.com/sanatan-learnings/verse-content-sdk)
-- [Content Generation Guide](https://github.com/sanatan-learnings/verse-content-sdk/blob/main/docs/content-generation-guide.md)
+- [sanatan-sdk README](https://github.com/sanatan-learnings/sanatan-sdk)
+- Run `verse-help` for comprehensive CLI documentation
+- Run `verse-generate --help` for detailed command options

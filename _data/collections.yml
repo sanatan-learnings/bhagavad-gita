@@ -1,0 +1,16 @@
+# Collection registry
+# Add your verse collections here
+
+bhagavad-gita:
+  key: "bhagavad-gita"
+  name_en: "Bhagavad Gita"
+  name_hi: "भगवद गीता"
+  author_en: "Bhagavan Krishna"
+  author_hi: "भगवान कृष्ण"
+  description_en: "The Song of God - 700 verses across 18 chapters"
+  description_hi: "भगवान का गीत - 18 अध्यायों में 700 श्लोक"
+  permalink_base: "/bhagavad-gita/"
+  icon: "📖"
+  subdirectory: "bhagavad-gita"
+  total_verses: 700
+  enabled: true

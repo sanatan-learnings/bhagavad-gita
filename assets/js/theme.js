@@ -45,8 +45,9 @@ function applyTheme(theme) {
     images.forEach(img => {
         const currentSrc = img.getAttribute('src');
         // Replace the theme folder in the path
-        // Pattern: /images/{old-theme}/ -> /images/{new-theme}/
-        const newSrc = currentSrc.replace(/\/images\/[^\/]+\//, `/images/${theme}/`);
+        // Pattern: /images/{collection}/{old-theme}/ -> /images/{collection}/{new-theme}/
+        // This handles the new collection-based structure: /images/bhagavad-gita/modern-minimalist/
+        const newSrc = currentSrc.replace(/\/images\/([^\/]+)\/[^\/]+\//, `/images/$1/${theme}/`);
         img.setAttribute('src', newSrc);
     });
 }

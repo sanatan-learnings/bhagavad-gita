@@ -1,5 +1,6 @@
 ---
 layout: verse
+collection_key: bhagavad-gita
 title_en: "Chapter 1, Verse 2"
 title_hi: "अध्याय 1, श्लोक 2"
 chapter: 1
@@ -10,9 +11,9 @@ chapter_info:
   number: 1
   name_en: "Arjuna's Dilemma"
   name_hi: "अर्जुन विषाद योग"
-image: /images/modern-minimalist/chapter-01-verse-02.png
-audio_full: /audio/chapter_01_verse_02_full.mp3
-audio_slow: /audio/chapter_01_verse_02_slow.mp3
+image: /images/bhagavad-gita/modern-minimalist/chapter-01-verse-02.png
+audio_full: /audio/bhagavad-gita/chapter-01-verse-02-full.mp3
+audio_slow: /audio/bhagavad-gita/chapter-01-verse-02-slow.mp3
 
 devanagari: |
   सञ्जय उवाच।

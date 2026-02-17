@@ -1,7 +1,7 @@
 # Requirements for image and audio generation scripts
 
-# Verse Content SDK (provides embeddings, audio, image generation)
-git+https://github.com/sanatan-learnings/verse-content-sdk.git
+# Sanatan SDK (provides embeddings, audio, image generation)
+sanatan-sdk
 
 # Project-specific dependencies (if any)
 # Add any Bhagavad Gita specific dependencies here
