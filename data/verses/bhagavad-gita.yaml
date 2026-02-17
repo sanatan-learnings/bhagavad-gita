@@ -12,6 +12,58 @@ _meta:
   chapters: 18
   description: Canonical Sanskrit text of the Bhagavad Gita
   format: "Each verse entry contains the Devanagari text used for audio generation and content verification"
+  sequence:
+    # Chapter 1: Arjuna Vishada Yoga (47 verses)
+    - chapter-01-verse-01
+    - chapter-01-verse-02
+    - chapter-01-verse-03
+    - chapter-01-verse-04
+    - chapter-01-verse-05
+    - chapter-01-verse-06
+    - chapter-01-verse-07
+    - chapter-01-verse-08
+    - chapter-01-verse-09
+    - chapter-01-verse-10
+    - chapter-01-verse-11
+    - chapter-01-verse-12
+    - chapter-01-verse-13
+    - chapter-01-verse-14
+    - chapter-01-verse-15
+    - chapter-01-verse-16
+    - chapter-01-verse-17
+    - chapter-01-verse-18
+    - chapter-01-verse-19
+    - chapter-01-verse-20
+    - chapter-01-verse-21
+    - chapter-01-verse-22
+    - chapter-01-verse-23
+    - chapter-01-verse-24
+    - chapter-01-verse-25
+    - chapter-01-verse-26
+    - chapter-01-verse-27
+    - chapter-01-verse-28
+    - chapter-01-verse-29
+    - chapter-01-verse-30
+    - chapter-01-verse-31
+    - chapter-01-verse-32
+    - chapter-01-verse-33
+    - chapter-01-verse-34
+    - chapter-01-verse-35
+    - chapter-01-verse-36
+    - chapter-01-verse-37
+    - chapter-01-verse-38
+    - chapter-01-verse-39
+    - chapter-01-verse-40
+    - chapter-01-verse-41
+    - chapter-01-verse-42
+    - chapter-01-verse-43
+    - chapter-01-verse-44
+    - chapter-01-verse-45
+    - chapter-01-verse-46
+    - chapter-01-verse-47
+    # Chapter 2: Sankhya Yoga (72 verses) - add as needed
+    - chapter-02-verse-47
+    # ... additional chapters to be added
 
 # Chapter 1: Arjuna's Dilemma (Arjuna Vishada Yoga)
 # Total verses in chapter: 47
