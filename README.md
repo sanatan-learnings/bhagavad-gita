@@ -49,10 +49,9 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 ### Prerequisites
 
 - Ruby 3.x or higher
-- Python 3.8+ (for content generation)
 - Git
 
-### Local Development
+### Run Locally
 
 1. **Clone the repository**
    ```bash
@@ -62,17 +61,11 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 
 2. **Install dependencies**
    ```bash
-   # Ruby dependencies for Jekyll
    gem install bundler
    bundle install
-
-   # Python virtual environment for content generation
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install sanatan-verse-sdk
    ```
 
-3. **Run Jekyll locally**
+3. **Run Jekyll server**
    ```bash
    bundle exec jekyll serve
    ```
@@ -80,38 +73,7 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 4. **View the site**
    Open http://localhost:4000/bhagavad-gita in your browser
 
-### Generate Content & Embeddings
-
-1. **Set up API keys**
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your API keys:
-   # - OPENAI_API_KEY (for content generation and embeddings)
-   # - ELEVENLABS_API_KEY (for audio pronunciation)
-   ```
-
-2. **Activate virtual environment**
-   ```bash
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Generate shloka content** (fully automated)
-   ```bash
-   sanatan generate --collection bhagavad-gita --chapter 1 --verse 3 --all
-   ```
-
-   Creates complete shloka with image and audio. See **[docs/guides/content-generation.md](docs/guides/content-generation.md)** for details.
-
-   Note: Total 701 verses across 18 chapters. Use `--chapter X --verse Y` to specify which verse to generate.
-
-4. **Generate embeddings** (for AI guidance feature)
-
-   ```bash
-   verse-embeddings --multi-collection
-   ```
-
-   This creates `data/embeddings.json` needed for the spiritual guidance feature.
-   Uses OpenAI embeddings by default (requires OPENAI_API_KEY).
+**To generate new shloka content:** See **[Content Generation Guide](docs/guides/content-generation.md)**
 
 ## 📖 Documentation
 
