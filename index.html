@@ -61,10 +61,17 @@ title: Home
 <section class="verse-navigation">
     <!-- Chapter 1 -->
     <details class="chapter-section" open>
+        {% assign chapter1_verses = site.verses | where_exp: "item", "item.chapter == 1" | sort: "verse_number" %}
+        {% assign chapter1_count = 0 %}
+        {% for verse in chapter1_verses %}
+            {% unless verse.devanagari contains "[Add" %}
+                {% assign chapter1_count = chapter1_count | plus: 1 %}
+            {% endunless %}
+        {% endfor %}
         <summary class="chapter-header">
             <h3>
-                <span data-lang="en">📖 Chapter 1: {{ t_en.chapter_1 }} <span class="verse-count">(47 verses)</span></span>
-                <span data-lang="hi">📖 अध्याय 1: {{ t_hi.chapter_1 }} <span class="verse-count">(47 श्लोक)</span></span>
+                <span data-lang="en">📖 Chapter 1: {{ t_en.chapter_1 }} <span class="verse-count">({{ chapter1_count }} available out of 47 total)</span></span>
+                <span data-lang="hi">📖 अध्याय 1: {{ t_hi.chapter_1 }} <span class="verse-count">(47 में से {{ chapter1_count }} उपलब्ध)</span></span>
             </h3>
         </summary>
         <p class="chapter-description">
@@ -77,33 +84,43 @@ title: Home
                 शिक्षकों और मित्रों को देखकर, वह एक योद्धा के रूप में अपने कर्तव्य के बारे में दुःख और भ्रम से अभिभूत हो जाता है।
             </span>
         </p>
-        {% assign chapter1_verses = site.verses | where_exp: "item", "item.chapter == 1" | sort: "verse_number" %}
-        {% assign chapter1_count = 0 %}
-        {% for verse in chapter1_verses %}
-            {% unless verse.devanagari contains "[Add" %}
-                {% assign chapter1_count = chapter1_count | plus: 1 %}
-            {% endunless %}
-        {% endfor %}
-        <div class="verse-status">
-            <p class="verse-count-display">
-                <span data-lang="en">✅ {{ chapter1_count }} verses available out of 47 total</span>
-                <span data-lang="hi">✅ 47 में से {{ chapter1_count }} श्लोक उपलब्ध</span>
-            </p>
-            {% if chapter1_count > 0 %}
-            <a href="{{ '/full-gita' | relative_url }}#chapter-1" class="view-verses-link">
-                <span data-lang="en">View available verses →</span>
-                <span data-lang="hi">उपलब्ध श्लोक देखें →</span>
-            </a>
-            {% endif %}
+        <div class="verse-grid">
+            {% for verse in chapter1_verses %}
+                {% unless verse.devanagari contains "[Add" %}
+                <a href="{{ verse.url | relative_url }}" class="verse-card">
+                    {% if verse.image %}
+                    <div class="card-image">
+                        <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+                    </div>
+                    {% endif %}
+                    <div class="card-content">
+                        <div class="verse-number">
+                            <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                            <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                        </div>
+                        <div class="verse-preview">
+                            {{ verse.devanagari | truncate: 60 }}
+                        </div>
+                    </div>
+                </a>
+                {% endunless %}
+            {% endfor %}
         </div>
     </details>
 
     <!-- Chapter 2 -->
     <details class="chapter-section">
+        {% assign chapter2_verses = site.verses | where_exp: "item", "item.chapter == 2" | sort: "verse_number" %}
+        {% assign chapter2_count = 0 %}
+        {% for verse in chapter2_verses %}
+            {% unless verse.devanagari contains "[Add" %}
+                {% assign chapter2_count = chapter2_count | plus: 1 %}
+            {% endunless %}
+        {% endfor %}
         <summary class="chapter-header">
             <h3>
-                <span data-lang="en">📖 Chapter 2: {{ t_en.chapter_2 }} <span class="verse-count">(72 verses)</span></span>
-                <span data-lang="hi">📖 अध्याय 2: {{ t_hi.chapter_2 }} <span class="verse-count">(72 श्लोक)</span></span>
+                <span data-lang="en">📖 Chapter 2: {{ t_en.chapter_2 }} <span class="verse-count">({{ chapter2_count }} available out of 72 total)</span></span>
+                <span data-lang="hi">📖 अध्याय 2: {{ t_hi.chapter_2 }} <span class="verse-count">(72 में से {{ chapter2_count }} उपलब्ध)</span></span>
             </h3>
         </summary>
         <p class="chapter-description">
@@ -116,24 +133,27 @@ title: Home
                 धर्म की अवधारणा, कर्म योग, और आत्म-साक्षात्कार प्राप्त व्यक्ति की विशेषताएं।
             </span>
         </p>
-        {% assign chapter2_verses = site.verses | where_exp: "item", "item.chapter == 2" | sort: "verse_number" %}
-        {% assign chapter2_count = 0 %}
-        {% for verse in chapter2_verses %}
-            {% unless verse.devanagari contains "[Add" %}
-                {% assign chapter2_count = chapter2_count | plus: 1 %}
-            {% endunless %}
-        {% endfor %}
-        <div class="verse-status">
-            <p class="verse-count-display">
-                <span data-lang="en">✅ {{ chapter2_count }} verses available out of 72 total</span>
-                <span data-lang="hi">✅ 72 में से {{ chapter2_count }} श्लोक उपलब्ध</span>
-            </p>
-            {% if chapter2_count > 0 %}
-            <a href="{{ '/full-gita' | relative_url }}#chapter-2" class="view-verses-link">
-                <span data-lang="en">View available verses →</span>
-                <span data-lang="hi">उपलब्ध श्लोक देखें →</span>
-            </a>
-            {% endif %}
+        <div class="verse-grid">
+            {% for verse in chapter2_verses %}
+                {% unless verse.devanagari contains "[Add" %}
+                <a href="{{ verse.url | relative_url }}" class="verse-card">
+                    {% if verse.image %}
+                    <div class="card-image">
+                        <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+                    </div>
+                    {% endif %}
+                    <div class="card-content">
+                        <div class="verse-number">
+                            <span data-lang="en">{{ t_en.verse }} {{ verse.verse_number }}</span>
+                            <span data-lang="hi">{{ t_hi.verse }} {{ verse.verse_number }}</span>
+                        </div>
+                        <div class="verse-preview">
+                            {{ verse.devanagari | truncate: 60 }}
+                        </div>
+                    </div>
+                </a>
+                {% endunless %}
+            {% endfor %}
         </div>
     </details>
 </section>
