@@ -40,9 +40,9 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 - ✅ **All 701 verses in canonical YAML format** with Devanagari text
 - ✅ Complete source text in Sanskrit/Devanagari
 - ✅ Python parser script for extracting verses from source text
-- ⚠️ **6 sample shlokas generated** (695 shlokas need full content generation)
+- ⚠️ **8 sample shlokas generated** (693 shlokas need full content generation)
 
-**Note**: The canonical Devanagari text for all 701 verses is available in `data/verses/bhagavad-gita.yaml`. Use the `verse-generate` command to create full content (translations, meanings, interpretations, images, audio) for each shloka following the format in `_verses/` directory.
+**Note**: The canonical Devanagari text for all 701 verses is available in `data/verses/bhagavad-gita.yaml`. Use the `verse-generate` command to create full content (translations, meanings, interpretations, images, audio) for each shloka following the format in `_verses/` directory. See **[Content Generation Guide](docs/guides/content-generation.md)** for details.
 
 ## 🚀 Quick Start
 
@@ -259,7 +259,7 @@ bhagavad-gita/
 
 Contributions are welcome! Areas where help is needed:
 
-1. **Content**: Generating full content for all 18 chapters (695 shlokas remaining out of 701 total)
+1. **Content**: Generating full content for all 18 chapters (693 shlokas remaining out of 701 total)
 2. **Translations**: Improving Hindi translations
 3. **Documentation**: Adding guides and explanations
 4. **Verification**: Verifying AI-generated content for accuracy and authenticity
