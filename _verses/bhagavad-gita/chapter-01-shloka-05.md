@@ -84,4 +84,5 @@ meaning: This verse lists the names of several warriors on the Pandava side in t
 translation:
   en: Dhristaketu, Chekitana, the mighty King of Kashi, Purujit, Kuntibhoja, and Shaibya,
     the best among men.
+next_verse: /bhagavad-gita/chapter-01-shloka-06/
 ---
