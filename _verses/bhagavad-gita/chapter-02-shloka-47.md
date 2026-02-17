@@ -6,7 +6,7 @@ title_hi: "अध्याय 2, श्लोक 47"
 chapter: 2
 verse_number: 47
 previous_shloka: /verses/chapter-02-shloka-46/
-next_shloka: /verses/chapter-02-shloka-48/
+next_shloka: null
 chapter_info:
   number: 2
   name_en: "The Yoga of Knowledge"
