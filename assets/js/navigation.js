@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Home key or 'h' - go to home
             if (e.keyCode === 36 || e.keyCode === 72) {
-                window.location.href = '/hanuman-chalisa/';
+                window.location.href = '/bhagavad-gita/';
             }
         });
 

@@ -8,8 +8,8 @@ layout: default
 
 <article class="verse-container">
     <nav class="verse-nav">
-        {% if page.previous_verse %}
-        <a href="{{ page.previous_verse | relative_url }}?lang={{ lang }}" class="nav-button prev" title="{{ t.previous_verse }} (Left arrow)">
+        {% if page.previous_shloka %}
+        <a href="{{ page.previous_shloka | relative_url }}?lang={{ lang }}" class="nav-button prev" title="{{ t.previous_verse }} (Left arrow)">
             ← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span>
         </a>
         {% else %}
@@ -20,8 +20,8 @@ layout: default
             ☰ <span data-lang="en">{{ t_en.home }}</span><span data-lang="hi">{{ t_hi.home }}</span>
         </a>
 
-        {% if page.next_verse %}
-        <a href="{{ page.next_verse | relative_url }}?lang={{ lang }}" class="nav-button next" title="{{ t.next_verse }} (Right arrow)">
+        {% if page.next_shloka %}
+        <a href="{{ page.next_shloka | relative_url }}?lang={{ lang }}" class="nav-button next" title="{{ t.next_verse }} (Right arrow)">
             <span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →
         </a>
         {% else %}
@@ -177,8 +177,8 @@ layout: default
     </div>
 
     <nav class="verse-nav bottom">
-        {% if page.previous_verse %}
-        <a href="{{ page.previous_verse | relative_url }}?lang={{ lang }}" class="nav-button prev">
+        {% if page.previous_shloka %}
+        <a href="{{ page.previous_shloka | relative_url }}?lang={{ lang }}" class="nav-button prev">
             ← <span data-lang="en">{{ t_en.previous_verse }}</span><span data-lang="hi">{{ t_hi.previous_verse }}</span>
         </a>
         {% else %}
@@ -189,8 +189,8 @@ layout: default
             ☰ <span data-lang="en">{{ t_en.home }}</span><span data-lang="hi">{{ t_hi.home }}</span>
         </a>
 
-        {% if page.next_verse %}
-        <a href="{{ page.next_verse | relative_url }}?lang={{ lang }}" class="nav-button next">
+        {% if page.next_shloka %}
+        <a href="{{ page.next_shloka | relative_url }}?lang={{ lang }}" class="nav-button next">
             <span data-lang="en">{{ t_en.next_verse }}</span><span data-lang="hi">{{ t_hi.next_verse }}</span> →
         </a>
         {% else %}
@@ -202,7 +202,7 @@ layout: default
 <script>
     // Store navigation URLs for arrow key navigation
     window.verseNav = {
-        previous: {% if page.previous_verse %}"{{ page.previous_verse | relative_url }}?lang={{ lang }}"{% else %}null{% endif %},
-        next: {% if page.next_verse %}"{{ page.next_verse | relative_url }}?lang={{ lang }}"{% else %}null{% endif %}
+        previous: {% if page.previous_shloka %}"{{ page.previous_shloka | relative_url }}?lang={{ lang }}"{% else %}null{% endif %},
+        next: {% if page.next_shloka %}"{{ page.next_shloka | relative_url }}?lang={{ lang }}"{% else %}null{% endif %}
     };
 </script>
