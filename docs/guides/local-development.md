@@ -1,10 +1,8 @@
-# Local Development Guide
+# Local Development Guide (macOS)
 
-Quick setup guide for running the Bhagavad Gita site locally.
+Quick setup guide for running the Bhagavad Gita site locally on macOS.
 
 ## Prerequisites Installation
-
-### macOS Setup
 
 Ruby version management via rbenv provides the cleanest installation:
 
@@ -30,23 +28,6 @@ gem install bundler
 brew install python3
 ```
 
-### Linux (Ubuntu/Debian)
-
-```bash
-# Install Ruby and build tools
-sudo apt-get update
-sudo apt-get install ruby-full build-essential zlib1g-dev python3 python3-pip python3-venv
-
-# Install Bundler
-gem install bundler
-```
-
-### Windows
-
-Download and install:
-- Ruby 3.x from [RubyInstaller](https://rubyinstaller.org/) (with DevKit)
-- Python 3.8+ from [Python.org](https://www.python.org/downloads/)
-
 ## Project Setup
 
 Clone and install dependencies:
@@ -60,10 +41,10 @@ bundle install
 
 # Set up Python virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 
-# Install verse-content-sdk (for content generation)
-pip install verse-content-sdk
+# Install sanatan-verse-sdk (for content generation)
+pip install sanatan-verse-sdk
 
 # Configure environment variables
 cp .env.example .env
@@ -105,13 +86,13 @@ After adding or modifying verses, regenerate embeddings for the RAG system:
 
 ```bash
 # Generate with OpenAI (recommended)
-verse-embeddings --verses-dir _verses --output data/embeddings.json
+verse-embeddings --multi-collection
 
 # Or generate locally (free, no API key)
-verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface
+verse-embeddings --multi-collection --provider huggingface
 ```
 
-See [verse-content-sdk USAGE.md](https://github.com/sanatan-learnings/verse-content-sdk/blob/main/docs/USAGE.md) for full documentation.
+See [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) for full documentation.
 
 ## Development Workflow
 
@@ -120,7 +101,7 @@ See [verse-content-sdk USAGE.md](https://github.com/sanatan-learnings/verse-cont
 Use the automated generation command (recommended):
 
 ```bash
-verse-generate --chapter 2 --verse 48 --all
+verse-generate --chapter 2 --verse 48
 ```
 
 This creates complete verse with text, image, and audio in one step.
@@ -157,14 +138,14 @@ bundle install
 ```
 
 **Changes not appearing:**
-- Hard refresh browser: Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows/Linux)
+- Hard refresh browser: Cmd+Shift+R
 - Clear Jekyll cache: `rm -rf _site .jekyll-cache`
 - Restart Jekyll server
 
 **Embeddings generation fails:**
 - Verify OpenAI API key in `.env`: `cat .env`
 - Check API key has credits: https://platform.openai.com/account/usage
-- Try local embeddings instead: `verse-embeddings --verses-dir _verses --output data/embeddings.json --provider huggingface`
+- Try local embeddings instead: `verse-embeddings --multi-collection --provider huggingface`
 
 **YAML syntax errors:**
 Validate verse YAML:
@@ -216,12 +197,12 @@ bundle exec jekyll serve --livereload
 
 **Generate new verse:**
 ```bash
-verse-generate --chapter 2 --verse 48 --all
+verse-generate --chapter 2 --verse 48
 ```
 
 **Regenerate embeddings:**
 ```bash
-verse-embeddings --verses-dir _verses --output data/embeddings.json
+verse-embeddings --multi-collection
 ```
 
 **Deploy to production:**

@@ -19,21 +19,14 @@ This guide shows the streamlined workflow for generating Bhagavad Gita shloka co
 
 The easiest way to generate shlokas is using the `--next` flag, which automatically detects and generates the next shloka in sequence.
 
-### Step 1: Add Sanskrit Text
+**Note:** Canonical Devanagari text for all 701 verses is already available in `data/verses/bhagavad-gita.yaml` - no need to add it manually.
 
-Add the canonical Devanagari text to `data/verses/bhagavad-gita.yaml`:
-
-```yaml
-chapter-01-shloka-08:
-  devanagari: 'भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः। अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।'
-```
-
-### Step 2: Generate Everything Automatically
+### Generate Everything Automatically
 
 Run one command to generate complete shloka content:
 
 ```bash
-verse-generate --collection bhagavad-gita --next --all
+verse-generate --collection bhagavad-gita --next
 ```
 
 **What this does automatically:**
@@ -52,7 +45,7 @@ verse-generate --collection bhagavad-gita --next --all
 - ✅ Updates navigation links (previous/next shloka)
 - ✅ Regenerates embeddings for search functionality
 
-### Step 3: Review and Commit
+### Review and Commit
 
 ```bash
 # Review AI-generated content
@@ -97,8 +90,7 @@ Each `verse-generate --next` command creates:
 If you need to regenerate or generate a specific shloka (not the next in sequence):
 
 ```bash
-verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --all
-```
+verse-generate --collection bhagavad-gita --chapter 1 --verse 5```
 
 **Note:** Use `--chapter X --verse Y` to specify exact chapter and verse numbers (701 verses total across 18 chapters).
 
@@ -116,8 +108,7 @@ verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --audio
 
 Generate image and audio (default):
 ```bash
-verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --all
-```
+verse-generate --collection bhagavad-gita --chapter 1 --verse 5```
 
 ### Regenerate Verse Content
 
@@ -129,24 +120,22 @@ verse-generate --collection bhagavad-gita --chapter 1 --verse 5 --regenerate-con
 
 ## Batch Generation
 
-To generate multiple shlokas, add Sanskrit text for all of them in `data/verses/bhagavad-gita.yaml`, then use the range syntax:
+To generate multiple shlokas, use the range syntax:
 
 ```bash
 # Generate shlokas 8-12 in Chapter 1
-verse-generate --collection bhagavad-gita --chapter 1 --verse 8-12 --all
-```
+verse-generate --collection bhagavad-gita --chapter 1 --verse 8-12```
 
 Or generate multiple chapters at once:
 ```bash
 # Generate all shlokas in Chapter 1 (verses 1-47)
-verse-generate --collection bhagavad-gita --chapter 1 --verse 1-47 --all
-```
+verse-generate --collection bhagavad-gita --chapter 1 --verse 1-47```
 
 Alternatively, use `--next` repeatedly:
 ```bash
 # Generate next 5 shlokas in sequence
 for i in {1..5}; do
-  verse-generate --collection bhagavad-gita --next --all
+  verse-generate --collection bhagavad-gita --next
   git add -A
   git commit -m "Generate next shloka"
 done
