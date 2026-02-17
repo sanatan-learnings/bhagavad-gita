@@ -268,8 +268,8 @@ The script outputs statistics to stderr:
 
 ## Next Steps
 
-1. **Source text ready**: `data/source-texts/bhagavad-gita-devanagari.txt`
-2. **Run the parser**: `python scripts/parse_gita.py data/source-texts/bhagavad-gita-devanagari.txt > data/verses/bhagavad-gita.yaml`
+1. **Source text ready**: `data/source-texts/bhagavad-gita-sanskrit-devanagari.txt`
+2. **Run the parser**: `python scripts/parse_gita.py data/source-texts/bhagavad-gita-sanskrit-devanagari.txt > data/verses/bhagavad-gita.yaml`
 3. **Verify output**: Check that all 700 verses were parsed correctly
 4. **Review manually**: Spot-check a few verses for accuracy
 5. **Backup current file**: `cp data/verses/bhagavad-gita.yaml data/verses/bhagavad-gita.yaml.backup`
@@ -340,6 +340,6 @@ The input text file should contain the canonical Devanagari text from a reliable
 The script is format-agnostic and will extract verses as long as they have the `॥ X-Y ॥` markers.
 
 **Current Source:**
-- File: `data/source-texts/bhagavad-gita-devanagari.txt`
+- File: `data/source-texts/bhagavad-gita-sanskrit-devanagari.txt`
 - Origin: https://sanskritdocuments.org/doc_giitaa/bhagvadnew.html
 - Format: Devanagari with verse markers
