@@ -1,13 +1,16 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: The Mighty Warriors
-previous_shloka: /verses/chapter-01-shloka-05/
-next_shloka: /verses/chapter-01-shloka-07/
-title_hi: शूरवीर योद्धा
+title_en: "Chapter 1, Shloka 6"
+title_hi: "अध्याय 1, श्लोक 6"
 chapter: 1
 verse_number: 6
-verse_type: chapter
+previous_shloka: /verses/chapter-01-shloka-05/
+next_shloka: /verses/chapter-01-shloka-07/
+chapter_info:
+  number: 1
+  name_en: "Arjuna's Dilemma"
+  name_hi: "अर्जुन विषाद योग"
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-06.png
 devanagari: युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् । सौभद्रो द्रौपदेयाश्च सर्व
   एव महारथाः।।
