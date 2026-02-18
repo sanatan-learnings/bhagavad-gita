@@ -145,18 +145,24 @@ def generate_yaml_output(verses, chapter_names, chapter_colophons):
             chapters[v['chapter']] = []
         chapters[v['chapter']].append(v)
 
+    # Generate flat sequence for _meta
+    flat_sequence = []
+    for ch in sorted(chapters.keys()):
+        for v in sorted(chapters[ch], key=lambda x: x['verse']):
+            flat_sequence.append(f"chapter-{ch:02d}-shloka-{v['verse']:02d}")
+
     # Generate output
     output_lines = []
     output_lines.append("# Bhagavad Gita - Canonical Devanagari Text")
     output_lines.append("# Format: chapter-XX-shloka-YY")
     output_lines.append("")
-    output_lines.append("# Sequence of all verses")
-    output_lines.append("sequence:")
-
-    for ch in sorted(chapters.keys()):
-        output_lines.append(f"  chapter_{ch:02d}:")
-        for v in sorted(chapters[ch], key=lambda x: x['verse']):
-            output_lines.append(f"    - chapter-{ch:02d}-shloka-{v['verse']:02d}")
+    output_lines.append("_meta:")
+    output_lines.append("  collection: bhagavad-gita")
+    output_lines.append("  source: Bhagavad Gita from sanskritdocuments.org")
+    output_lines.append("  description: Complete Bhagavad Gita with 701 shlokas across 18 chapters in canonical Devanagari text")
+    output_lines.append("  sequence:")
+    for verse_id in flat_sequence:
+        output_lines.append(f"  - {verse_id}")
 
     output_lines.append("")
     output_lines.append("# Verse Data")
