@@ -81,7 +81,7 @@ An interactive web-based guide to the Bhagavad Gita featuring shloka-by-shloka a
 - **[Local Development](docs/guides/local-development.md)** - Setup and running locally
 - **[Content Generation](docs/guides/content-generation.md)** - Creating verses with AI
 - **[Content Verification](docs/guides/content-verification-guide.md)** - Verifying AI-generated content
-- **[Parse Gita README](docs/parse-gita-readme.md)** - Parsing canonical Sanskrit text
+- **[Parsing Source Text](docs/guides/parsing-source-text.md)** - Parsing canonical Sanskrit text
 - **[Cloudflare Worker](docs/guides/cloudflare-worker-setup.md)** - API proxy deployment
 
 ### Reference
@@ -121,7 +121,7 @@ bhagavad-gita/
 │   └── cloudflare-worker.js  # API proxy for spiritual guidance
 ├── docs/                # Documentation
 │   ├── guides/          # User guides
-│   └── parse-gita-readme.md  # Parser documentation
+│   └── guides/parsing-source-text.md  # Parser documentation
 ├── audio/               # Audio pronunciations
 │   └── bhagavad-gita/
 ├── images/              # Generated artwork
