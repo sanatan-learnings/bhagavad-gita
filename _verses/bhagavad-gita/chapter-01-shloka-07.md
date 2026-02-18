@@ -1,16 +1,16 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: "Chapter 1, Shloka 7"
-title_hi: "अध्याय 1, श्लोक 7"
+title_en: Chapter 1, Shloka 7
+title_hi: अध्याय 1, श्लोक 7
 chapter: 1
 verse_number: 7
 previous_shloka: /verses/chapter-01-shloka-06/
 next_shloka: /verses/chapter-02-shloka-47/
 chapter_info:
   number: 1
-  name_en: "Arjuna's Dilemma"
-  name_hi: "अर्जुन विषाद योग"
+  name_en: Arjuna's Dilemma
+  name_hi: अर्जुन विषाद योग
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-07.png
 devanagari: अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम । नायका मम सैन्यस्य संज्ञार्थं
   तान्ब्रवीमि ते ॥
@@ -83,4 +83,5 @@ meaning: Duryodhana is addressing his teacher Dronacharya (dvijottama - best amo
 translation:
   en: But know, O best of the twice-born, the distinguished leaders of our army. For
     your information, I tell you their names.
+next_verse: /bhagavad-gita/chapter-01-shloka-08/
 ---
