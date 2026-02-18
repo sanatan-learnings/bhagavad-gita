@@ -176,29 +176,28 @@ devanagari: 'धर्मक्षेत्रे कुरुक्षेत्
 
 ## Output Format
 
-The script generates:
+The script generates YAML with `_meta` structure:
 
 ```yaml
 # Bhagavad Gita - Canonical Devanagari Text
 # Format: chapter-XX-shloka-YY
 
-# Sequence of all verses
-sequence:
-  chapter_01:
-    - chapter-01-shloka-01
-    - chapter-01-shloka-02
-    # ... all verses
-  chapter_02:
-    - chapter-02-shloka-01
-    # ... etc
+_meta:
+  collection: bhagavad-gita
+  source: Bhagavad Gita from sanskritdocuments.org
+  description: Complete Bhagavad Gita with 701 shlokas across 18 chapters in canonical Devanagari text
+  sequence:
+  - chapter-01-shloka-01
+  - chapter-01-shloka-02
+  # ... all 701 verses in flat list
 
 # Verse Data
 
 chapter-01-shloka-01:
-  devanagari: 'धृतराष्ट्र उवाच। धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १-१॥'
+  devanagari: धृतराष्ट्र उवाच। धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १-१॥
 
 chapter-01-shloka-02:
-  devanagari: 'सञ्जय उवाच। दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा। आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ १-२॥'
+  devanagari: सञ्जय उवाच। दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा। आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ १-२॥
 
 # ... verses 3-47 ...
 
