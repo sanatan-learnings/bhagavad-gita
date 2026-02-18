@@ -35,7 +35,7 @@ Two deployment modes available: (1) User-provided OpenAI API key stored locally 
 ## Development Workflow
 
 **Content Generation:**
-The [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) provides unified commands for generating complete verses with text, images, and audio. GPT-4 generates verse content, DALL-E 3 creates artwork, ElevenLabs produces Sanskrit audio.
+The [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) provides unified commands for generating complete verses with text, images, and audio. GPT-4 generates verse content, DALL-E 3 creates artwork, ElevenLabs produces Sanskrit audio.
 
 **Deployment:**
 Version control through Git. Verses follow consistent YAML structure in `_verses/`. The `verse-embeddings` command regenerates semantic search data. Jekyll rebuilds site automatically. GitHub Actions deploys on push to main branch.
@@ -47,7 +47,7 @@ Static site generation eliminates server overhead, achieving instant page loads 
 ## Technical Implementation Details
 
 **Content Generation SDK:**
-- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) - Python package for automated content generation
+- [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) - Python package for automated content generation
 - Commands: `verse-generate`, `verse-images`, `verse-audio`, `verse-embeddings`, `verse-deploy`
 - Dependencies: OpenAI API (GPT-4, DALL-E 3), ElevenLabs API (audio), HuggingFace (optional local embeddings)
 
@@ -70,9 +70,14 @@ Static site generation eliminates server overhead, achieving instant page loads 
 - ✅ Semantic search and RAG-powered spiritual guidance
 - ✅ Bilingual interface (English/Hindi)
 
+**Current Status:**
+- 11 verses generated (690 remaining out of 701 total)
+- All 701 verses available in canonical YAML format
+- Parser script for extracting verses from source text
+
 **Planned Enhancements:**
 - Full-text search with Lunr.js
-- Progressive web app capabilities for offline access
-- Extended verse coverage (currently 4 sample verses)
+- Progressive web app capabilities
+- Complete all 701 verses
 - Hindi commentary narration
 - Additional artwork themes
