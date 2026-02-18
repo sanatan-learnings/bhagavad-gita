@@ -17,46 +17,116 @@ _meta:
 scenes:
   chapter-01-shloka-01:
     title: Dhritarashtra's Question
-    description: 'A vast battlefield at Kurukshetra stretches endlessly under a dramatic sky. Two massive armies face each other - the Kauravas on one side and the Pandavas on the other, with thousands of warriors, chariots, elephants, and flags visible in organized formations. In the foreground, blind King Dhritarashtra sits on his throne in his palace chamber, his face turned toward his minister Sanjaya who stands beside him with eyes closed in divine concentration. Sanjaya''s posture suggests he is receiving visions from afar. The scene should convey anticipation, the calm before the storm, and the weight of destiny. The lighting is dramatic, with golden-hour sunlight casting long shadows across the battlefield visible through a mystical window or divine vision. The overall mood is solemn, epic, and spiritually charged, representing the moment when the greatest spiritual dialogue in history is about to begin.
+    description: 'A vast battlefield at Kurukshetra stretches endlessly under a dramatic sky. Two massive armies face each
+      other - the Kauravas on one side and the Pandavas on the other, with thousands of warriors, chariots, elephants, and
+      flags visible in organized formations. In the foreground, blind King Dhritarashtra sits on his throne in his palace
+      chamber, his face turned toward his minister Sanjaya who stands beside him with eyes closed in divine concentration.
+      Sanjaya''s posture suggests he is receiving visions from afar. The scene should convey anticipation, the calm before
+      the storm, and the weight of destiny. The lighting is dramatic, with golden-hour sunlight casting long shadows across
+      the battlefield visible through a mystical window or divine vision. The overall mood is solemn, epic, and spiritually
+      charged, representing the moment when the greatest spiritual dialogue in history is about to begin.
 
       '
   chapter-01-shloka-02:
     title: Duryodhana Approaches Drona
-    description: 'Prince Duryodhana, dressed in royal battle armor with golden accents, stands on the battlefield looking anxious and troubled as he gazes at the vast Pandava army arrayed before him. In the foreground, he is shown approaching his revered teacher Dronacharya, an elderly warrior-sage with a white beard, wearing traditional guru robes and carrying a bow. Dronacharya stands with dignified composure near the Kaurava command post. Behind them, the massive Kaurava army is visible with thousands of soldiers, elephants, chariots, and battle standards. In the distance across the battlefield, the formidable Pandava army stands in perfect military formation, their organized ranks and disciplined arrangement clearly visible, causing concern in Duryodhana''s expression. The scene captures the moment of consultation before battle, with dramatic morning light casting long shadows across the battlefield, conveying both the scale of the impending conflict and Duryodhana''s inner conflict
-      between confidence and doubt.
+    description: 'Prince Duryodhana, dressed in royal battle armor with golden accents, stands on the battlefield looking
+      anxious and troubled as he gazes at the vast Pandava army arrayed before him. In the foreground, he is shown approaching
+      his revered teacher Dronacharya, an elderly warrior-sage with a white beard, wearing traditional guru robes and carrying
+      a bow. Dronacharya stands with dignified composure near the Kaurava command post. Behind them, the massive Kaurava army
+      is visible with thousands of soldiers, elephants, chariots, and battle standards. In the distance across the battlefield,
+      the formidable Pandava army stands in perfect military formation, their organized ranks and disciplined arrangement
+      clearly visible, causing concern in Duryodhana''s expression. The scene captures the moment of consultation before battle,
+      with dramatic morning light casting long shadows across the battlefield, conveying both the scale of the impending conflict
+      and Duryodhana''s inner conflict between confidence and doubt.
 
       '
   chapter-01-shloka-03:
     title: The Pandava Army Arranged by Dhrishtadyumna
-    description: 'In the midst of the Kurukshetra battlefield, the early morning light casts a golden hue over the assembled armies, creating an atmosphere of anticipation and tension. Drona, the venerable teacher, stands prominently, his expression a mix of pride and concern as he surveys the vast Pandava army, meticulously arranged by his intelligent disciple, Dhrishtadyumna. Drona is adorned in traditional warrior attire, with intricate armor and a flowing sage-colored robe, while Dhrishtadyumna stands beside him, donned in resplendent armor with a determined look, holding a ceremonial staff. Behind them, the Pandava army stretches into the horizon, banners fluttering and weapons gleaming in the soft, diffused light, symbolizing both the grandeur and gravity of the impending conflict. The scene captures the spiritual tension of Arjuna Vishada Yoga, highlighting the complex emotions of duty, loyalty, and foresight in the face of an inevitable battle.
+    description: 'In the midst of the Kurukshetra battlefield, the early morning light casts a golden hue over the assembled
+      armies, creating an atmosphere of anticipation and tension. Drona, the venerable teacher, stands prominently, his expression
+      a mix of pride and concern as he surveys the vast Pandava army, meticulously arranged by his intelligent disciple, Dhrishtadyumna.
+      Drona is adorned in traditional warrior attire, with intricate armor and a flowing sage-colored robe, while Dhrishtadyumna
+      stands beside him, donned in resplendent armor with a determined look, holding a ceremonial staff. Behind them, the
+      Pandava army stretches into the horizon, banners fluttering and weapons gleaming in the soft, diffused light, symbolizing
+      both the grandeur and gravity of the impending conflict. The scene captures the spiritual tension of Arjuna Vishada
+      Yoga, highlighting the complex emotions of duty, loyalty, and foresight in the face of an inevitable battle.
 
       '
   chapter-01-shloka-04:
     title: The Great Warriors of the Pandava Army
-    description: 'In a dynamic battlefield setting, the noble warriors stand ready for battle, each exuding valor and strength. Bhima, with his mighty mace, stands powerfully, his expression fierce yet controlled, wearing traditional warrior attire of deep reds and golds that catch the sunlight. Beside him, Arjuna is poised with his bow, his face a study in concentration and determination, adorned in shimmering armor that reflects his inner resolve. Nearby, the heroic figures of Yuyudhana and Virata are depicted, their chariots adorned with vibrant banners, while Drupada, a seasoned veteran, holds his spear with a commanding presence. The golden hour light casts a warm, ethereal glow over the scene, highlighting the warriors'' readiness and capturing the spiritual essence of courage and duty. Traditional Indian motifs, such as lotus patterns and sacred symbols, subtly embellish their armor and chariots, adding layers of cultural depth to the scene.
+    description: 'In a dynamic battlefield setting, the noble warriors stand ready for battle, each exuding valor and strength.
+      Bhima, with his mighty mace, stands powerfully, his expression fierce yet controlled, wearing traditional warrior attire
+      of deep reds and golds that catch the sunlight. Beside him, Arjuna is poised with his bow, his face a study in concentration
+      and determination, adorned in shimmering armor that reflects his inner resolve. Nearby, the heroic figures of Yuyudhana
+      and Virata are depicted, their chariots adorned with vibrant banners, while Drupada, a seasoned veteran, holds his spear
+      with a commanding presence. The golden hour light casts a warm, ethereal glow over the scene, highlighting the warriors''
+      readiness and capturing the spiritual essence of courage and duty. Traditional Indian motifs, such as lotus patterns
+      and sacred symbols, subtly embellish their armor and chariots, adding layers of cultural depth to the scene.
+
+      '
+  chapter-02-shloka-47:
+    title: Krishna Teaches Karma Yoga
+    description: 'Lord Krishna stands in a teaching pose on the battlefield, his divine form radiating wisdom and serenity,
+      with one hand raised in a gesture of instruction (abhaya mudra). He is speaking to Arjuna, who sits attentively on his
+      chariot, bow resting beside him, listening intently to Krishna''s profound teaching. The scene captures the essence
+      of Karma Yoga - around them, symbolic visual elements represent the teaching: on one side, hands performing various
+      actions (working, serving, creating) glowing with golden light representing "right to action"; on the other side, fruits
+      and outcomes fade into mist representing "detachment from results." In the background, the battlefield has a dreamlike
+      quality, slightly blurred to emphasize the timeless nature of this teaching. The composition balances action and detachment,
+      duty and surrender. The lighting is ethereal with divine rays emanating from Krishna, casting a peaceful glow over the
+      scene. The overall mood is one of profound spiritual instruction, with Krishna as the eternal teacher delivering the
+      most famous verse of the Gita about performing duty without attachment to results.
 
       '
   chapter-01-shloka-05:
     title: '[Mock Title] [AI-Generated - Review Recommended]'
-    description: Under the twilight sky, a grand assembly of seven brave warriors, each embodying the essence of the verse from the Bhagavad Gita, stands resolute on the verdant plains of Kurukshetra. The central character, Dhrishtaketu, bathed in the warm, ethereal glow of the setting sun, holds a radiant, inscribed Sanskrit scroll of the verse, as his compatriots, including Kuntibhoja and the valiant King of Kashi, form a half-circle around him, each in distinctive, ornate armor symbolizing their individual virtues. A gentle wind rustles through their flowing robes and the nearby sacred fig tree, as a sense of serene determination pervades the atmosphere. In the foreground, the focus is on the scroll and the lit faces, while the background subtly blurs into the distant silhouettes of ancient, majestic temples.
+    description: Under the twilight sky, a grand assembly of seven brave warriors, each embodying the essence of the verse
+      from the Bhagavad Gita, stands resolute on the verdant plains of Kurukshetra. The central character, Dhrishtaketu, bathed
+      in the warm, ethereal glow of the setting sun, holds a radiant, inscribed Sanskrit scroll of the verse, as his compatriots,
+      including Kuntibhoja and the valiant King of Kashi, form a half-circle around him, each in distinctive, ornate armor
+      symbolizing their individual virtues. A gentle wind rustles through their flowing robes and the nearby sacred fig tree,
+      as a sense of serene determination pervades the atmosphere. In the foreground, the focus is on the scroll and the lit
+      faces, while the background subtly blurs into the distant silhouettes of ancient, majestic temples.
   chapter-01-shloka-06:
     title: The Mighty Warriors
-    description: On the sacred field of Kurukshetra under golden sunlight, noble warriors Yudhamanyu and Uttamaujas stand with dignity and determination. Beside them, the youthful prince Abhimanyu (Saubhadra) and the sons of Draupadi display extraordinary courage and resolve. These great maharathas (chariot warriors) embody dharma and righteousness, their presence radiating strength of character. The scene captures their nobility and spiritual fortitude as they gather on this historic ground, representing the eternal struggle between dharma and adharma battlefield of Kurukshetra stretching out behind them, a sea of assembled warriors and chariots under the ominous shadow of impending conflict. The focus is on these Maharathi warriors, symbolizing bravery and duty, their determined faces illuminated by the soft, warm light of the setting sun.
+    description: On the sacred field of Kurukshetra under golden sunlight, noble warriors Yudhamanyu and Uttamaujas stand
+      with dignity and determination. Beside them, the youthful prince Abhimanyu (Saubhadra) and the sons of Draupadi display
+      extraordinary courage and resolve. These great maharathas (chariot warriors) embody dharma and righteousness, their
+      presence radiating strength of character. The scene captures their nobility and spiritual fortitude as they gather on
+      this historic ground, representing the eternal struggle between dharma and adharma battlefield of Kurukshetra stretching
+      out behind them, a sea of assembled warriors and chariots under the ominous shadow of impending conflict. The focus
+      is on these Maharathi warriors, symbolizing bravery and duty, their determined faces illuminated by the soft, warm light
+      of the setting sun.
   chapter-01-shloka-07:
     title: Duryodhana's Mighty Warriors [AI-Generated - Review Recommended]
-    description: Under a vast, ethereal sky filled with radiant stars, the divine figure of Krishna stands in a chariot on the battlefield of Kurukshetra, his divine aura creating a gentle, mystical glow in the dim pre-dawn light. Clad in shimmering royal blue attire, he addresses Arjuna, who is kneeling before him with a humble and attentive countenance, his bow and arrows laid aside. Krishna’s hand is raised in a gesture of imparting knowledge, hinting at the profound spiritual conversation, while Arjuna's receptive posture symbolizes his readiness to receive wisdom. In the distant background, thousands of warriors await in silence, their silhouettes looming against the slowly brightening horizon, emphasizing the gravity of the situation and the peace amidst chaos.
+    description: Under a vast, ethereal sky filled with radiant stars, the divine figure of Krishna stands in a chariot on
+      the battlefield of Kurukshetra, his divine aura creating a gentle, mystical glow in the dim pre-dawn light. Clad in
+      shimmering royal blue attire, he addresses Arjuna, who is kneeling before him with a humble and attentive countenance,
+      his bow and arrows laid aside. Krishna’s hand is raised in a gesture of imparting knowledge, hinting at the profound
+      spiritual conversation, while Arjuna's receptive posture symbolizes his readiness to receive wisdom. In the distant
+      background, thousands of warriors await in silence, their silhouettes looming against the slowly brightening horizon,
+      emphasizing the gravity of the situation and the peace amidst chaos.
   chapter-01-shloka-08:
     title: 'Chapter 8: Listing of Mighty Warriors [AI-Generated - Review Recommended]'
-    description: An ancient battlefield of Kurukshetra under a dramatic twilight sky, with Bhishma, Karna, Kripa, Ashwatthama, Vikarna and Drona's son, draped in radiant armor, wielding traditional Indian weapons, ready for war. The mood is solemn yet charged, the atmosphere thick with anticipation, lit by the eerie glow of the setting sun and the faint shimmer of astras (divine weapons). Prominent is the grandeur of Bhishma's white chariot and Karna's golden one, both pulled by magnificently caparisoned horses. The focus is on these epic figures, standing resolute, embodying the spiritual dichotomy of duty and morality.
+    description: An ancient battlefield of Kurukshetra under a dramatic twilight sky, with Bhishma, Karna, Kripa, Ashwatthama,
+      Vikarna and Drona's son, draped in radiant armor, wielding traditional Indian weapons, ready for war. The mood is solemn
+      yet charged, the atmosphere thick with anticipation, lit by the eerie glow of the setting sun and the faint shimmer
+      of astras (divine weapons). Prominent is the grandeur of Bhishma's white chariot and Karna's golden one, both pulled
+      by magnificently caparisoned horses. The focus is on these epic figures, standing resolute, embodying the spiritual
+      dichotomy of duty and morality.
   chapter-01-shloka-09:
     title: 'Chapter 9: The Brave Warriors Ready for Battle [AI-Generated - Review Recommended]'
-    description: A grand battlefield at dawn, steeped in a solemn yet determined atmosphere. Countless valiant warriors, ready to sacrifice their lives for a noble cause, are spread across the vast expanse, armed with a diverse array of ancient weapons, their faces etched with resolute determination, under a sky blushing with the first light of the sun. In the foreground, a group of these warriors, skilled in the art of war, is highlighted, their eyes reflecting their unwavering readiness for the impending battle. The lighting subtly accentuates their armor and weapons, infusing the scene with an ethereal glow, symbolizing their selfless devotion and courage.
+    description: A grand battlefield at dawn, steeped in a solemn yet determined atmosphere. Countless valiant warriors, ready
+      to sacrifice their lives for a noble cause, are spread across the vast expanse, armed with a diverse array of ancient
+      weapons, their faces etched with resolute determination, under a sky blushing with the first light of the sun. In the
+      foreground, a group of these warriors, skilled in the art of war, is highlighted, their eyes reflecting their unwavering
+      readiness for the impending battle. The lighting subtly accentuates their armor and weapons, infusing the scene with
+      an ethereal glow, symbolizing their selfless devotion and courage.
   chapter-01-shloka-10:
     title: 'Chapter 10: Strength of Armies [AI-Generated - Review Recommended]'
-    description: 'A grand, ancient battlefield under a dramatic twilight sky, filled with thousands of warriors. In the foreground, two central figures stand out: Bhishma, a noble, elderly warrior in gleaming golden armor, radiating an aura of tranquility and strength while guarding a vast army symbolizing ''aparyaptam''; and Bhima, a muscular, fierce warrior in dark armor, surrounded by a smaller, but equally determined army representing ''paryaptam''. The contrast between the warm glow of the setting sun and the encroaching cool shadows manifests the tension in the air. The focus is on the two warriors, their armies, and the vast battlefield, embodying the eternal spiritual conflict between the vast and the sufficient.'
-  chapter-02-shloka-47:
-    title: Krishna Teaches Karma Yoga
-    description: 'Lord Krishna stands in a teaching pose on the battlefield, his divine form radiating wisdom and serenity, with one hand raised in a gesture of instruction (abhaya mudra). He is speaking to Arjuna, who sits attentively on his chariot, bow resting beside him, listening intently to Krishna''s profound teaching. The scene captures the essence of Karma Yoga - around them, symbolic visual elements represent the teaching: on one side, hands performing various actions (working, serving, creating) glowing with golden light representing "right to action"; on the other side, fruits and outcomes fade into mist representing "detachment from results." In the background, the battlefield has a dreamlike quality, slightly blurred to emphasize the timeless nature of this teaching. The composition balances action and detachment, duty and surrender. The lighting is ethereal with divine rays emanating from Krishna, casting a peaceful glow over the scene. The overall mood is one of profound
-      spiritual instruction, with Krishna as the eternal teacher delivering the most famous verse of the Gita about performing duty without attachment to results.
-
-      '
+    description: 'A grand, ancient battlefield under a dramatic twilight sky, filled with thousands of warriors. In the foreground,
+      two central figures stand out: Bhishma, a noble, elderly warrior in gleaming golden armor, radiating an aura of tranquility
+      and strength while guarding a vast army symbolizing ''aparyaptam''; and Bhima, a muscular, fierce warrior in dark armor,
+      surrounded by a smaller, but equally determined army representing ''paryaptam''. The contrast between the warm glow
+      of the setting sun and the encroaching cool shadows manifests the tension in the air. The focus is on the two warriors,
+      their armies, and the vast battlefield, embodying the eternal spiritual conflict between the vast and the sufficient.'
