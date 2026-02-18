@@ -1,6 +1,6 @@
 _meta:
   collection: bhagavad-gita
-  source: Converted from docs/reference/image-prompts.md
+  source: AI-generated scene descriptions for Bhagavad Gita visualization
   description: Scene descriptions for Bhagavad Gita image generation
   format: theme-agnostic scene descriptions (narrative and spiritual meaning)
   style_guidelines: '- Images should convey the spiritual depth of the Gita
