@@ -1,101 +1,100 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: "Chapter 1, Shloka 6"
-title_hi: "अध्याय 1, श्लोक 6"
+title_en: 'Chapter 6: The Mighty Warriors in Battle'
+title_hi: 'Chapter 6: युद्ध में शूरवीर योद्धाओं का वर्णन'
 chapter: 1
 verse_number: 6
 previous_shloka: /verses/chapter-01-shloka-05/
 next_shloka: /verses/chapter-01-shloka-07/
 chapter_info:
   number: 1
-  name_en: "Arjuna's Dilemma"
-  name_hi: "अर्जुन विषाद योग"
+  name_en: Arjuna's Dilemma
+  name_hi: अर्जुन विषाद योग
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-06.png
-devanagari: युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् । सौभद्रो द्रौपदेयाश्च सर्व
-  एव महारथाः।।
+devanagari: युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्। सौभद्रो द्रौपदेयाश्च सर्व
+  एव महारथाः ॥ १-६॥
 transliteration: yudhāmanyuśca vikrānta uttamaujāśca vīryavān | saubhadro draupadeyāśca
-  sarva eva mahārathāḥ||
+  sarva eva mahārathāḥ ॥ १-६॥
 phonetic_notes:
-- word: युधामन्युश्च
-  phonetic: yu-dha-ma-nyu-shcha
+- word: युधामन्यु
+  phonetic: yu-dha-ma-nyu
   emphasis: second syllable
 - word: विक्रान्त
   phonetic: vi-kraan-ta
   emphasis: second syllable
-- word: महारथाः
-  phonetic: ma-haa-ra-thaah
-  emphasis: second syllable
 word_meanings:
-- word: युधामन्युश्च
-  roman: Yudhamanyushcha
+- word: युधामन्यु
+  roman: Yudhamanyu
   meaning:
-    en: Yudhamanyu
-    hi: युधामन्यु
+    en: Yudhamanyu (a warrior)
+    hi: युधामन्यु (एक योद्धा)
 - word: विक्रान्त
   roman: Vikranta
   meaning:
     en: Mighty
     hi: शूरवीर
-- word: उत्तमौजाश्च
-  roman: Uttamaujashcha
+- word: उत्तमौजाः
+  roman: Uttamaujas
   meaning:
-    en: Uttamaujas
-    hi: उत्तमौजा
+    en: Uttamaujas (a warrior)
+    hi: उत्तमौजाः (एक योद्धा)
 - word: सौभद्रो
-  roman: Saubhadro
+  roman: Saubhadra
   meaning:
-    en: Saubhadra (Abhimanyu)
-    hi: सौभद्र (अभिमन्यु)
-- word: द्रौपदेयाश्च
-  roman: Draupadeyashcha
+    en: Saubhadra (another name for Abhimanyu)
+    hi: सौभद्रो (अभिमन्यु का एक अन्य नाम)
+- word: द्रौपदेयाः
+  roman: Draupadeyas
   meaning:
     en: Sons of Draupadi
     hi: द्रौपदी के पुत्र
-- word: सर्व
-  roman: Sarva
-  meaning:
-    en: All
-    hi: सभी
 - word: महारथाः
-  roman: Maharathah
+  roman: Maharathas
   meaning:
-    en: Great chariot-warriors
-    hi: महारथी
+    en: Great warriors
+    hi: महान योद्धा
 literal_translation:
-  en: Yudhamanyu the mighty, Uttamaujas the valiant, Saubhadra and the sons of Draupadi,
-    all are indeed great chariot-warriors.
-  hi: शूरवीर युधामन्यु, वीर उत्तमौजा, सौभद्र (अभिमन्यु) और द्रौपदी के पुत्र, सभी वास्तव
-    में महारथी हैं।
+  en: Yudhamanyu the mighty, Uttamaujas the brave, Saubhadra and the sons of Draupadi,
+    all are indeed great warriors.
+  hi: शूरवीर युधामन्यु, बहादुर उत्तमौजाः, सौभद्रो और द्रौपदी के पुत्र, सभी वास्तव
+    में महान योद्धा हैं।
 interpretive_meaning:
-  en: The verse signifies the strength and valor of the Pandava army, highlighting
-    the prowess of its key warriors.
-  hi: यह श्लोक पांडव सेना की शक्ति और वीरता को दर्शाता है, जिसमें उनके प्रमुख योद्धाओं
-    की प्रतिभा को उजागर किया गया है।
+  en: This verse highlights the valor and strength of the Pandava warriors, emphasizing
+    their readiness and capability to fight in the great war of Kurukshetra.
+  hi: यह श्लोक पांडव योद्धाओं के वीरता और शक्ति को उजागर करता है, और कुरुक्षेत्र के
+    महान युद्ध में लड़ने की उनकी तैयारी और सामर्थ्य को बल देता है।
 story:
-  en: This verse is from the Bhagavad Gita, specifically from the first chapter where
-    Duryodhana is assessing the strength of the Pandava army. He mentions the names
-    of the key warriors in the Pandava army, acknowledging their prowess and valor.
-    This sets the stage for the epic battle of Kurukshetra.
-  hi: यह श्लोक भगवदगीता का है, विशेषकर पहले अध्याय से जहां दुर्योधन पांडव सेना की
-    शक्ति का मूल्यांकन कर रहा है। वह पांडव सेना के प्रमुख योद्धाओं के नाम लेता है,
-    उनकी प्रतिभा और वीरता को मानते हुए। यह कुरुक्षेत्र के महायुद्ध के लिए मंच सेट
-    करता है।
+  en: This verse is from the Bhagavad Gita, Chapter 1, where Duryodhana is assessing
+    the strength of the Pandava army. He is naming the mighty warriors on the Pandava
+    side, acknowledging their strength and valor. The warriors named here - Yudhamanyu,
+    Uttamaujas, Saubhadra (Abhimanyu), and the sons of Draupadi - are known for their
+    bravery and skills in warfare.
+  hi: यह श्लोक भगवदगीता के पहले अध्याय से है, जहां दुर्योधन पांडव सेना की शक्ति का
+    मूल्यांकन कर रहे हैं। वे पांडव पक्ष के शूरवीर योद्धाओं का नाम ले रहे हैं, उनकी
+    शक्ति और वीरता को मानते हुए। यहां नामित योद्धाओं - युधामन्यु, उत्तमौजाः, सौभद्रो
+    (अभिमन्यु), और द्रौपदी के पुत्र - को उनकी बहादुरी और युद्ध कौशल के लिए जाना जाता
+    है।
 practical_application:
   teaching:
     en: The verse teaches us to acknowledge and respect the strength and capabilities
-      of others.
-    hi: यह श्लोक हमें दूसरों की शक्ति और क्षमताओं को मान्यता देने और सम्मान करने की
-      शिक्षा देता है।
+      of others, even if they are our adversaries.
+    hi: यह श्लोक हमें दूसरों की शक्ति और क्षमताओं की पहचान और सम्मान करना सिखाता है,
+      भले ही वे हमारे प्रतिद्वंद्वी हों।
   when_to_use:
-    en: This verse can be recited when one needs to gather courage and strength, or
-      to appreciate the strength of others.
-    hi: जब किसी को साहस और शक्ति इकट्ठा करने की आवश्यकता होती है, या दूसरों की शक्ति
-      की सराहना करने के लिए, तब यह श्लोक पढ़ा जा सकता है।
-meaning: The verse lists the names of the mighty warriors of the Pandava army - Yudhamanyu,
-  Uttamaujas, Saubhadra (Abhimanyu), and the sons of Draupadi. All of them are described
-  as "Maharathas" or great chariot-warriors.
+    en: This verse can be recited or remembered when one needs to find strength in
+      acknowledging the power of others, especially in challenging situations.
+    hi: जब किसी को दूसरों की शक्ति को मानने में बल पाने की आवश्यकता होती है, विशेषकर
+      कठिन परिस्थितियों में, तब यह श्लोक पढ़ा या याद किया जा सकता है।
+meaning: The verse is describing the mighty warriors on the Pandava side in the battle
+  of Kurukshetra. Yudhamanyu and Uttamaujas are named as brave warriors. Saubhadra,
+  another name for Abhimanyu, and the sons of Draupadi are also mentioned as great
+  warriors.
 translation:
-  en: Yudhamanyu the mighty, Uttamaujas the valiant, Saubhadra and the sons of Draupadi,
-    all are indeed great chariot-warriors.
+  en: Yudhamanyu the mighty, Uttamaujas the brave, Saubhadra and the sons of Draupadi,
+    all are indeed great warriors.
+permalink: /bhagavad-gita/chapter-01-shloka-06/
+verse_type: chapter
+previous_verse: /bhagavad-gita/chapter-01-shloka-05/
+next_verse: /bhagavad-gita/chapter-01-shloka-07/
 ---

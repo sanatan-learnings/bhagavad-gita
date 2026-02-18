@@ -2,8 +2,8 @@
 layout: verse
 collection_key: bhagavad-gita
 permalink: /bhagavad-gita/chapter-01-shloka-08/
-title_en: 'Chapter 8: Listing of Mighty Warriors'
-title_hi: 'Chapter 8: महायोद्धाओं की सूची'
+title_en: 'Chapter 8: The Mighty Warriors of Kaurava'
+title_hi: 'Chapter 8: कौरवों के शूरवीर योद्धा'
 chapter: 1
 verse_number: 8
 verse_type: chapter
@@ -11,8 +11,8 @@ previous_verse: /bhagavad-gita/chapter-01-shloka-07/
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-08.png
 devanagari: भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः। अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव
   च ॥ १-८॥
-transliteration: bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ। aśvatthāmā vikarṇaśca
-  saumadattistathaiva ca ॥ 1-8॥
+transliteration: bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ | aśvatthāmā vikarṇaśca
+  saumadattistathaiva ca ॥ १-८॥
 phonetic_notes:
 - word: भवान्भीष्म
   phonetic: bha-vaan-bhee-shma
@@ -28,24 +28,24 @@ word_meanings:
   roman: Bhavan
   meaning:
     en: You
-    hi: आप
-- word: भीष्म
+    hi: तुम
+- word: भीष्मः
   roman: Bhishma
   meaning:
     en: Bhishma
     hi: भीष्म
-- word: कर्ण
+- word: कर्णः
   roman: Karna
   meaning:
     en: Karna
     hi: कर्ण
-- word: कृप
-  roman: Kripa
+- word: कृपः
+  roman: Krpa
   meaning:
-    en: Kripa
-    hi: कृप
+    en: Krpa
+    hi: कृपा
 - word: समितिञ्जयः
-  roman: Samitijayah
+  roman: Samitinjaya
   meaning:
     en: Conqueror in battle
     hi: युद्ध में विजयी
@@ -54,50 +54,49 @@ word_meanings:
   meaning:
     en: Ashvatthama
     hi: अश्वत्थामा
-- word: विकर्ण
+- word: विकर्णः
   roman: Vikarna
   meaning:
     en: Vikarna
     hi: विकर्ण
-- word: सौमदत्ति
+- word: सौमदत्तिः
   roman: Saumadatti
   meaning:
     en: Son of Somadatta
     hi: सोमदत्त का पुत्र
 literal_translation:
-  en: You, Bhishma, Karna, Kripa, the victorious in battle, Ashvatthama, Vikarna,
-    and the son of Somadatta.
-  hi: आप, भीष्म, कर्ण, कृप, युद्ध में विजयी, अश्वत्थामा, विकर्ण, और सोमदत्त के पुत्र।
+  en: You, Bhishma, Karna, Krpa, the victorious in battle, Ashvatthama, Vikarna, and
+    also the son of Somadatta.
+  hi: तुम, भीष्म, कर्ण, कृपा, युद्ध में विजयी, अश्वत्थामा, विकर्ण, और सोमदत्त के पुत्र
+    भी।
 interpretive_meaning:
-  en: Duryodhana is listing the mighty warriors on his side, showing his confidence
-    in their strength and ability to win the battle.
-  hi: दुर्योधन अपनी ओर के महायोद्धाओं की सूची बता रहे हैं, जिससे उनके विजय में आत्मविश्वास
-    का प्रदर्शन होता है।
+  en: This verse signifies the strength of the Kaurava army, listing some of the most
+    formidable warriors, indicating the scale and intensity of the upcoming battle.
+  hi: इस श्लोक का अर्थ है कौरव सेना की शक्ति का प्रतीक, जिसमें सबसे प्रबल योद्धाओं
+    का उल्लेख है, जो आगामी युद्ध की प्रमाणिकता और तीव्रता का संकेत देता है।
 story:
-  en: This verse is from the Bhagavad Gita, a 700-verse Hindu scripture that is part
-    of the Indian epic Mahabharata. Here, Duryodhana is speaking to his teacher Drona
-    on the battlefield of Kurukshetra, listing the mighty warriors on his side. This
-    list is a display of his confidence and arrogance, believing that these warriors
-    will ensure his victory.
-  hi: यह श्लोक भगवदगीता से है, जो भारतीय महाकाव्य महाभारत का हिस्सा है। यहां, दुर्योधन
-    कुरुक्षेत्र के युद्धभूमि पर अपने गुरु द्रोण से बात कर रहे हैं, अपनी ओर के महायोद्धाओं
-    की सूची बता रहे हैं। यह सूची उनके आत्मविश्वास और अहंकार का प्रदर्शन है, जिसमें
-    उन्हें विश्वास है कि ये योद्धा उनकी विजय सुनिश्चित करेंगे।
+  en: This verse is from the first chapter of the Bhagavad Gita, where Duryodhana
+    is speaking to his teacher Drona, assessing the strength of their own army. He
+    names the key warriors, highlighting the power and capability of the Kaurava forces
+    before the epic battle of Kurukshetra.
+  hi: यह श्लोक भगवद गीता के पहले अध्याय से है, जहां दुर्योधन अपने गुरु द्रोण से बात
+    कर रहे हैं, अपनी सेना की शक्ति का आकलन कर रहे हैं। वह मुख्य योद्धाओं का नाम लेते
+    हैं, कुरुक्षेत्र के महायुद्ध से पहले कौरव बलों की शक्ति और क्षमता को उजागर करते
+    हैं।
 practical_application:
   teaching:
-    en: The verse teaches us about the folly of arrogance and overconfidence.
-    hi: यह श्लोक हमें अहंकार और अत्यधिक आत्मविश्वास की मूर्खता के बारे में सिखाता
-      है।
+    en: Recognize and respect the strength of your opposition.
+    hi: अपने विरोधी की शक्ति को मान्यता दें और सम्मान करें।
   when_to_use:
-    en: This verse can be recited or remembered when one needs a reminder about the
-      dangers of overconfidence.
-    hi: जब किसी को अत्यधिक आत्मविश्वास के खतरों की याद दिलाने की आवश्यकता होती है,
-      तब यह श्लोक पढ़ा या याद किया जा सकता है।
-meaning: This verse is a list of mighty warriors named by Duryodhana. He addresses
-  his teacher Drona (Bhavan) and then mentions Bhishma, Karna, Kripa, Ashvatthama,
-  Vikarna, and the sons of Somadatta.
+    en: This verse can be recited when one needs to muster courage and strength in
+      the face of formidable challenges.
+    hi: जब किसी को भयानक चुनौतियों के सामने साहस और शक्ति इकट्ठा करने की आवश्यकता
+      होती है, तब यह श्लोक पढ़ा जा सकता है।
+meaning: The verse lists some of the prominent warriors on the Kaurava side in the
+  Kurukshetra war. These include Bhishma, Karna, Krpa, Ashvatthama, Vikarna, and the
+  sons of Somadatta.
 translation:
-  en: You, Bhishma, Karna, Kripa, the victorious in battle, Ashvatthama, Vikarna,
-    and the son of Somadatta.
+  en: You, Bhishma, Karna, Krpa, the victorious in battle, Ashvatthama, Vikarna, and
+    also the son of Somadatta.
 next_verse: /bhagavad-gita/chapter-01-shloka-09/
 ---

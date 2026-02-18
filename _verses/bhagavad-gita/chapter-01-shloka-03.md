@@ -1,8 +1,8 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: Chapter 1, Shloka 3
-title_hi: अध्याय 1, श्लोक 3
+title_en: 'Chapter 3: Observing the Pandava Army'
+title_hi: 'Chapter 3: पाण्डव सेना का निरीक्षण'
 verse_number: 3
 previous_shloka: /verses/chapter-01-shloka-02/
 next_shloka: /verses/chapter-01-shloka-04/
@@ -14,34 +14,28 @@ chapter_info:
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-03.png
 audio_full: /audio/bhagavad-gita/chapter-01-shloka-03-full.mp3
 audio_slow: /audio/bhagavad-gita/chapter-01-shloka-03-slow.mp3
-devanagari: 'पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।
-
-  व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥ ३॥'
-transliteration: paśyaitāṁ pāṇḍuputrāṇām ācārya mahatīṁ camūm vyūḍhāṁ drupadaputreṇa
-  tava śiṣyeṇa dhīmatā
+devanagari: पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण
+  धीमता ॥ १-३॥
+transliteration: paśyaitāṁ pāṇḍuputrāṇām ācārya mahatīṁ camūm | vyūḍhāṁ drupadaputreṇa
+  tava śiṣyeṇa dhīmatā ॥ १-३॥
 word_meanings:
-- word: पश्य
-  roman: paśya
+- word: पश्यैतां
+  roman: paśyaitāṁ
   meaning:
-    en: see
-    hi: देखो
-- word: एताम्
-  roman: etām
-  meaning:
-    en: this
-    hi: इस
-- word: पाण्डुपुत्राणाम्
+    en: Behold
+    hi: देखिए
+- word: पाण्डुपुत्राणाम
   roman: pāṇḍuputrāṇām
   meaning:
     en: of the sons of Pandu
-    hi: पाण्डु के पुत्रों की
+    hi: पांडु के पुत्रों का
 - word: आचार्य
   roman: ācārya
   meaning:
     en: O teacher
     hi: हे आचार्य
-- word: महतीम्
-  roman: mahatīm
+- word: महतीं
+  roman: mahatīṁ
   meaning:
     en: great
     hi: महान
@@ -50,11 +44,11 @@ word_meanings:
   meaning:
     en: army
     hi: सेना
-- word: व्यूढाम्
-  roman: vyūḍhām
+- word: व्यूढां
+  roman: vyūḍhāṁ
   meaning:
     en: arranged
-    hi: व्यूहबद्ध
+    hi: व्यवस्थित
 - word: द्रुपदपुत्रेण
   roman: drupadaputreṇa
   meaning:
@@ -64,7 +58,7 @@ word_meanings:
   roman: tava
   meaning:
     en: your
-    hi: आपका
+    hi: तुम्हारा
 - word: शिष्येण
   roman: śiṣyeṇa
   meaning:
@@ -73,94 +67,60 @@ word_meanings:
 - word: धीमता
   roman: dhīmatā
   meaning:
-    en: wise
+    en: intelligent
     hi: बुद्धिमान
 literal_translation:
-  en: O teacher, behold this great army of the sons of Pandu, arranged by your wise
+  en: Behold, O teacher, the great army of the sons of Pandu, arranged by your intelligent
     disciple, the son of Drupada.
-  hi: हे आचार्य, देखो पाण्डु के पुत्रों की इस महान सेना को, जो आपके बुद्धिमान शिष्य
-    द्रुपद के पुत्र द्वारा व्यूहबद्ध की गई है।
+  hi: हे आचार्य, देखिए पांडु के पुत्रों की महान सेना, जो तुम्हारे बुद्धिमान शिष्य,
+    द्रुपद के पुत्र द्वारा व्यवस्थित की गई है।
 interpretive_meaning:
-  en: 'In this verse, Duryodhana, addressing his teacher Dronacharya, points out the
-    formidable army of the Pandavas as a strategic move to emphasize the seriousness
-    of the battle they were about to engage in. The mention of the army being arranged
-    by Dronacharya’s own disciple, Dhrishtadyumna, serves as an additional layer of
-    irony and psychological pressure. This highlights the importance of recognizing
-    the capabilities and strategies of one''s opponents, even when they include former
-    allies or students.
-
-
-    Spiritually, this verse can be seen as a reminder of the duality and complexities
-    of life, where roles and relationships can change, and one must remain aware and
-    adaptable. It serves to illustrate the tension between duty and personal relationships,
-    a recurring theme in the Gita.
-
-    '
-  hi: 'इस श्लोक में, दुर्योधन अपने गुरु द्रोणाचार्य से पांडवों की विशाल सेना की ओर
-    ध्यान आकर्षित करता है, जो कि युद्ध की गंभीरता को रेखांकित करता है। सेना का उल्लेख
-    द्रोणाचार्य के ही शिष्य धृष्टद्युम्न द्वारा व्यूहबद्ध किए जाने से एक प्रकार का
-    व्यंग्य और मनोवैज्ञानिक दबाव उत्पन्न होता है। यह दर्शाता है कि किसी के विरोधियों
-    की क्षमताओं और रणनीतियों को पहचानना कितना महत्वपूर्ण है, भले ही वे पूर्व सहयोगी
-    या विद्यार्थी हों।
-
-
-    आध्यात्मिक दृष्टिकोण से, यह श्लोक जीवन की द्वैतता और जटिलताओं की याद दिलाता है,
-    जहां भूमिकाएँ और रिश्ते बदल सकते हैं, और हमें सतर्क और अनुकूल रहना पड़ता है। यह
-    कर्तव्य और व्यक्तिगत रिश्तों के बीच के तनाव को दर्शाता है, जो गीता में बार-बार
-    उभरता है।
-
-    '
+  en: This verse signifies Duryodhana's anxiety and fear upon seeing the formidable
+    Pandava army, and his attempt to instigate his teacher Dronacharya.
+  hi: यह श्लोक दुर्योधन की चिंता और भय को दर्शाता है, जो वह पांडव सेना को देखकर महसूस
+    कर रहा था, और उसका प्रयास अपने गुरु द्रोणाचार्य को उकसाने का।
 story:
-  en: 'The context of this verse is set on the battlefield of Kurukshetra, just before
-    the great war of the Mahabharata is about to begin. Duryodhana, the leader of
-    the Kauravas, is surveying the battlefield and assessing the strengths of the
-    enemy forces. He is speaking to his teacher Dronacharya, who had taught both the
-    Kauravas and the Pandavas in the past.
-
-
-    Duryodhana’s words are strategic, as he seeks to remind Dronacharya of the prowess
-    of the Pandava army, particularly highlighting that it is organized by Dronacharya’s
-    own pupil, Dhrishtadyumna, who was born to kill Dronacharya. This scene sets the
-    stage for the complex emotional and moral dynamics that will unfold throughout
-    the Bhagavad Gita.
-
-    '
-  hi: 'इस श्लोक का संदर्भ महाभारत के युद्ध के आरंभ से ठीक पहले कुरुक्षेत्र की युद्धभूमि
-    पर स्थित है। दुर्योधन, कौरवों का नेता, युद्धभूमि का जायजा ले रहा है और शत्रु बलों
-    की ताकतों का मूल्यांकन कर रहा है। वह अपने गुरु द्रोणाचार्य से बात कर रहा है, जिन्होंने
-    अतीत में कौरवों और पांडवों दोनों को पढ़ाया था।
-
-
-    दुर्योधन की बातें रणनीतिक हैं, क्योंकि वह द्रोणाचार्य को पांडव सेना की शक्ति की
-    याद दिलाना चाहता है, विशेष रूप से यह बताते हुए कि इसे द्रोणाचार्य के ही शिष्य
-    धृष्टद्युम्न द्वारा व्यवस्थित किया गया है, जिसका जन्म ही द्रोणाचार्य को मारने
-    के लिए हुआ था। यह दृश्य गीता में आने वाले जटिल भावनात्मक और नैतिक गतिशीलता के
-    लिए मंच तैयार करता है।
-
-    '
+  en: This verse is from the first chapter of the Bhagavad Gita, where Duryodhana,
+    the prince of the Kauravas, is expressing his anxiety to his teacher Dronacharya
+    upon seeing the vast and well-arranged army of the Pandavas. He points out that
+    the army has been arranged by Dronacharya's own intelligent disciple, Dhrishtadyumna,
+    the son of Drupada. This is a significant moment as it sets the stage for the
+    epic battle of Kurukshetra, and highlights Duryodhana's fear and insecurity.
+  hi: यह श्लोक भगवद्गीता के पहले अध्याय से है, जहां कौरवों के राजकुमार दुर्योधन, पांडवों
+    की विशाल और अच्छी तरह से व्यवस्थित सेना को देखकर अपने गुरु द्रोणाचार्य को अपनी
+    चिंता व्यक्त कर रहे हैं। उन्होंने इस बात का उल्लेख किया है कि सेना को द्रोणाचार्य
+    के ही बुद्धिमान शिष्य, द्रुपद के पुत्र धृष्टद्युम्न ने व्यवस्थित किया है। यह एक
+    महत्वपूर्ण क्षण है क्योंकि यह कुरुक्षेत्र के महायुद्ध के लिए मंच सेट करता है,
+    और दुर्योधन के भय और असुरक्षा को उजागर करता है।
 practical_application:
-  en: 'In our daily lives, this verse inspires us to be aware of the dynamics of our
-    surroundings and relationships. It encourages us to recognize the strengths and
-    potential of those around us, even when they might appear as adversaries. By understanding
-    the capabilities of others, we can better prepare ourselves for the challenges
-    we face.
-
-
-    Additionally, it teaches the importance of not underestimating any situation or
-    individual, as roles and allegiances can shift, and today''s friend may become
-    tomorrow''s competitor. This awareness can lead to better strategic planning and
-    preparedness in both personal and professional scenarios.
-
-    '
-  hi: 'हमारे दैनिक जीवन में, यह श्लोक हमें हमारे परिवेश और रिश्तों की गतिशीलता के
-    प्रति जागरूक रहने के लिए प्रेरित करता है। यह हमें हमारे चारों ओर के लोगों की ताकत
-    और क्षमता को पहचानने के लिए प्रोत्साहित करता है, भले ही वे विरोधी के रूप में प्रतीत
-    हों। दूसरों की क्षमताओं को समझकर, हम अपने सामने आने वाली चुनौतियों के लिए बेहतर
-    तैयारी कर सकते हैं।
-
-
-    इसके अतिरिक्त, यह किसी भी स्थिति या व्यक्ति को कम न आंकने की महत्ता सिखाता है,
-    क्योंकि भूमिकाएँ और वफादारियाँ बदल सकती हैं, और आज का मित्र कल का प्रतिस्पर्धी
-    बन सकता है। इस जागरूकता से व्यक्तिगत और पेशेवर दोनों ही परिदृश्यों में बेहतर रणनीतिक
-    योजना और तैयारी हो सकती है।'
+  teaching:
+    en: This verse teaches us that fear and anxiety can cloud our judgement and lead
+      us to act impulsively.
+    hi: यह श्लोक हमें यह सिखाता है कि भय और चिंता हमारे निर्णय को धुंधला कर सकती है
+      और हमें बिना सोचे-समझे कार्य करने के लिए प्रेरित कर सकती है।
+  when_to_use:
+    en: This verse can be recited when one is feeling anxious or fearful, to remind
+      oneself to stay calm and composed.
+    hi: जब कोई व्यक्ति चिंतित या डरा हुआ महसूस कर रहा हो, तो खुद को शांत और संयत रखने
+      की याद दिलाने के लिए इस श्लोक का पाठ किया जा सकता है।
+permalink: /bhagavad-gita/chapter-01-shloka-03/
+verse_type: chapter
+previous_verse: /bhagavad-gita/chapter-01-shloka-02/
+next_verse: /bhagavad-gita/chapter-01-shloka-04/
+phonetic_notes:
+- word: पश्यैतां
+  phonetic: pa-shya-i-tām
+  emphasis: first syllable
+- word: पाण्डुपुत्राणाम
+  phonetic: pā-ṇḍu-pu-tra-āṇām
+  emphasis: third syllable
+- word: धीमता
+  phonetic: dhī-ma-tā
+  emphasis: first syllable
+meaning: Duryodhana is addressing his teacher Dronacharya and asking him to observe
+  the great army of the Pandavas, which has been arranged by his intelligent disciple,
+  the son of Drupada (Dhrishtadyumna).
+translation:
+  en: Behold, O teacher, the great army of the sons of Pandu, arranged by your intelligent
+    disciple, the son of Drupada.
 ---

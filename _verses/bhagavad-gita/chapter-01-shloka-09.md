@@ -2,8 +2,8 @@
 layout: verse
 collection_key: bhagavad-gita
 permalink: /bhagavad-gita/chapter-01-shloka-09/
-title_en: 'Chapter 9: The Brave Warriors Ready for Battle'
-title_hi: 'Chapter 9: युद्ध के लिए तैयार बहादुर योद्धागण'
+title_en: 'Chapter 9: The Brave Warriors Ready to Sacrifice'
+title_hi: 'Chapter 9: बली योद्धाओं की त्यागभावना'
 chapter: 1
 verse_number: 9
 verse_type: chapter
@@ -11,8 +11,8 @@ previous_verse: /bhagavad-gita/chapter-01-shloka-08/
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-09.png
 devanagari: अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः। नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः
   ॥ १-९॥
-transliteration: anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ | nānāśastrapraharṇāḥ
-  sarve yuddhaviśāradāḥ || 1-9 ||
+transliteration: anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ। nānāśastrapraharaṇāḥ
+  sarve yuddhaviśāradāḥ ॥ १-९॥
 phonetic_notes:
 - word: शूरा
   phonetic: shoo-raa
@@ -29,6 +29,11 @@ word_meanings:
   meaning:
     en: others
     hi: अन्य
+- word: च
+  roman: ca
+  meaning:
+    en: and
+    hi: और
 - word: बहवः
   roman: bahavaḥ
   meaning:
@@ -47,12 +52,12 @@ word_meanings:
 - word: त्यक्तजीविताः
   roman: tyaktajīvitāḥ
   meaning:
-    en: ready to lay down their lives
-    hi: जीवन त्यागने को तैयार
+    en: ready to sacrifice their lives
+    hi: जीवन की त्यागने को तैयार
 - word: नानाशस्त्रप्रहरणाः
-  roman: nānāśastrapraharṇāḥ
+  roman: nānāśastrapraharaṇāḥ
   meaning:
-    en: armed with various weapons
+    en: equipped with various weapons
     hi: विभिन्न शस्त्रों से सज्जित
 - word: सर्वे
   roman: sarve
@@ -65,45 +70,45 @@ word_meanings:
     en: skilled in warfare
     hi: युद्ध कुशल
 literal_translation:
-  en: Many other brave warriors are ready to lay down their lives for my sake. They
-    are armed with various weapons and all are skilled in warfare.
-  hi: मेरे लिए अन्य बहुत सारे बहादुर योद्धा अपना जीवन त्यागने को तैयार हैं। वे विभिन्न
-    शस्त्रों से सज्जित हैं और सभी युद्ध कुशल हैं।
+  en: There are many other brave warriors who are ready to sacrifice their lives for
+    my sake. They are all equipped with various weapons and are skilled in warfare.
+  hi: मेरे लिए अपने जीवन की त्यागने को तैयार अन्य बहुत साहसी योद्धा भी हैं। वे सभी
+    विभिन्न शस्त्रों से सज्जित हैं और युद्ध कुशल हैं।
 interpretive_meaning:
-  en: This verse signifies the readiness and dedication of the warriors to fight for
-    a cause, even if it means sacrificing their own lives. It emphasizes their bravery,
-    skill, and commitment.
-  hi: यह श्लोक योद्धाओं की तत्परता और समर्पण को दर्शाता है, यहां तक कि अगर इसका मतलब
-    उनका अपना जीवन त्यागना हो। इसमें उनकी बहादुरी, कौशल, और समर्पण को बल दिया गया
-    है।
+  en: This verse signifies the readiness and bravery of the warriors who are willing
+    to sacrifice their lives for a noble cause. It emphasizes their skill in warfare
+    and their preparedness with various weapons.
+  hi: यह श्लोक उन योद्धाओं की तैयारी और साहस को दर्शाता है जो एक उच्च कारण के लिए
+    अपने जीवन की त्यागने को तैयार हैं। यह उनके युद्ध कुशलता और विभिन्न शस्त्रों के
+    साथ उनकी तैयारी पर जोर देता है।
 story:
-  en: This verse is from the Bhagavad Gita, Chapter 1, Verse 9. Here, Duryodhana is
-    speaking to his teacher Dronacharya, expressing his confidence in his army. He
-    is listing out the brave warriors who are ready to lay down their lives for him.
-    This verse reflects the high morale and readiness of the Kaurava army before the
-    great war of Kurukshetra.
-  hi: यह श्लोक भगवदगीता के प्रथम अध्याय, नवम श्लोक से है। यहां, दुर्योधन अपने गुरु
-    द्रोणाचार्य से बात कर रहे हैं, अपनी सेना में आत्मविश्वास व्यक्त करते हुए। वह उन
-    बहादुर योद्धाओं की सूची बना रहे हैं जो उसके लिए अपना जीवन त्यागने को तैयार हैं।
-    यह श्लोक कुरुक्षेत्र के महान युद्ध से पहले कौरव सेना की उच्च मनोबल और तत्परता
-    को दर्शाता है।
+  en: This verse is from the Bhagavad Gita, chapter 1, verse 9. Here, Duryodhana is
+    speaking to his teacher Dronacharya before the great war of Kurukshetra. He is
+    expressing his confidence in his army and the warriors who are ready to sacrifice
+    their lives for him. He is trying to boost the morale of his troops and also to
+    assure his teacher of their strength and readiness.
+  hi: यह श्लोक भगवद गीता के पहले अध्याय, श्लोक 9 से है। यहां, दुर्योधन कुरुक्षेत्र
+    के महान युद्ध से पहले अपने गुरु द्रोणाचार्य से बात कर रहे हैं। वह अपनी सेना और
+    उन योद्धाओं में अपना विश्वास व्यक्त कर रहे हैं जो उसके लिए अपने जीवन की त्यागने
+    को तैयार हैं। वह अपनी सेना के मनोबल को बढ़ाने की कोशिश कर रहे हैं और साथ ही अपने
+    गुरु को उनकी ताकत और तैयारी की आश्वासन दे रहे हैं।
 practical_application:
   teaching:
-    en: The verse teaches the virtues of bravery, dedication, and readiness to sacrifice
-      for a cause.
-    hi: यह श्लोक बहादुरी, समर्पण, और एक कारण के लिए बलिदान की तत्परता की शिक्षा देता
-      है।
+    en: The verse teaches us about the virtues of bravery, readiness, and self-sacrifice
+      for a noble cause.
+    hi: यह श्लोक हमें साहस, तैयारी, और उच्च कारण के लिए आत्मत्याग के गुणों के बारे
+      में सिखाता है।
   when_to_use:
-    en: This verse can be recited or remembered when one needs to muster courage,
-      dedication, and readiness to face challenges.
-    hi: जब किसी को साहस, समर्पण, और चुनौतियों का सामना करने की तत्परता जुटाने की आवश्यकता
-      होती है, तब यह श्लोक पढ़ा या याद किया जा सकता है।
-meaning: The verse speaks of 'anye' (others) who are 'bahavaḥ' (many) and 'śūrā' (brave).
-  They are 'madarthe' (for my sake) 'tyaktajīvitāḥ' (ready to lay down their lives).
-  They are 'nānāśastrapraharṇāḥ' (armed with various weapons) and 'sarve' (all) are
-  'yuddhaviśāradāḥ' (skilled in warfare).
+    en: This verse can be recited or remembered when one needs inspiration for bravery,
+      self-sacrifice, and preparedness.
+    hi: जब किसी को साहस, आत्मत्याग, और तैयारी के लिए प्रेरणा की आवश्यकता होती है,
+      तब यह श्लोक पढ़ा या याद किया जा सकता है।
+meaning: The verse talks about 'anye' (others) who are 'bahavaḥ' (many) and 'śūrā'
+  (brave). They are 'madarthe tyaktajīvitāḥ' (ready to sacrifice their lives for my
+  sake). They are 'nānāśastrapraharaṇāḥ' (equipped with various weapons) and 'sarve'
+  (all) are 'yuddhaviśāradāḥ' (skilled in warfare).
 translation:
-  en: Many other brave warriors are ready to lay down their lives for my sake. They
-    are armed with various weapons and all are skilled in warfare.
+  en: There are many other brave warriors who are ready to sacrifice their lives for
+    my sake. They are all equipped with various weapons and are skilled in warfare.
 next_verse: /bhagavad-gita/chapter-01-shloka-10/
 ---

@@ -1,8 +1,8 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: Chapter 1, Shloka 5
-title_hi: अध्याय 1, श्लोक 5
+title_en: 'Chapter 5: The Mighty Warriors'
+title_hi: 'Chapter 5: शूरवीर योद्धा'
 verse_number: 5
 previous_shloka: /verses/chapter-01-shloka-04/
 next_shloka: /verses/chapter-01-shloka-06/
@@ -14,75 +14,72 @@ chapter_info:
 image: /images/bhagavad-gita/modern-minimalist/chapter-01-shloka-05.png
 audio_full: /audio/bhagavad-gita/chapter-01-shloka-05-full.mp3
 audio_slow: /audio/bhagavad-gita/chapter-01-shloka-05-slow.mp3
-devanagari: "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च\
-  \ नरपुङ्गवः।। \n"
-transliteration: Purujitkuntibhojaśca śaibyaśca narapuṅgavaḥ||
+devanagari: धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्। पुरुजित्कुन्तिभोजश्च शैब्यश्च
+  नरपुङ्गवः ॥ १-५॥
+transliteration: Dhṛṣṭaketuścekitaānaḥ kāśirājaśca vīryavān | Purujitkuntibhojaśca
+  śaibyaśca narapuṅgavaḥ ॥ १-५॥
 phonetic_notes:
-- word: धृष्टकेतुश्चेकितानः
-  phonetic: Dhṛ-ṣṭa-ke-tu-śce-ki-tā-naḥ
+- word: धृष्टकेतु
+  phonetic: dhṛ-ṣṭa-ke-tu
   emphasis: second syllable
-- word: काशिराजश्च वीर्यवान्
-  phonetic: kā-śi-rā-ja-śca vī-rya-vān
+- word: वीर्यवान्
+  phonetic: vī-rya-vān
   emphasis: first syllable
-- word: पुरुजित्कुन्तिभोजश्च
-  phonetic: pu-ru-jit-kun-ti-bho-ja-śca
-  emphasis: first syllable
+- word: पुरुजित्
+  phonetic: pu-ru-jit
+  emphasis: second syllable
 word_meanings:
-- word: धृष्टकेतुश्चेकितानः
-  roman: Dhṛṣṭaketuścekītānaḥ
+- word: धृष्टकेतु
+  roman: Dhṛṣṭaketu
   meaning:
-    en: Dhristaketu and Chekitana
-    hi: धृष्टकेतु और चेकितान
-- word: काशिराजश्च वीर्यवान्
-  roman: kāśirājaśca vīryavān
+    en: Dhristaketu
+    hi: धृष्टकेतु
+- word: वीर्यवान्
+  roman: Vīryavān
   meaning:
-    en: the mighty King of Kashi
-    hi: वीर्यवान काशी राजा
-- word: पुरुजित्कुन्तिभोजश्च
-  roman: Purujitkuntibhojaśca
+    en: Mighty
+    hi: शूरवीर
+- word: पुरुजित्
+  roman: Purujit
   meaning:
-    en: Purujit and Kuntibhoja
-    hi: पुरुजित और कुंतिभोज
-- word: शैब्यश्च नरपुङ्गवः
-  roman: śaibyaśca narapuṅgavaḥ
-  meaning:
-    en: Shaibya, the best among men
-    hi: शैब्य, महान पुरुष
+    en: Purujit
+    hi: पुरुजित
 literal_translation:
-  en: Dhristaketu, Chekitana, the mighty King of Kashi, Purujit, Kuntibhoja, and Shaibya,
-    the best among men.
-  hi: धृष्टकेतु, चेकितान, वीर्यवान काशी राजा, पुरुजित, कुंतिभोज और महान पुरुष शैब्य।
+  en: Dhristaketu, Chekitana, the valiant King of Kashi, Purujit, Kuntibhoja, and
+    Shaibya, all great human leaders.
+  hi: धृष्टकेतु, चेकितान, वीर्यवान काशी राज, पुरुजित, कुंतिभोज और शैब्य, सभी महान
+    मानव नेता।
 interpretive_meaning:
-  en: This verse emphasizes the strength and valor of the warriors on the Pandava
-    side, highlighting their readiness for the upcoming battle.
-  hi: इस श्लोक में पांडवों की ओर के योद्धाओं की शक्ति और वीरता को बल दिया गया है,
-    जो आगामी युद्ध के लिए उनकी तैयारी को दर्शाता है।
+  en: The verse signifies the strength and valor of the warriors on the Pandava side,
+    emphasizing their leadership and prowess in battle.
+  hi: यह श्लोक पांडव पक्ष के योद्धाओं की शक्ति और वीरता को दर्शाता है, उनके नेतृत्व
+    और युद्ध में कौशल को महत्व देता है।
 story:
   en: This verse is from the first chapter of the Bhagavad Gita, where Duryodhana
-    is listing the warriors on the Pandava side to his teacher Dronacharya. He is
-    trying to show the strength of the Pandava army, which includes many mighty and
-    valiant warriors. The verse serves to set the stage for the epic battle of Kurukshetra,
-    highlighting the formidable opponents the Kauravas are up against.
+    is listing the mighty warriors in the Pandava army to his teacher Dronacharya.
+    He is trying to emphasize the strength of his opponents, perhaps to instill fear
+    or respect in his own army.
   hi: यह श्लोक भगवदगीता के पहले अध्याय से है, जहां दुर्योधन अपने गुरु द्रोणाचार्य
-    को पांडवों की ओर के योद्धाओं की सूची दे रहा है। वह पांडव सेना की शक्ति को दिखाने
-    की कोशिश कर रहा है, जिसमें कई शूरवीर योद्धा शामिल हैं। यह श्लोक कुरुक्षेत्र के
-    महायुद्ध के लिए मंच सेट करता है, जिसमें कौरवों के सामने दुर्दांत विरोधी हैं।
+    को पांडव सेना के शूरवीर योद्धाओं के नाम बता रहे हैं। वह अपने प्रतिद्वंद्वियों
+    की शक्ति को महत्व देने का प्रयास कर रहे हैं, शायद अपनी सेना में भय या सम्मान डालने
+    के लिए।
 practical_application:
   teaching:
-    en: The verse teaches us about the importance of recognizing and acknowledging
-      the strength of our opponents.
-    hi: यह श्लोक हमें अपने प्रतिद्वंद्वियों की शक्ति को मान्यता देने और मानने के महत्व
-      के बारे में सिखाता है।
+    en: The verse teaches us to acknowledge and respect the strength of our opponents.
+    hi: यह श्लोक हमें अपने प्रतिद्वंद्वियों की शक्ति को मान्यता देने और सम्मान करने
+      की शिक्षा देता है।
   when_to_use:
-    en: This verse can be recited when seeking courage and strength in the face of
+    en: This verse can be recited when one needs to muster courage in the face of
       formidable challenges.
-    hi: जब दुर्दांत चुनौतियों के सामने साहस और शक्ति की तलाश हो, तब इस श्लोक का उच्चारण
-      किया जा सकता है।
-meaning: This verse lists the names of several warriors on the Pandava side in the
-  Mahabharata war. Dhristaketu, Chekitana, the mighty King of Kashi, Purujit, Kuntibhoja,
-  and Shaibya are mentioned as valiant warriors.
+    hi: जब किसी को भयानक चुनौतियों के सामने साहस इकट्ठा करने की आवश्यकता होती है,
+      तब यह श्लोक पढ़ा जा सकता है।
+meaning: 'The verse lists the names of mighty warriors: Dhristaketu, Chekitana, the
+  valiant King of Kashi, Purujit, Kuntibhoja, and Shaibya - all great human leaders.'
 translation:
-  en: Dhristaketu, Chekitana, the mighty King of Kashi, Purujit, Kuntibhoja, and Shaibya,
-    the best among men.
+  en: Dhristaketu, Chekitana, the valiant King of Kashi, Purujit, Kuntibhoja, and
+    Shaibya, all great human leaders.
 next_verse: /bhagavad-gita/chapter-01-shloka-06/
+permalink: /bhagavad-gita/chapter-01-shloka-05/
+verse_type: chapter
+previous_verse: /bhagavad-gita/chapter-01-shloka-04/
 ---

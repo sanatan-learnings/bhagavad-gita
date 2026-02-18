@@ -1,143 +1,92 @@
 ---
 layout: verse
 collection_key: bhagavad-gita
-title_en: "Chapter 2, Shloka 47"
-title_hi: "अध्याय 2, श्लोक 47"
+title_en: 'Chapter 47: Duty and Detachment from Results'
+title_hi: 'Chapter 47: कर्तव्य और फल से विरक्ति'
 chapter: 2
 verse_number: 47
 previous_shloka: /verses/chapter-01-shloka-07/
-next_shloka: null
 chapter_info:
   number: 2
-  name_en: "The Yoga of Knowledge"
-  name_hi: "सांख्य योग"
+  name_en: The Yoga of Knowledge
+  name_hi: सांख्य योग
 image: /images/bhagavad-gita/modern-minimalist/chapter-02-shloka-47.png
 audio_full: /audio/bhagavad-gita/chapter-02-shloka-47-full.mp3
 audio_slow: /audio/bhagavad-gita/chapter-02-shloka-47-slow.mp3
-
-devanagari: |
-  कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
-  मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।
-
-transliteration: |
-  karmaṇy-evādhikāras te mā phaleṣu kadācana
-  mā karma-phala-hetur bhūr mā te saṅgo 'stvakarmaṇi
-
+devanagari: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि
+  ॥ २-४७॥
+transliteration: karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā
+  te saṅgo'stvakarmaṇi ॥ २-४७॥
 phonetic_notes:
-  - word: "कर्मण्येवाधिकारस्ते"
-    note: "kar-MAN-ye-va-dhi-KAR-as-te (compound word)"
-  - word: "अकर्मणि"
-    note: "a-kar-MA-ni (emphasis on 'MA')"
-
+- word: कर्मण्येवाधिकारस्ते
+  phonetic: kar-ma-ṇye-vā-dhi-kā-ra-ste
+  emphasis: third syllable
+- word: मा फलेषु कदाचन
+  phonetic: mā pha-le-ṣu ka-dā-ca-na
+  emphasis: first syllable
 word_meanings:
-  - word: "कर्मणि"
-    roman: "karmaṇi"
-    meaning:
-      en: "in action/duty"
-      hi: "कर्म/कर्तव्य में"
-  - word: "एव"
-    roman: "eva"
-    meaning:
-      en: "only/alone"
-      hi: "केवल/मात्र"
-  - word: "अधिकारः"
-    roman: "adhikāraḥ"
-    meaning:
-      en: "right/authority"
-      hi: "अधिकार"
-  - word: "ते"
-    roman: "te"
-    meaning:
-      en: "your"
-      hi: "तुम्हारा"
-  - word: "मा"
-    roman: "mā"
-    meaning:
-      en: "not/never"
-      hi: "नहीं/कभी नहीं"
-  - word: "फलेषु"
-    roman: "phaleṣu"
-    meaning:
-      en: "in the fruits/results"
-      hi: "फलों/परिणामों में"
-  - word: "कदाचन"
-    roman: "kadācana"
-    meaning:
-      en: "at any time"
-      hi: "कभी भी"
-  - word: "कर्मफलहेतुः"
-    roman: "karma-phala-hetuḥ"
-    meaning:
-      en: "cause of fruits of action"
-      hi: "कर्म के फल का कारण"
-  - word: "भूः"
-    roman: "bhūḥ"
-    meaning:
-      en: "be"
-      hi: "बनो"
-  - word: "सङ्गः"
-    roman: "saṅgaḥ"
-    meaning:
-      en: "attachment"
-      hi: "आसक्ति"
-  - word: "अस्तु"
-    roman: "astu"
-    meaning:
-      en: "let there be"
-      hi: "होने दो"
-  - word: "अकर्मणि"
-    roman: "akarmaṇi"
-    meaning:
-      en: "in inaction"
-      hi: "निष्क्रियता में"
-
+- word: कर्मण्ये
+  roman: karmaṇye
+  meaning:
+    en: in duty
+    hi: कर्तव्य में
+- word: अधिकार
+  roman: adhikāra
+  meaning:
+    en: right
+    hi: अधिकार
+- word: मा
+  roman: mā
+  meaning:
+    en: not
+    hi: मत
+- word: फलेषु
+  roman: phaleṣu
+  meaning:
+    en: in results
+    hi: फलों में
+- word: 'कर्मफलहेतुर्भू:'
+  roman: 'karmaphalaheturbhū:'
+  meaning:
+    en: cause of the result of action
+    hi: कर्मफल का कारण
 literal_translation:
-  en: "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself to be the cause of the results of your activities, nor be attached to inaction."
-  hi: "तुम्हें अपने निर्धारित कर्तव्य को करने का अधिकार है, लेकिन तुम कर्म के फलों के अधिकारी नहीं हो। कभी भी अपने को अपनी गतिविधियों के परिणामों का कारण मत समझो, और न ही निष्क्रियता से आसक्त होओ।"
-
+  en: Your right is to perform your duties, but do not lay claim to the results. Do
+    not be motivated by the fruits of action, and never develop an attachment to inaction.
+  hi: आपका अधिकार अपने कर्तव्यों का पालन करने में है, परन्तु फलों का दावा न करें।
+    कर्मफल के प्रेरणा से कभी मत चलें, और कभी भी कर्म न करने की आसक्ति न विकसित करें।
 interpretive_meaning:
-  en: |
-    This is arguably the most famous verse of the Bhagavad Gita, encapsulating the essence of Karma Yoga. Krishna presents a revolutionary approach to action: perform your duty with excellence, but detach from the outcomes.
-
-    This teaching liberates us from anxiety about results. When we become attached to outcomes, we suffer from fear of failure and disappointment when things don't go as planned. By focusing on the action itself rather than its fruits, we maintain inner peace regardless of external circumstances.
-
-    The verse also warns against inaction. Detachment doesn't mean passivity or laziness. We must act, but act without the expectation that drives anxiety and suffering. This balance - engaged action with inner detachment - is the heart of spiritual practice in daily life.
-  hi: |
-    यह भगवद गीता का सबसे प्रसिद्ध श्लोक है, जो कर्म योग के सार को समाहित करता है। कृष्ण कर्म के लिए एक क्रांतिकारी दृष्टिकोण प्रस्तुत करते हैं: अपने कर्तव्य को उत्कृष्टता के साथ करो, लेकिन परिणामों से अनासक्त रहो।
-
-    यह शिक्षा हमें परिणामों की चिंता से मुक्त करती है। जब हम परिणामों से आसक्त हो जाते हैं, तो हम असफलता के डर और निराशा से पीड़ित होते हैं। कर्म पर ध्यान केंद्रित करके, हम बाहरी परिस्थितियों की परवाह किए बिना आंतरिक शांति बनाए रखते हैं।
-
-    श्लोक निष्क्रियता के खिलाफ भी चेतावनी देता है। अनासक्ति का मतलब निष्क्रियता या आलस्य नहीं है। हमें कार्य करना चाहिए, लेकिन उस अपेक्षा के बिना जो चिंता और पीड़ा को जन्म देती है।
-
+  en: This verse encourages selfless action, where one performs their duties without
+    attachment to the outcome. It emphasizes the importance of duty and the dangers
+    of ego and inaction.
+  hi: यह श्लोक निस्वार्थ कर्म को प्रोत्साहित करता है, जहां व्यक्ति अपने कर्तव्यों
+    का पालन फलों से आसक्ति के बिना करता है। इसमें कर्तव्य के महत्व और अहंकार और कर्म
+    न करने के खतरों पर जोर दिया गया है।
 story:
-  en: |
-    This verse comes in the context of Krishna teaching Arjuna about different types of yoga. Arjuna is paralyzed by anxiety about the consequences of war - killing his relatives will bring terrible karmic consequences. Krishna is teaching him that this attachment to outcomes is the problem.
-
-    The battlefield represents life itself, where we constantly face difficult choices. Like Arjuna, we often freeze in indecision, worried about making mistakes or facing undesired outcomes. Krishna's teaching applies universally: do what is right (your dharma), do it with full commitment, but release attachment to whether it brings you success, recognition, or pleasure.
-  hi: |
-    यह श्लोक कृष्ण द्वारा अर्जुन को विभिन्न प्रकार के योग के बारे में सिखाने के संदर्भ में आता है। अर्जुन युद्ध के परिणामों की चिंता से पंगु है - अपने रिश्तेदारों को मारना भयानक कर्मफल लाएगा। कृष्ण उसे सिखा रहे हैं कि परिणामों से यह आसक्ति ही समस्या है।
-
-    युद्धक्षेत्र जीवन का प्रतिनिधित्व करता है, जहां हम लगातार कठिन विकल्पों का सामना करते हैं। अर्जुन की तरह, हम अक्सर अनिर्णय में जम जाते हैं। कृष्ण की शिक्षा सार्वभौमिक रूप से लागू होती है: जो सही है वह करो, पूर्ण प्रतिबद्धता के साथ करो, लेकिन परिणामों से आसक्ति छोड़ दो।
-
+  en: This verse is from the Bhagavad Gita, a 700-verse Hindu scripture. It is part
+    of a conversation between Prince Arjuna and the god Krishna, who serves as his
+    charioteer. In this verse, Krishna is advising Arjuna on the nature of duty and
+    the importance of doing one's duty without attachment to the results.
+  hi: यह श्लोक भगवद गीता से है, जो एक 700-श्लोक वाला हिंदू ग्रंथ है। यह युद्धवीर अर्जुन
+    और भगवान कृष्ण के बीच हुई बातचीत का हिस्सा है, जो उनके रथ सारथी के रूप में कार्य
+    कर रहे हैं। इस श्लोक में, कृष्ण अर्जुन को कर्तव्य की प्रकृति और परिणामों से आसक्ति
+    के बिना अपने कर्तव्य का पालन करने के महत्व पर सलाह दे रहे हैं।
 practical_application:
-  en: |
-    **In Work:** Give your best effort to your job, but don't let your self-worth depend on promotions, recognition, or outcomes. Work with excellence for its own sake.
-
-    **In Relationships:** Love and care for others without expecting them to behave in specific ways or return your love in measured amounts. Let your giving be pure.
-
-    **In Learning:** Study and practice with dedication, but don't be devastated by exam results. The learning itself is the reward.
-
-    **In Service:** Help others without keeping score or expecting gratitude. The act of service itself is fulfilling.
-
-    This verse teaches us to be process-oriented rather than outcome-oriented, which paradoxically often leads to better outcomes while ensuring inner peace regardless of results.
-  hi: |
-    **काम में:** अपने काम में अपना सर्वश्रेष्ठ प्रयास दें, लेकिन अपने आत्मसम्मान को पदोन्नति, मान्यता या परिणामों पर निर्भर न होने दें।
-
-    **रिश्तों में:** दूसरों से प्यार करें और उनकी देखभाल करें बिना यह उम्मीद किए कि वे विशिष्ट तरीकों से व्यवहार करेंगे। आपका देना शुद्ध हो।
-
-    **सीखने में:** समर्पण के साथ अध्ययन और अभ्यास करें, लेकिन परीक्षा के परिणामों से तबाह न हों। सीखना ही पुरस्कार है।
-
-    **सेवा में:** दूसरों की मदद करें बिना स्कोर रखे या कृतज्ञता की उम्मीद किए।
-
-    यह श्लोक हमें परिणाम-उन्मुख के बजाय प्रक्रिया-उन्मुख होना सिखाता है।
+  teaching:
+    en: Perform your duty selflessly, without attachment to the results.
+    hi: अपने कर्तव्य का पालन निस्वार्थ रूप से करें, परिणामों से आसक्ति के बिना।
+  when_to_use:
+    en: This verse can be recited or applied when one needs to be reminded of the
+      importance of duty and the need for detachment from the results of one's actions.
+    hi: जब किसी को कर्तव्य के महत्व और अपने कर्मों के परिणामों से विरक्ति की आवश्यकता
+      की याद दिलाने की जरूरत होती है, तब इस श्लोक का उच्चारण या उपयोग किया जा सकता
+      है।
+permalink: /bhagavad-gita/chapter-02-shloka-47/
+verse_type: chapter
+meaning: Your right is to perform your duties, but you are not entitled to the fruits
+  of your actions. Never consider yourself the cause of the results of your actions,
+  and never be attached to not doing your duty.
+translation:
+  en: Your right is to perform your duties, but do not lay claim to the results. Do
+    not be motivated by the fruits of action, and never develop an attachment to inaction.
 ---
